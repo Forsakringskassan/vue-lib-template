@@ -1,0 +1,20 @@
+{
+    "extends": ["@fkui/tsconfig/recommended", "@fkui/tsconfig/cypress"],
+    "compilerOptions": {
+        "rootDir": "..",
+        "types": [
+            "cypress",
+            "node",
+            "vite/client",
+            "cy-mount",
+            "cypress-html-validate/commands",
+            "@forsakringskassan/cypress-visual-regression/commands",
+            "forced-colors"
+        ],
+        "typeRoots": ["../node_modules", "../node_modules/@types", "./types"],
+        "paths": {
+            "@forsakringskassan/vue-lib-template": ["./src/index.ts"]
+        }
+    },
+    "include": ["**/*.ts"]
+}

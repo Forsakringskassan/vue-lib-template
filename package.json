@@ -1,0 +1,154 @@
+{
+  "name": "@forsakringskassan/vue-lib-template",
+  "version": "0.0.1",
+  "description": "Vue library template based on Cloneman",
+  "keywords": [
+    "template",
+    "vue",
+    "cloneman",
+    "library"
+  ],
+  "homepage": "https://github.com/Forsakringskassan/vue-lib-template#readme",
+  "bugs": {
+    "url": "https://github.com/Forsakringskassan/vue-lib-template/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Forsakringskassan/vue-lib-template.git"
+  },
+  "license": "MIT",
+  "author": "Försäkringskassan",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/esm/index.esm.js"
+    },
+    "./selectors": {
+      "types": "./dist/types/selectors.d.ts",
+      "import": "./dist/esm/selectors.esm.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "dist/esm/index.esm.js",
+  "module": "dist/esm/index.esm.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "run-s build:lib build:selectors build:dts build:api",
+    "build:api": "fk-api-extractor api-extractor.*.json",
+    "build:dts": "vue-tsc -b",
+    "build:lib": "fk-build-vue-lib --clean",
+    "build:selectors": "fk-build-selectors",
+    "build:test-bundles": "node build-test-bundles.mjs",
+    "clean": "rimraf -g dist temp",
+    "eslint": "eslint --cache .",
+    "eslint:fix": "eslint --fix .",
+    "html-validate": "html-validate --formatter stylish,codeframe --ext md,html,vue src docs",
+    "lint": "run-s prettier:check eslint stylelint html-validate",
+    "lint:fix": "run-s prettier:write eslint:fix stylelint:fix",
+    "prepack": "release-prepack --bundle --retain-scripts",
+    "postpack": "release-postpack",
+    "prepare": "commitlint-config",
+    "prepublishOnly": "release-prepublish --bundle --retain-scripts",
+    "prettier:check": "prettier --check .",
+    "prettier:write": "prettier --write .",
+    "start": "vite --",
+    "start:docs": "fkui-serve public temp/docs",
+    "stylelint": "stylelint \"src/**/*.{css,scss}\"",
+    "stylelint:fix": "npm run stylelint -- --fix",
+    "pretest": "npm run lint",
+    "test": "vitest run",
+    "unit": "vitest run --no-coverage"
+  },
+  "commitlint": {
+    "extends": "@forsakringskassan/commitlint-config"
+  },
+  "prettier": "@forsakringskassan/prettier-config",
+  "stylelint": {
+    "extends": [
+      "@forsakringskassan/stylelint-config",
+      "@fkui/design/stylelint/recommended"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "7.29.7",
+    "@babel/preset-env": "7.29.7",
+    "@fkui/design": "6.53.0",
+    "@fkui/font-default": "6.54.0",
+    "@fkui/icon-lib-default": "6.53.0",
+    "@fkui/logic": "6.53.0",
+    "@fkui/test-utils": "6.53.0",
+    "@fkui/theme-default": "6.53.0",
+    "@fkui/vue": "6.53.0",
+    "@forsakringskassan/commitlint-config": "4.2.8",
+    "@forsakringskassan/cypress-axe": "5.1.5",
+    "@forsakringskassan/cypress-visual-regression": "5.1.0",
+    "@forsakringskassan/docs-generator": "3.6.0",
+    "@forsakringskassan/docs-live-example": "3.0.0",
+    "@forsakringskassan/eslint-config": "15.8.7",
+    "@forsakringskassan/eslint-config-cli": "15.8.7",
+    "@forsakringskassan/eslint-config-cypress": "15.8.4",
+    "@forsakringskassan/eslint-config-jest": "15.8.6",
+    "@forsakringskassan/eslint-config-typescript": "15.8.4",
+    "@forsakringskassan/eslint-config-typescript-typeinfo": "15.8.4",
+    "@forsakringskassan/eslint-config-vitest": "15.8.3",
+    "@forsakringskassan/eslint-config-vue": "15.8.7",
+    "@forsakringskassan/prettier-config": "3.7.8",
+    "@forsakringskassan/stylelint-config": "3.4.5",
+    "@forsakringskassan/vite-lib-config": "5.7.0",
+    "@forsakringskassan/vitest-config-jsdom": "2.6.0",
+    "@html-validate/release-scripts": "7.6.0",
+    "@types/node": "20.19.43",
+    "@typescript/native": "npm:typescript@7.0.2",
+    "@vue/server-renderer": "3.5.41",
+    "@vue/test-utils": "2.4.11",
+    "core-js": "3.50.0",
+    "cypress": "15.20.1",
+    "cypress-html-validate": "9.0.0",
+    "html-validate": "11.6.2",
+    "html-validate-markdown": "6.0.0",
+    "html-validate-vue": "9.3.1",
+    "mocha-junit-reporter": "2.2.1",
+    "mocha-multi-reporters": "1.5.1",
+    "npm-pkg-lint": "5.2.2",
+    "npm-run-all2": "9.0.3",
+    "rimraf": "6.1.3",
+    "typescript": "npm:@typescript/typescript6@6.0.2",
+    "vite": "8.2.1",
+    "vitest": "4.1.10",
+    "vue": "3.5.41",
+    "vue-tsc": "3.3.9"
+  },
+  "peerDependencies": {
+    "@fkui/design": "^6.53.0",
+    "@fkui/logic": "^6.53.0",
+    "@fkui/vue": "^6.53.0",
+    "fk-icons": "^4.30.1",
+    "html-validate": ">= 10.10.0",
+    "vue": "^3.5.34"
+  },
+  "peerDependenciesMeta": {
+    "fk-icons": {
+      "optional": true
+    },
+    "html-validate": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": "^22.16 || >= 24",
+    "npm": ">= 7"
+  },
+  "allowScripts": {
+    "@parcel/watcher": false,
+    "core-js": false,
+    "cypress": true,
+    "esbuild": true,
+    "fsevents": false,
+    "nx": false,
+    "unrs-resolver": true
+  },
+  "externalDependencies": []
+}

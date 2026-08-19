@@ -1,0 +1,24 @@
+# vite dev
+# /src/vite-dev/app.vue
+*.tgz
+node_modules/
+
+# Build artifacts
+.eslintcache
+coverage/
+dist/
+public/
+temp/
+
+# Cypress output
+cypress/screenshots/
+test-results/
+
+# Editor directories and files
+.DS_Store
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

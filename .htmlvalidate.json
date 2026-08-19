@@ -1,0 +1,22 @@
+{
+    "root": true,
+    "extends": [
+        "@fkui/vue:recommended",
+        "html-validate:recommended",
+        "html-validate:prettier",
+        "html-validate-vue:recommended",
+        "@forsakringskassan/docs-live-example/htmlvalidate:recommended"
+    ],
+    "plugins": [
+        "html-validate-vue",
+        "@fkui/vue/htmlvalidate",
+        "@forsakringskassan/docs-live-example/htmlvalidate"
+    ],
+    "transform": {
+        "^.*\\.spec.ts$": "html-validate-vue:html",
+        "^.*\\.md$": "html-validate-markdown",
+        "^.*\\.md:html$": "html-validate-vue:html",
+        "^.*\\.vue$": "html-validate-vue"
+    },
+    "elements": ["html5"]
+}
