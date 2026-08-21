@@ -1,4 +1,4 @@
-import AwesomeComponent from "../../src/AwesomeComponent.vue";
+import AwesomeComponent from "./AwesomeComponent.vue";
 
 describe("AwesomeComponent", () => {
     it("fetches data on button click", () => {
@@ -12,13 +12,13 @@ describe("AwesomeComponent", () => {
         // click to start fetch
         cy.get("button").click();
         // loading state disables button
-        cy.get("button").should("be.disabled");
+        cy.get("button").should("have.attr", "aria-disabled", "true");
 
         // advance fake timer to resolve the simulated backend call
         cy.tick(300);
 
         // result should be displayed and button re-enabled
         cy.get("p.result").should("contain.text", "Hello from backend");
-        cy.get("button").should("not.be.disabled");
+        cy.get("button").should("have.attr", "aria-disabled", "false");
     });
 });
