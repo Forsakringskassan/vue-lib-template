@@ -63,7 +63,7 @@
     "unit": "vitest run --no-coverage"
   },
   "commitlint": {
-    "extends": "@forsakringskassan/commitlint-config"
+    "extends": "@forsakringskassan/commitlint-config/no-jira"
   },
   "prettier": "@forsakringskassan/prettier-config",
   "stylelint": {
