@@ -98,7 +98,7 @@
     "@forsakringskassan/prettier-config": "3.7.8",
     "@forsakringskassan/stylelint-config": "3.4.5",
     "@forsakringskassan/vite-lib-config": "5.9.0",
-    "@forsakringskassan/vitest-config-jsdom": "2.6.0",
+    "@forsakringskassan/vitest-config-jsdom": "2.7.0",
     "@html-validate/release-scripts": "7.6.0",
     "@types/node": "24.13.3",
     "@typescript/native": "npm:typescript@7.0.2",
