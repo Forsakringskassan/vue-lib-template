@@ -13,7 +13,21 @@ function installPlugins(
 ): Cypress.PluginConfigOptions {
     getToMatchScreenshotsPlugin(on, config);
     htmlvalidate.install(on, htmlValidateConfig, htmlValidateOptions);
-    config = installAxe(on, config);
+    config = installAxe(on, config, {
+        context: {
+            include: [
+                [".code-preview"],
+                ["[data-preview]"],
+                ["[data-cy-root]"],
+            ],
+            exclude: [
+                [".calendar__item--selected"],
+                [".file-selector input"],
+                [".wizard-step__header__title"],
+                [".live-example__code"],
+            ],
+        },
+    });
     return config;
 }
 

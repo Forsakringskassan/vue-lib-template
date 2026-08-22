@@ -1,4 +1,3 @@
-/* eslint-disable vue/no-restricted-block */
 <script setup lang="ts">
 import { FButton, FCard } from "@fkui/vue";
 import { useAwesomeLogic } from "./awesome-component-logic";
