@@ -14,6 +14,9 @@ Biblioteket innehåller vue-implementationen av komponenter.
 - [ ] så här kör du cypress
 - [ ] bundling och inte bundling, hur gör jag
 - [ ] checklista över vad som ska fungera
+    - importera static assets
+    - vscode: ska inte visa squiggly lines vid import av static assets
+    - vscode: ska inte visa squiggly lines vid cy.mount i komponenttest
 
 ## Att göra
 
