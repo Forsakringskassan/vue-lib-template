@@ -19,9 +19,6 @@ Cypress.Commands.add("mount", (component, options = {}) => {
     // Setup options object
     options.global ??= {};
     options.global.plugins ??= [];
-    options.global.config ??= {};
-    options.global.config.compilerOptions ??= {};
-    options.global.config.compilerOptions.whitespace = "preserve";
 
     /* Installing validationPlugin */
     options.global.plugins.push({
@@ -33,7 +30,7 @@ Cypress.Commands.add("mount", (component, options = {}) => {
             setRunningContext(app);
 
             /* handle warnings as errors */
-            app.config.warnHandler = (msg, b, trace) => {
+            app.config.warnHandler = (msg, _info, trace) => {
                 throw new Error(`Vue warning: ${msg}\n${trace}`);
             };
         },
