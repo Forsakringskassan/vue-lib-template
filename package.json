@@ -27,6 +27,7 @@
       "types": "./dist/types/selectors.d.ts",
       "import": "./dist/esm/selectors.esm.js"
     },
+    "./style.css": "dist/esm/vue-lib-template.css",
     "./package.json": "./package.json"
   },
   "main": "dist/esm/index.esm.js",

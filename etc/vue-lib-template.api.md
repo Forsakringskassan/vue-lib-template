@@ -4,6 +4,16 @@
 
 ```ts
 
+import { ComponentOptionsMixin } from 'vue';
+import { ComponentProvideOptions } from 'vue';
+import { DefineComponent } from 'vue';
+import { PublicProps } from 'vue';
+
+// Warning: (ae-forgotten-export) The symbol "__VLS_export" needs to be exported by the entry point index.d.ts
+//
+// @public (undocumented)
+export const AwesomeComponent: typeof __VLS_export;
+
 // (No @packageDocumentation comment for this package)
 
 ```
