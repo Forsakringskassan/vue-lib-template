@@ -149,7 +149,6 @@
     "cypress": true,
     "esbuild": true,
     "fsevents": false,
-    "nx": false,
     "unrs-resolver": true
   },
   "externalDependencies": []

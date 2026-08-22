@@ -22,7 +22,7 @@ Biblioteket innehåller vue-implementationen av komponenter.
 - [x] sandbox eller inte
 - [ ] stylelint, även på sfc
 - [ ] levera css, autoprefixer ska vara med
-- [ ] trimma allowScripts (jättelåg prio)
+- [x] trimma allowScripts (jättelåg prio)
 - [x] semantic release för vanligt repo
 - [ ] uppdatera .gitignore med app.vue
 - [ ] pretest: att vara eller att inte vara, det är frågan
