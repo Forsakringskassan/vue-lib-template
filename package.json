@@ -41,7 +41,6 @@
     "build:dts": "vue-tsc -b",
     "build:lib": "fk-build-vue-lib --clean",
     "build:selectors": "fk-build-selectors",
-    "build:test-bundles": "node build-test-bundles.mjs",
     "clean": "rimraf -g dist temp",
     "eslint": "eslint --cache .",
     "eslint:fix": "eslint --fix .",
