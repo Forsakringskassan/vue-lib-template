@@ -102,7 +102,7 @@
     "@forsakringskassan/stylelint-config": "3.4.5",
     "@forsakringskassan/vite-lib-config": "5.9.3",
     "@forsakringskassan/vitest-config-jsdom": "2.7.0",
-    "@html-validate/release-scripts": "7.6.0",
+    "@html-validate/release-scripts": "7.6.6",
     "@types/node": "24.13.3",
     "@typescript/native": "npm:typescript@7.0.2",
     "@vue/server-renderer": "3.5.41",
