@@ -36,3 +36,7 @@ Biblioteket innehåller vue-implementationen av komponenter.
 - [x] npm run build
 - [ ] npm run docs
 - [ ] npm run serve
+- [ ] apimock
+- [ ] bättre exempelkomponent
+- [ ] bättre enhetstest
+- [ ] bättre komponenttest
