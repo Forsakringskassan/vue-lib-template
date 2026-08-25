@@ -40,8 +40,9 @@
     "docs"
   ],
   "scripts": {
-    "build": "run-s build:lib build:selectors build:dts build:api",
+    "build": "run-s build:lib build:selectors build:dts build:api build:cloneman",
     "build:api": "fk-api-extractor api-extractor.*.json",
+    "build:cloneman": "cloneman build -o temp/cloneman",
     "build:docs": "npm run -w docs build",
     "build:dts": "vue-tsc -b",
     "build:lib": "fk-build-vue-lib --clean",
@@ -71,7 +72,7 @@
   },
   "prettier": "@forsakringskassan/prettier-config",
   "release": {
-    "extends": "@forsakringskassan/semantic-release-config"
+    "extends": "@forsakringskassan/semantic-release-cloneman-config"
   },
   "stylelint": {
     "extends": [
@@ -111,6 +112,7 @@
     "@typescript/native": "npm:typescript@7.0.2",
     "@vue/server-renderer": "3.5.41",
     "@vue/test-utils": "2.4.11",
+    "cloneman": "1.19.6",
     "core-js": "3.50.0",
     "cypress": "15.21.0",
     "cypress-html-validate": "9.0.0",
