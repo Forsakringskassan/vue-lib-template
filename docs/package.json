@@ -1,0 +1,17 @@
+{
+  "name": "docs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node build.mts",
+    "start": "http-server public"
+  },
+  "devDependencies": {
+    "@fkui/vue": "6.54.0",
+    "@forsakringskassan/docs-generator": "3.6.1",
+    "@tsconfig/node24": "24.0.5",
+    "@tsconfig/recommended": "1.0.13",
+    "http-server": "14.1.1",
+    "vue": "3.5.41"
+  }
+}

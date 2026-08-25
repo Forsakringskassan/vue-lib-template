@@ -8,7 +8,10 @@ const { loading, data, fetchData } = useAwesomeLogic();
 <template>
     <f-card class="awesome-card">
         <template #header>
-            <h2>Awesome Component</h2>
+            <h2>
+                <!-- @slot Heading -->
+                <slot>Awesome Component</slot>
+            </h2>
         </template>
         <template #default>
             <div class="content">

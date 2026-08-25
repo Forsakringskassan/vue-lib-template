@@ -1,6 +1,47 @@
-# fkui/vue
+# @forsakringskassan/vue-lib-template
 
-Biblioteket innehåller vue-implementationen av komponenter.
+En mall för hur ett komponentbibliotek fungerar.
+
+## Dokumentation
+
+Bygg och starta dokumentationen med:
+
+```bash
+npm run build:docs
+npm run start:docs
+```
+
+Dokumentationen kan nås på http://localhost:8080.
+
+Komponenter dokumenteras i `docs/components` katalogen.
+Varje komponent ska ha en tillhörande Markdown fil (`.md`) med ett inledande Frontmatter-block:
+
+```md
+---
+title: Fantastisk komponent
+status: Draft
+layout: component
+component: AwesomeComponent
+---
+```
+
+Exempel infogas med en code fence:
+
+````md
+```import
+${filename}
+```
+````
+
+Vue API dokumentation för komponenter infogas med ett api block:
+
+```md
+::: api
+vue:${component}
+:::
+```
+
+Dokumentationen genereras med [`@forsakringskassan/docs-generator`](https://forsakringskassan.github.io/docs-generator/latest/).
 
 ## Att dokumentera
 
@@ -13,6 +54,9 @@ Biblioteket innehåller vue-implementationen av komponenter.
 - [ ] förstå vad paketet levererar
 - [ ] så här kör du cypress
 - [ ] bundling och inte bundling, hur gör jag
+- [ ] hur dokumenterar man komponenter?
+- [x] hur bygger man dokumentationen?
+- [x] hur startar man dokumentationen?
 - [ ] checklista över vad som ska fungera
     - importera static assets
     - vscode: ska inte visa squiggly lines vid import av static assets
@@ -21,7 +65,7 @@ Biblioteket innehåller vue-implementationen av komponenter.
 ## Att göra
 
 - [x] börja med att kopiera alla rotfiler och cypresskatalog etc från designsystem (det vi inte fick med som körs från roten t ex lint osv)
-- [ ] docs
+- [x] docs
 - [x] sandbox eller inte
 - [ ] stylelint, även på sfc
 - [x] levera css
@@ -34,9 +78,11 @@ Biblioteket innehåller vue-implementationen av komponenter.
 - [x] npm start AwesomeComponent
 - [x] npm test
 - [x] npm run build
-- [ ] npm run docs
-- [ ] npm run serve
+- [x] npm run build:docs
+- [x] npm run start:docs
 - [ ] apimock
 - [ ] bättre exempelkomponent
 - [ ] bättre enhetstest
 - [ ] bättre komponenttest
+- [ ] live exempel
+- [ ] skill för att skapa live exempel

@@ -36,9 +36,13 @@
   "files": [
     "dist"
   ],
+  "workspaces": [
+    "docs"
+  ],
   "scripts": {
     "build": "run-s build:lib build:selectors build:dts build:api",
     "build:api": "fk-api-extractor api-extractor.*.json",
+    "build:docs": "npm run -w docs build",
     "build:dts": "vue-tsc -b",
     "build:lib": "fk-build-vue-lib --clean",
     "build:selectors": "fk-build-selectors",
@@ -55,7 +59,7 @@
     "prettier:check": "prettier --check .",
     "prettier:write": "prettier --write .",
     "start": "vite --",
-    "start:docs": "fkui-serve public temp/docs",
+    "start:docs": "npm start -w docs",
     "stylelint": "stylelint \"src/**/*.{css,scss}\"",
     "stylelint:fix": "npm run stylelint -- --fix",
     "pretest": "npm run lint",
