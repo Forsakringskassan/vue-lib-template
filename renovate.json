@@ -1,4 +1,3 @@
 {
-    "extends": ["local>forsakringskassan/renovate-config"],
-    "ignoreDeps": ["fk-icons"]
+    "extends": ["local>forsakringskassan/renovate-config"]
 }
