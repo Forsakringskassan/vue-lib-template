@@ -108,10 +108,10 @@ export default async (context) => {
             "# Each line is a file pattern followed by one or more owners.",
             "",
             "# Global owner for the whole repository",
-            "# * @username-or-team",
+            "#* @username-or-team",
             "",
             "# Example folder-specific owner",
-            "# /docs/ @org/doc-team",
+            "#/docs/ @org/doc-team",
         ].join("\n"),
     );
 
