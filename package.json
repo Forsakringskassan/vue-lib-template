@@ -134,13 +134,7 @@
     "@fkui/design": "^6.53.0",
     "@fkui/logic": "^6.53.0",
     "@fkui/vue": "^6.53.0",
-    "html-validate": ">= 10.10.0",
     "vue": "^3.5.34"
-  },
-  "peerDependenciesMeta": {
-    "html-validate": {
-      "optional": true
-    }
   },
   "engines": {
     "node": "^24 || >= 26",
