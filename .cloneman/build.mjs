@@ -48,6 +48,7 @@ export default async (context) => {
             ".github/**",
             ".npmrc", // does not work internally yet
             ".vscode/**",
+            "package-lock.json", // consumers are expected to use custom dependencies
         ],
         ignoredDependencies: [
             "@fkui/*",
