@@ -7,7 +7,7 @@
     "start": "http-server public"
   },
   "devDependencies": {
-    "@fkui/vue": "6.54.0",
+    "@fkui/vue": "6.55.0",
     "@forsakringskassan/docs-generator": "3.6.1",
     "@tsconfig/node24": "24.0.5",
     "@tsconfig/recommended": "1.0.13",
