@@ -12,7 +12,6 @@ export default async (context) => {
             ".editorconfig",
             ".gitignore",
             ".htmlvalidate.json",
-            ".npmrc",
             ".prettierignore",
             /* ".vscode/**", */
             "api-extractor.lib.json",
@@ -44,7 +43,12 @@ export default async (context) => {
             "tsconfig.selectors.json",
             "vite.config.mts",
         ],
-        ignoredFiles: [".agents/**", ".vscode/**", ".github/**"],
+        ignoredFiles: [
+            ".agents/**",
+            ".github/**",
+            ".npmrc", // does not work internally yet
+            ".vscode/**",
+        ],
         ignoredDependencies: [
             "@fkui/*",
             "!@fkui/tsconfig",
