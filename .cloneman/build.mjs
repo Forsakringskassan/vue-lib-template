@@ -51,6 +51,14 @@ export default async (context) => {
             "@forsakringskassan/*-api",
             "fk-icons",
         ],
+        removeFiles: [
+            "api-extractor.json", // split into multiple files
+            "index.html", // does not need to use custom template
+            "jest.setup.ts", // template uses vitest
+            "project.code-workspace", // replaced with .vscode folder
+            "tsconfig-consumer.json", // replaced by @fkui/tsconfig
+            "vite.config.ts", // replaced by vite.config.mts
+        ],
     });
 
     /* install hook to verify application uses the correct template (we cannot put
