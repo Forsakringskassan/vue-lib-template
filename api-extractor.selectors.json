@@ -8,7 +8,7 @@
         "tsconfigFilePath": "<projectFolder>/tsconfig.selectors.json"
     },
     "apiReport": {
-        "reportFileName": "<unscopedPackageName>-selectors.api.md"
+        "reportFileName": "selectors.api.md"
     },
     "dtsRollup": {
         "publicTrimmedFilePath": "<projectFolder>/dist/types/selectors.d.ts"
