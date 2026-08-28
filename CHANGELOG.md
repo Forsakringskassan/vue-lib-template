@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## [1.0.2](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.0.1...v1.0.2) (2026-08-28)
+
+### Bug Fixes
+
+* add docs block by default ([9ade8ee](https://github.com/Forsakringskassan/vue-lib-template/commit/9ade8ee200ad4498c21b7278d3404131c14e6b52))
+* **deps:** loosen other peerDependencies ranges ([e9bb25a](https://github.com/Forsakringskassan/vue-lib-template/commit/e9bb25a1cc3ed218e4192c108dadc130b1ba228f))
+* **deps:** remove fk-icons peerDependency ([c3411a8](https://github.com/Forsakringskassan/vue-lib-template/commit/c3411a834c9ba8620bedc54ca20cf8245a9f7926))
+* **deps:** remove html-validate peerDependency ([8d436ab](https://github.com/Forsakringskassan/vue-lib-template/commit/8d436ab58e9e4f4e97b210f74760deaa6fe07b37))
+* disable running cypress on release ([c472acf](https://github.com/Forsakringskassan/vue-lib-template/commit/c472acf39f03198ad1924009c1ada7a604e8b44f))
+* renove custom renovate config ([0eb748c](https://github.com/Forsakringskassan/vue-lib-template/commit/0eb748c7915ba287027245141021050adeabeff6))
+
 ## [1.0.1](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.0.0...v1.0.1) (2026-08-28)
 
 ### Bug Fixes
