@@ -1,1 +1,7 @@
-buildRepo()
+buildRepo([
+    nodejs: [
+        cypress: [
+            runOnRelease: false,
+        ],
+    ],
+])
