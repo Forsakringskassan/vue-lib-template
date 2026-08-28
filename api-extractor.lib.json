@@ -7,7 +7,7 @@
         "tsconfigFilePath": "<projectFolder>/tsconfig.lib.json"
     },
     "apiReport": {
-        "reportFileName": "<unscopedPackageName>.api.md"
+        "reportFileName": "lib.api.md"
     },
     "docModel": {
         "enabled": true
