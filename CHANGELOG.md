@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [1.0.3](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.0.2...v1.0.3) (2026-08-28)
+
+### Bug Fixes
+
+* add repository url parameter ([018c6f7](https://github.com/Forsakringskassan/vue-lib-template/commit/018c6f70da36e9d584c9d83c0f02071beaad8d79))
+* rename api reports to fixed names ([2ff3d22](https://github.com/Forsakringskassan/vue-lib-template/commit/2ff3d223b651326b533ad8024e3fbe9081df542e))
+
 ## [1.0.2](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.0.1...v1.0.2) (2026-08-28)
 
 ### Bug Fixes
