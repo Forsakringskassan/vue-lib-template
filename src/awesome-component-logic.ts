@@ -1,6 +1,10 @@
 import type { Ref } from "vue";
 import { ref } from "vue";
 
+interface Data {
+    reply: string;
+}
+
 /**
  * Business logic for the Awesome component.
  * Returns reactive refs and a fetch function that simulates a backend call.
@@ -15,12 +19,8 @@ export function useAwesomeLogic(): {
 
     async function fetchData(): Promise<void> {
         loading.value = true;
-        const result = await new Promise<{ message: string }>((resolve) => {
-            setTimeout(() => {
-                resolve({ message: "Hello from backend" });
-            }, 300);
-        });
-        data.value = result.message;
+        const response = await fetch("/api/awesome-endpoint");
+        data.value = ((await response.json()) as Data).reply;
         loading.value = false;
     }
 

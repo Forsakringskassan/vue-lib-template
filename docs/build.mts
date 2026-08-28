@@ -1,3 +1,4 @@
+import { copyFileSync } from "node:fs";
 import path from "node:path";
 import {
     Generator,
@@ -21,6 +22,10 @@ docs.compileStyle("main", "./src/main.scss", {
     appendTo: "head",
 });
 
+docs.compileScript("mocks", "./src/bundleMocks.js", {
+    appendTo: "head",
+});
+
 await docs.build([
     {
         include: ["**/*.md"],
@@ -32,3 +37,8 @@ await docs.build([
         fileReader: vueFileReader,
     },
 ]);
+
+copyFileSync(
+    "../node_modules/msw/lib/mockServiceWorker.js",
+    "./public/mockServiceWorker.js",
+);
