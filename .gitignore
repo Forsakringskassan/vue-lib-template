@@ -30,3 +30,5 @@ test-results/
 
 # [cloneman-template-override: Add custom changes below this line]
 
+foo.txt
+bar/baz.gif
