@@ -1,12 +1,10 @@
-import { beforeEach, describe, expect, it, vi } from "vitest";
+import { beforeEach, describe, expect, it } from "vitest";
 import { useAwesomeLogic } from "./awesome-component-logic";
 
 describe("useAwesomeLogic", () => {
     let logic: ReturnType<typeof useAwesomeLogic>;
 
     beforeEach(() => {
-        // Reset timers for the Promise timeout
-        vi.useFakeTimers();
         logic = useAwesomeLogic();
     });
 
@@ -21,10 +19,8 @@ describe("useAwesomeLogic", () => {
         const fetchPromise = logic.fetchData();
         // loading should be true immediately
         expect(logic.loading.value).toBe(true);
-        // fast-forward the timer to resolve the simulated backend call
-        vi.advanceTimersByTime(300);
         await fetchPromise;
         expect(logic.loading.value).toBe(false);
-        expect(logic.data.value).toBe("Hello from backend");
+        expect(logic.data.value).toBe("Pong!");
     });
 });
