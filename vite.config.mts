@@ -5,7 +5,15 @@ import { defineTestConfig } from "@forsakringskassan/vitest-config-jsdom";
 import mocks from "./src/mocks.mts";
 
 export default defineConfig({
-    test: defineTestConfig(),
+    test: defineTestConfig({
+        environment: "jsdom",
+        environmentOptions: {
+            jsdom: {
+                url: "http://localhost:3000",
+            },
+        },
+        setupFiles: ["./vitest.setup.ts"],
+    }),
     fk: {
         mocks,
     },
