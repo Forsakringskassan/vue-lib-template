@@ -117,6 +117,7 @@
     "core-js": "3.50.0",
     "cypress": "15.21.0",
     "cypress-html-validate": "9.0.0",
+    "happy-dom": "20.11.12",
     "html-validate": "11.10.0",
     "html-validate-markdown": "6.0.0",
     "html-validate-vue": "9.3.1",

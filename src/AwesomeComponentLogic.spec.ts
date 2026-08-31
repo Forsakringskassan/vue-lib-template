@@ -1,3 +1,5 @@
+/* @vitest-environment happy-dom */
+
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { useAwesomeLogic } from "./awesome-component-logic";
 
@@ -25,6 +27,6 @@ describe("useAwesomeLogic", () => {
         vi.advanceTimersByTime(300);
         await fetchPromise;
         expect(logic.loading.value).toBe(false);
-        expect(logic.data.value).toBe("Hello from backend");
+        expect(logic.data.value).toBe("Pong!");
     });
 });

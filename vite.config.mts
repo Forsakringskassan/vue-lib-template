@@ -5,7 +5,17 @@ import { defineTestConfig } from "@forsakringskassan/vitest-config-jsdom";
 import mocks from "./src/mocks.mts";
 
 export default defineConfig({
-    test: defineTestConfig(),
+    test: {
+        ...defineTestConfig(),
+        globalSetup: "./global-setup.ts",
+
+        environmentOptions: {
+            happyDOM: {
+                url: "http://127.0.0.1:8080",
+            },
+        },
+    },
+
     fk: {
         mocks,
     },
