@@ -9,7 +9,8 @@
             "cy-mount",
             "cypress-html-validate/commands",
             "@forsakringskassan/cypress-visual-regression/commands",
-            "forced-colors"
+            "forced-colors",
+            "mocha"
         ],
         "typeRoots": ["../node_modules", "../node_modules/@types", "./types"],
         "paths": {
