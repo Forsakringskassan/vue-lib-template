@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { FTextField } from "@fkui/vue";
+import AwesomeComponent from "../AwesomeComponent.vue";
 
 const namn = ref("Vue lib template");
 </script>
@@ -11,5 +12,6 @@ const namn = ref("Vue lib template");
 
         <f-text-field v-model="namn" v-validation.required maxlength="100"> Namn </f-text-field>
         <pre>Hello {{ namn }}!</pre>
+        <awesome-component></awesome-component>
     </div>
 </template>

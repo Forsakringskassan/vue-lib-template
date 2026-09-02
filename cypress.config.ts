@@ -85,6 +85,7 @@ export default defineConfig({
             framework: "vue",
             bundler: "vite",
         },
+        excludeSpecPattern: ["temp/**"], // cloneman puts cy-files in temp folder during build
     },
     defaultBrowser: "chrome",
     hosts: { localhost: "127.0.0.1" },

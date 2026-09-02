@@ -8,10 +8,12 @@
   },
   "devDependencies": {
     "@fkui/vue": "6.55.0",
+    "@forsakringskassan/apimock-express": "3.2.0",
     "@forsakringskassan/docs-generator": "3.6.2",
     "@tsconfig/node24": "24.0.5",
     "@tsconfig/recommended": "1.0.13",
     "http-server": "14.1.1",
+    "msw": "2.15.0",
     "vue": "3.5.42"
   }
 }
