@@ -13,7 +13,7 @@ export default async (context) => {
             ".gitignore",
             ".htmlvalidate.json",
             ".prettierignore",
-            /* ".vscode/**", */
+            ".vscode/**",
             "api-extractor.lib.json",
             "api-extractor.selectors.json",
             "babel.config.js",
@@ -47,7 +47,6 @@ export default async (context) => {
             ".agents/**",
             ".github/**",
             ".npmrc", // does not work internally yet
-            ".vscode/**",
             "package-lock.json", // consumers are expected to use custom dependencies
         ],
         ignoredDependencies: [
