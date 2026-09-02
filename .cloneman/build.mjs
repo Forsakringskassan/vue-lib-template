@@ -8,7 +8,7 @@ export default async (context) => {
 
     const template = await buildTemplate(pkg.name, {
         managedFiles: [
-            /* ".agents/**", */
+            ".agents/**",
             ".editorconfig",
             ".gitignore",
             ".htmlvalidate.json",
@@ -44,7 +44,6 @@ export default async (context) => {
             "vite.config.mts",
         ],
         ignoredFiles: [
-            ".agents/**",
             ".github/**",
             ".npmrc", // does not work internally yet
             "package-lock.json", // consumers are expected to use custom dependencies
