@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { FButton, FCard } from "@fkui/vue";
-import { useAwesomeLogic } from "./awesome-component-logic";
+import { useAwesomeData } from "./use-awesome-data";
 
-const { loading, data, fetchData } = useAwesomeLogic();
+const { loading, data, fetchData } = useAwesomeData();
 </script>
 
 <template>
