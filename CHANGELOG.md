@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## [1.0.4](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.0.3...v1.0.4) (2026-09-02)
+
+### Bug Fixes
+
+* add agent files to template ([144b6c6](https://github.com/Forsakringskassan/vue-lib-template/commit/144b6c6ce15a1c45448771f25b85e2145092493a))
+* add vscode files to template ([2ebe8ab](https://github.com/Forsakringskassan/vue-lib-template/commit/2ebe8abdc992b4a8ec627a2afe52aadc4c3a85ac))
+* exclude cloneman from minReleaseAge ([a34fb87](https://github.com/Forsakringskassan/vue-lib-template/commit/a34fb8735842aa1f85085ffeada9aa5e55d31371))
+
 ## [1.0.3](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.0.2...v1.0.3) (2026-08-28)
 
 ### Bug Fixes
