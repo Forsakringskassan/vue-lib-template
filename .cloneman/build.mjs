@@ -20,7 +20,6 @@ export default async (context) => {
             "cypress/fixtures/example.json",
             "cypress/support/commands/forced-colors.ts",
             "cypress/support/common.ts",
-            "cypress/support/component-index.html",
             "cypress/support/component.ts",
             "cypress/support/main.scss",
             "cypress/tsconfig.json",
