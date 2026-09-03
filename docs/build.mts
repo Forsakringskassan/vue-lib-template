@@ -18,6 +18,10 @@ const docs = new Generator(import.meta.url, {
     ],
 });
 
+docs.compileScript("main", "./src/main.js", {
+    appendTo: "body",
+});
+
 docs.compileStyle("main", "./src/main.scss", {
     appendTo: "head",
 });

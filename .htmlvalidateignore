@@ -1,2 +1,4 @@
 # generated files
 docs/public/
+docs/node_modules/
+docs/temp/
