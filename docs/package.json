@@ -7,6 +7,7 @@
     "start": "http-server public"
   },
   "devDependencies": {
+    "@fkui/icon-lib-default": "6.55.0",
     "@fkui/vue": "6.55.0",
     "@forsakringskassan/apimock-express": "3.2.0",
     "@forsakringskassan/docs-generator": "3.6.2",
