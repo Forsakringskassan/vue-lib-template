@@ -6,6 +6,9 @@
     "build": "node build.mts",
     "start": "http-server public"
   },
+  "dependencies": {
+    "@fkui/icon-lib-default": "6.55.0"
+  },
   "devDependencies": {
     "@fkui/vue": "6.55.0",
     "@forsakringskassan/apimock-express": "3.2.0",

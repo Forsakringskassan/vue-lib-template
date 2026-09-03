@@ -1,4 +1,5 @@
 import { createApp, h } from "vue";
+import { injectSpritesheet } from "@fkui/icon-lib-default/dist/f/injectSpritesheet";
 import {
     ErrorPlugin,
     FErrorHandlingApp,
@@ -18,6 +19,7 @@ export function setup(options: SetupOptions): void {
         },
     });
     setRunningContext(app);
+    injectSpritesheet();
     app.use(ErrorPlugin, {
         captureWarnings: true,
         logToConsole: true,
