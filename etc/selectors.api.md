@@ -4,6 +4,19 @@
 
 ```ts
 
+// @public
+export function CatInfoComponentSelectors(selector?: string): Readonly<{
+    readonly selector: string;
+    loadingContainer(): string;
+    viewContainer(): string;
+    editContainer(): string;
+    nameInput(): string;
+    ageInput(): string;
+    breedInput(): string;
+    colorInput(): string;
+    favoriteFoodInput(): string;
+}>;
+
 // (No @packageDocumentation comment for this package)
 
 ```
