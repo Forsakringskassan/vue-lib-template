@@ -113,7 +113,7 @@
     "@typescript/native": "npm:typescript@7.0.2",
     "@vue/server-renderer": "3.5.42",
     "@vue/test-utils": "2.5.0",
-    "cloneman": "1.22.0",
+    "cloneman": "1.23.0",
     "core-js": "3.50.0",
     "cypress": "15.21.1",
     "cypress-html-validate": "9.0.0",
