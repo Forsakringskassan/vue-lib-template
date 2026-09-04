@@ -80,9 +80,10 @@ Dokumentationen genereras med [`@forsakringskassan/docs-generator`](https://fors
 - [x] npm run build
 - [x] npm run build:docs
 - [x] npm run start:docs
-- [ ] apimock
-- [ ] bättre exempelkomponent
-- [ ] bättre enhetstest
-- [ ] bättre komponenttest
-- [ ] live exempel
+- [x] apimock
+- [x] bättre exempelkomponent
+- [x] bättre enhetstest
+- [x] bättre komponenttest
+- [x] live exempel
 - [ ] skill för att skapa live exempel
+- [ ] skript för att rensa demo-filer

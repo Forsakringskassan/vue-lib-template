@@ -6,9 +6,9 @@ import {
     ValidationPlugin,
     setRunningContext,
 } from "@fkui/vue";
-import "./local.scss";
 import { type SetupOptions } from "@forsakringskassan/vite-lib-config";
 import "@fkui/icon-lib-default/dist/f";
+import "./local.scss";
 
 export function setup(options: SetupOptions): void {
     const { rootComponent, selector } = options;

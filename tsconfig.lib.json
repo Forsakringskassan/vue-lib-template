@@ -3,11 +3,17 @@
 {
     "extends": "@forsakringskassan/vite-lib-config/tsconfig.lib.json",
     "compilerOptions": {
+        "allowImportingTsExtensions": true,
         "paths": {
             "@forsakringskassan/vue-lib-template/selectors": [
                 "./src/selectors/index.ts"
             ],
             "@forsakringskassan/vue-lib-template": ["./src/index.ts"]
         }
-    }
+    },
+    "include": [
+        "${configDir}/src/**/*.mts",
+        "${configDir}/src/**/*.ts",
+        "${configDir}/src/**/*.vue"
+    ]
 }
