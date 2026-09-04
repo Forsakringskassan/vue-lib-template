@@ -1,20 +1,63 @@
 # @forsakringskassan/vue-lib-template
 
-En mall för hur ett komponentbibliotek fungerar.
+A template for Vue component libraries.
 
-## Dokumentation
+The template is managed with [Cloneman](https://github.com/Forsakringskassan/cloneman), a tool for creating and updating projects based on a shared template.
 
-Bygg och starta dokumentationen med:
+## Getting started
+
+Create a new repository and navigate to the directory where it was cloned, then run:
+
+```bash
+npx cloneman@latest create @forsakringskassan/vue-lib-template
+npm install
+```
+
+The `create` command takes the name of the template (`@forsakringskassan/vue-lib-template`) as its argument. The template will ask for the name of the application and whether there is an associated documentation repository.
+
+Start a local development server at http://localhost:8080 with `npm start`.'
+Open it in a browser to view the components live.
+
+See [Cloneman's documentation](https://github.com/Forsakringskassan/cloneman#usage-for-consumers) for more details, such as how to target a specific version of the template.
+
+Make a first commit by staging all files and enter a commit message following
+[conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#summary).
+
+```bash
+git add --all
+git commit -m "chore: initial commit based on @forsakringskassan/vue-lib-template"
+git push
+```
+
+When it is time for the first release, the commit messages are looked at to determine what version to bump to semantically (and to update the changelog).
+
+### Updating from the template
+
+When the template is updated, the application can be updated to the latest version with:
+
+```bash
+npx cloneman@latest update
+```
+
+Then run `npm install` to install any new dependencies. See [Cloneman's documentation](https://github.com/Forsakringskassan/cloneman#update-your-application) for more information, including how to update to a specific version.
+
+#### Renovate
+
+The template (`@forsakringskassan/vue-lib-template`) is itself a dependency monitored by Renovate, which creates update PRs for it if Renovate is used. However, many of the other dependencies used by the template are ignored by Renovate in the application because they are instead updated by running `npx cloneman@latest update` against a new version of the template.
+
+## Documentation
+
+Build and start the documentation with:
 
 ```bash
 npm run build:docs
 npm run start:docs
 ```
 
-Dokumentationen kan nås på http://localhost:8080.
+The documentation is available at http://localhost:8080.
 
-Komponenter dokumenteras i `docs/components` katalogen.
-Varje komponent ska ha en tillhörande Markdown fil (`.md`) med ett inledande Frontmatter-block:
+Components are documented in the `docs/components` directory.
+Each component should have an associated Markdown file (`.md`) with an initial Frontmatter block:
 
 ```md
 ---
@@ -25,7 +68,7 @@ component: AwesomeComponent
 ---
 ```
 
-Exempel infogas med en code fence:
+Examples are included with a code fence:
 
 ````md
 ```import
@@ -33,7 +76,7 @@ ${filename}
 ```
 ````
 
-Vue API dokumentation för komponenter infogas med ett api block:
+Vue API documentation for components is included with an API block:
 
 ```md
 ::: api
@@ -41,48 +84,48 @@ vue:${component}
 :::
 ```
 
-Dokumentationen genereras med [`@forsakringskassan/docs-generator`](https://forsakringskassan.github.io/docs-generator/latest/).
+The documentation is generated with [`@forsakringskassan/docs-generator`](https://forsakringskassan.github.io/docs-generator/latest/).
 
-## Att dokumentera
+## Documentation to add
 
-- [ ] ingress
-- [ ] quick start: de vanliga kommandon man behöver
-- [ ] lintning och statisk kodanalys
-    - vilka verktyg körs och varför
-    - förklara html-validate och no-unknown-elements
-- [ ] förklara varför vi använder api-extractor/värde | public internal | dts-fil
-- [ ] förstå vad paketet levererar
-- [ ] så här kör du cypress
-- [ ] bundling och inte bundling, hur gör jag
-- [ ] hur dokumenterar man komponenter?
+- [ ] introduction
+- [ ] quick start: the common commands you need
+- [ ] linting and static code analysis
+    - which tools are run and why
+    - explain html-validate and no-unknown-elements
+- [ ] explain why we use api-extractor/value | public internal | dts file
+- [ ] understand what the package delivers
+- [ ] how to run Cypress
+- [ ] bundling and not bundling, how do I do it?
+- [ ] how to document components
 - [x] hur bygger man dokumentationen?
-- [x] hur startar man dokumentationen?
+- [x] how to start the documentation
 - [ ] checklista över vad som ska fungera
-    - importera static assets
-    - vscode: ska inte visa squiggly lines vid import av static assets
-    - vscode: ska inte visa squiggly lines vid cy.mount i komponenttest
+    - import static assets
+    - VS Code should not show squiggly lines when importing static assets
+    - VS Code should not show squiggly lines for cy.mount in component tests
 
-## Att göra
+## To do
 
-- [x] börja med att kopiera alla rotfiler och cypresskatalog etc från designsystem (det vi inte fick med som körs från roten t ex lint osv)
+- [x] start by copying all root files, the Cypress directory, etc. from the design system (things that were not included but run from the root, such as linting)
 - [x] docs
-- [x] sandbox eller inte
-- [ ] stylelint, även på sfc
-- [x] levera css
-- [ ] postcss med autoprefixer ska köras
-- [x] trimma allowScripts (jättelåg prio)
-- [x] semantic release för vanligt repo
-- [ ] uppdatera .gitignore med app.vue
-- [ ] pretest: att vara eller att inte vara, det är frågan
+- [x] sandbox or not
+- [ ] Stylelint, including SFCs
+- [x] deliver CSS
+- [ ] PostCSS with Autoprefixer should be run
+- [x] trim allowScripts (very low priority)
+- [x] Semantic Release for a regular repository
+- [ ] update .gitignore with app.vue
+- [ ] pretest: to be or not to be, that is the question
 - [x] npm start
 - [x] npm start AwesomeComponent
 - [x] npm test
 - [x] npm run build
 - [x] npm run build:docs
 - [x] npm run start:docs
-- [ ] apimock
-- [ ] bättre exempelkomponent
-- [ ] bättre enhetstest
-- [ ] bättre komponenttest
-- [ ] live exempel
-- [ ] skill för att skapa live exempel
+- [ ] API mock
+- [ ] better example component
+- [ ] better unit test
+- [ ] better component test
+- [ ] live examples
+- [ ] skill for creating live examples
