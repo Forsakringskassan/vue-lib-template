@@ -1,7 +1,7 @@
 import type { Cat } from "./cat-types";
 
 /**
- * Mock cat data for the CatInfoComponent
+ * Mock cat data for the FcCatInfoComponent
  */
 
 export const cats: Cat[] = [

@@ -1,3 +1,3 @@
 import "./style.scss";
 
-export { default as CatInfoComponent } from "./CatInfoComponent.vue";
+export { default as FcCatInfoComponent } from "./FcCatInfoComponent.vue";

@@ -12,7 +12,7 @@ import { PublicProps } from 'vue';
 // Warning: (ae-forgotten-export) The symbol "__VLS_export" needs to be exported by the entry point index.d.ts
 //
 // @public (undocumented)
-export const CatInfoComponent: typeof __VLS_export;
+export const FcCatInfoComponent: typeof __VLS_export;
 
 // (No @packageDocumentation comment for this package)
 

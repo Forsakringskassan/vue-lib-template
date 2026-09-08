@@ -4,7 +4,7 @@ import { catGetById } from "./cat-api";
 import type { Cat } from "./cat-types";
 
 /**
- * Business logic for the CatInfoComponent.
+ * Business logic for the FcCatInfoComponent.
  * Manages fetching and updating cat information from mock backend.
  */
 export function useCatInfo(): {
