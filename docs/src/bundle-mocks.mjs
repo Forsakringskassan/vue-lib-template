@@ -13,6 +13,7 @@ const worker = setupWorker(...handlers);
 const rootUrl = document.documentElement.dataset["rootUrl"];
 const url = `${rootUrl}/mock-service-worker.js`;
 
+// Used in setup.ts
 // eslint-disable-next-line unicorn/no-global-object-property-assignment, no-undef -- technical debt
 window.bundleMocks = worker.start({
     serviceWorker: {
