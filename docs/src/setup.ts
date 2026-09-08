@@ -10,8 +10,13 @@ import {
 } from "@fkui/vue";
 import { type SetupOptions } from "@forsakringskassan/docs-generator";
 
-export function setup(options: SetupOptions): void {
+export async function setup(options: SetupOptions): Promise<void> {
     const { rootComponent, selector } = options;
+
+    // Set in bundle-mocks.mjs, wait on mock service worker to be ready.
+    if (window.bundleMocks) {
+        await window.bundleMocks;
+    }
     const app = createApp({
         render() {
             return h(FErrorHandlingApp, { defaultComponent: rootComponent });
