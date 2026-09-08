@@ -1,11 +1,11 @@
 /**
- * Selectors for `CatInfoComponent`.
+ * Selectors for `FcCatInfoComponent`.
  *
  * @public
- * @param selector - The selector for the CatInfoComponent.
- * @returns An object with selector methods for the CatInfoComponent.
+ * @param selector - The selector for the FcCatInfoComponent.
+ * @returns An object with selector methods for the FcCatInfoComponent.
  */
-export function CatInfoComponentSelectors(selector: string = ":scope") {
+export function FcCatInfoComponentSelectors(selector: string = ":scope") {
     return Object.freeze({
         /**
          * The base selector for the component.

@@ -2,14 +2,14 @@
 title: Kattinformation
 status: Draft
 layout: component
-component: CatInfoComponent
+component: FcCatInfoComponent
 ---
 
 Komponenten kan visa kattdata i visningsläge eller i ett redigerbart läge.
 Den hämtar kattdata från ett mockat backend.
 
 ```import live-example
-CatInfoComponentLiveExample.vue
+FcCatInfoComponentLiveExample.vue
 ```
 
 ## Tänk på att
@@ -24,5 +24,5 @@ CatInfoComponentLiveExample.vue
 ## API
 
 ::: api
-vue:CatInfoComponent
+vue:FcCatInfoComponent
 :::
