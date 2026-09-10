@@ -90,7 +90,7 @@
     "@fkui/test-utils": "6.57.1",
     "@fkui/theme-default": "6.57.1",
     "@fkui/vue": "6.57.1",
-    "@forsakringskassan/apimock-express": "3.2.1",
+    "@forsakringskassan/apimock-express": "4.0.0",
     "@forsakringskassan/commitlint-config": "4.2.8",
     "@forsakringskassan/cypress-axe": "5.1.5",
     "@forsakringskassan/cypress-visual-regression": "5.2.0",
