@@ -109,5 +109,11 @@ export default async (context) => {
 
     await template.writeFile("CHANGELOG.md", "");
 
+    /* rewrite the repository "renovate.json" config (we want different config
+     * for the template repository and for the consumers using the template) */
+    await template.updateJson("renovate.json", {
+        lockFileMaintenance: undefined,
+        packageRules: undefined,
+    });
     await template.renovateIgnoreDependencies();
 };

@@ -1,3 +1,18 @@
 {
-    "extends": ["local>forsakringskassan/renovate-config"]
+    "extends": ["local>forsakringskassan/renovate-config"],
+    "lockFileMaintenance": {
+        "enabled": true
+    },
+    "packageRules": [
+        {
+            "description": "use feat as commit type for major dependency updates",
+            "matchUpdateTypes": ["major"],
+            "semanticCommitType": "feat"
+        },
+        {
+            "description": "use fix as commit type for other dependency updates",
+            "matchUpdateTypes": ["minor", "patch"],
+            "semanticCommitType": "fix"
+        }
+    ]
 }
