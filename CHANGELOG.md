@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## [1.1.0](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.0.4...v1.1.0) (2026-09-11)
+
+### Features
+
+* add CatInfoComponent ([30f0294](https://github.com/Forsakringskassan/vue-lib-template/commit/30f0294ff026ad5b770e900b13a158bfe269a2fa))
+* **deps:** update @forsakringskassan/vitest-config monorepo to v5 ([5c554d9](https://github.com/Forsakringskassan/vue-lib-template/commit/5c554d93cb7a3866e5ff552fea4c351626ed32cb))
+* **deps:** update dependency vitest to v5 ([c132552](https://github.com/Forsakringskassan/vue-lib-template/commit/c1325529b5732660c44a1a11657974310e155cca))
+
+### Bug Fixes
+
+* **deps:** update dependency @forsakringskassan/docs-generator to v3.6.4 ([30ddb69](https://github.com/Forsakringskassan/vue-lib-template/commit/30ddb690f7a9a4a4a232fa4d08dc5baef71c2cc6))
+* **deps:** update dependency @html-validate/release-scripts to v7.6.11 ([fd918fa](https://github.com/Forsakringskassan/vue-lib-template/commit/fd918faa6cf0c3536ae3be05553dacf3ae58b57c))
+* **deps:** update dependency cloneman to v1.23.1 ([633869d](https://github.com/Forsakringskassan/vue-lib-template/commit/633869d71316e6bfb4037b92f3a18a7f94f4e8c5))
+* **deps:** update dependency html-validate to v11.14.0 ([e2ff169](https://github.com/Forsakringskassan/vue-lib-template/commit/e2ff1696348036792835abe43bd02531d8f76796))
+* **deps:** update forsakringskassan/vitest-config action to v2.8.1 ([4602069](https://github.com/Forsakringskassan/vue-lib-template/commit/4602069a6cfc799dd1423679d70539ae243a26ae))
+* wait on bundle mocks to start ([8de054e](https://github.com/Forsakringskassan/vue-lib-template/commit/8de054e4e54f713100850e56900be55db59f565d))
+
 ## [1.0.4](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.0.3...v1.0.4) (2026-09-02)
 
 ### Bug Fixes
