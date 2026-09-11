@@ -59,8 +59,16 @@ export default async (context) => {
     });
 
     template.addParameter("repo-url", {
-        description: "URL to repository",
+        description: "URL to source repository",
         required: true,
+    });
+
+    template.addParameter("docs-repo-url", {
+        description: "URL to repository to deploy documentation to",
+        defaultValue: "",
+        help: "Format: ssh://user@host/project/repo.git",
+        required: false,
+        pattern: "ssh://.*.git",
     });
 
     /* install hook to verify application uses the correct template (we cannot put
@@ -100,10 +108,10 @@ export default async (context) => {
             "# Each line is a file pattern followed by one or more owners.",
             "",
             "# Global owner for the whole repository",
-            "# * @username-or-team",
+            "#* @username-or-team",
             "",
             "# Example folder-specific owner",
-            "# /docs/ @org/doc-team",
+            "#/docs/ @org/doc-team",
         ].join("\n"),
     );
 
