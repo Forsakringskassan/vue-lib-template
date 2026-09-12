@@ -109,7 +109,7 @@
     "@forsakringskassan/vite-lib-config": "5.11.1",
     "@forsakringskassan/vitest-config-jsdom": "5.0.0",
     "@html-validate/release-scripts": "7.6.11",
-    "@types/node": "24.13.3",
+    "@types/node": "24.13.4",
     "@typescript/native": "npm:typescript@7.0.2",
     "@vue/server-renderer": "3.5.42",
     "@vue/test-utils": "2.5.0",
