@@ -3,8 +3,8 @@ import { ref, watch } from "vue";
 import { FCard, FLoader } from "@fkui/vue";
 import CatInfoEdit from "./CatInfoEdit.vue";
 import CatInfoShow from "./CatInfoShow.vue";
-import { useCatInfo } from "./cat-info-logic";
-import { type Cat } from "./cat-types";
+import { useCatInfo } from "./cat-info-logic.js";
+import { type Cat } from "./cat-types.js";
 
 interface Props {
     /**
