@@ -1,7 +1,7 @@
 import { FLoaderSelectors } from "@fkui/vue/selectors";
+import { FcCatInfoComponentSelectors } from "../../../selectors/guide/FcCatInfoComponent.selectors";
 import FcCatInfoComponent from "./FcCatInfoComponent.vue";
 import { cats } from "./cat-data";
-import { FcCatInfoComponentSelectors } from "./selectors";
 
 describe("FcCatInfoComponent", () => {
     const testCat = cats[0];

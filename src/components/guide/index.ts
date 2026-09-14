@@ -1,0 +1,1 @@
+export { FcCatInfoComponent } from "./FcCatInfo";

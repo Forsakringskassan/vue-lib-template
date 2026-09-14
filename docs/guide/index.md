@@ -3,6 +3,7 @@ title: Kattinformation
 status: Draft
 layout: component
 component: FcCatInfoComponent
+visible: false
 ---
 
 Komponenten kan visa kattdata i visningsläge eller i ett redigerbart läge.

@@ -1,7 +1,7 @@
 import { matchRequest } from "@forsakringskassan/apimock-express/browser";
 import { http } from "msw";
 import { setupWorker } from "msw/browser";
-import mocks from "../../src/mocks.mts";
+import mocks from "../../src/mocks/index.mts";
 
 const handlers = [
     http.all("/api/*", async (req) => {
