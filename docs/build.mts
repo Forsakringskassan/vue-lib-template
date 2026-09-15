@@ -1,3 +1,5 @@
+/* This file is managed by @forsakringskassan/vue-lib-template. Changes will be overwritten! */
+
 import { copyFileSync } from "node:fs";
 import path from "node:path";
 import {

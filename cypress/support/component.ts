@@ -1,3 +1,5 @@
+/* This file is managed by @forsakringskassan/vue-lib-template. Changes will be overwritten! */
+
 import { mount } from "@forsakringskassan/cypress-config/support";
 import { injectSpritesheet } from "@fkui/icon-lib-default/dist/f/injectSpritesheet";
 import "@fkui/theme-default";

@@ -1,3 +1,6 @@
+# This file is managed by @forsakringskassan/vue-lib-template.
+# Changes will be overwritten!
+
 # owned by tooling
 package-lock.json
 node_modules/

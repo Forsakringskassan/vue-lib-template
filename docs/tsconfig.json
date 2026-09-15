@@ -1,3 +1,5 @@
+/* This file is managed by @forsakringskassan/vue-lib-template. Changes will be overwritten! */
+
 {
     "extends": ["@tsconfig/recommended", "@tsconfig/node24"],
     "compilerOptions": {
