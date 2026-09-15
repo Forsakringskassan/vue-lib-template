@@ -3,7 +3,7 @@ import exclude from "@fkui/vue/htmlvalidate/cypress";
 import { init as installAxe } from "@forsakringskassan/cypress-axe/plugins";
 import getToMatchScreenshotsPlugin from "@forsakringskassan/cypress-visual-regression/plugin";
 import htmlvalidate, {
-    CypressHtmlValidateOptions,
+    type CypressHtmlValidateOptions,
 } from "cypress-html-validate/plugin";
 import { type ConfigData } from "html-validate";
 
