@@ -1,3 +1,6 @@
+# This file is managed by @forsakringskassan/vue-lib-template.
+# Changes will be overwritten!
+
 # vite dev
 # /src/vite-dev/app.vue
 *.tgz

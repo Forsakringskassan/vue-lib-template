@@ -1,3 +1,5 @@
+/* This file is managed by @forsakringskassan/vue-lib-template. Changes will be overwritten! */
+
 import defaultConfig, {
     docsConfig,
     examplesConfig,
