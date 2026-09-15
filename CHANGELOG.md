@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## [1.2.0](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.1.0...v1.2.0) (2026-09-15)
+
+### Features
+
+* replace placeholder name in tsconfig with real application name ([b06a0b2](https://github.com/Forsakringskassan/vue-lib-template/commit/b06a0b269bb2b977f32f452826b86b8ebef284da))
+
+### Bug Fixes
+
+* add/update boilerplate disclaimer ([88b7071](https://github.com/Forsakringskassan/vue-lib-template/commit/88b7071446f514a770ee40e6277546e8f78b8775))
+* **deps:** update @forsakringskassan/eslint-config monorepo ([4d8ba76](https://github.com/Forsakringskassan/vue-lib-template/commit/4d8ba760de2315d5f710ceb0f1051d390e47c76d))
+* **deps:** update @forsakringskassan/eslint-config monorepo to v15.9.9 ([8c1cbf0](https://github.com/Forsakringskassan/vue-lib-template/commit/8c1cbf04254226e076a9cc6cecc97aa133fae0b6))
+* **deps:** update dependency @forsakringskassan/apimock-express to v4.1.0 ([851abfa](https://github.com/Forsakringskassan/vue-lib-template/commit/851abfa958b6726a40f24a3111790e5385d15ea1))
+* **deps:** update dependency @forsakringskassan/vite-lib-config to v5.11.1 ([45035fb](https://github.com/Forsakringskassan/vue-lib-template/commit/45035fb9a7ee3fa36262fa53e8187266637c55e3))
+* **deps:** update dependency @types/node to v24.13.4 ([2e18fe6](https://github.com/Forsakringskassan/vue-lib-template/commit/2e18fe636030cfd9e68790198caaab933bba0f79))
+* **deps:** update dependency html-validate to v11.15.0 ([6c31e1c](https://github.com/Forsakringskassan/vue-lib-template/commit/6c31e1c39caa8588427c1230c011ea1004d66e61))
+* **deps:** update dependency mocha-multi-reporters to v1.5.2 ([5579202](https://github.com/Forsakringskassan/vue-lib-template/commit/5579202bcbc4d00f13d71a7005988317ac8177dd))
+* **deps:** update dependency vite to v8.3.0 ([87f118e](https://github.com/Forsakringskassan/vue-lib-template/commit/87f118e40b21fefcf62720271e9e434e22e9f170))
+
 ## [1.1.0](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.0.4...v1.1.0) (2026-09-11)
 
 ### Features
