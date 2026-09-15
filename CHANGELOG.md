@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [1.2.1](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.2.0...v1.2.1) (2026-09-15)
+
+### Bug Fixes
+
+* **deps:** update dependency @forsakringskassan/vite-lib-config to v5.12.0 ([b3771b2](https://github.com/Forsakringskassan/vue-lib-template/commit/b3771b2cd90074d7bae89f23dafc672a50948b22))
+* remove obsolete tsconfig properties ([9512e3d](https://github.com/Forsakringskassan/vue-lib-template/commit/9512e3d8702dfc886bc3cf34b9da7251ec9701fb))
+
 ## [1.2.0](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.1.0...v1.2.0) (2026-09-15)
 
 ### Features
