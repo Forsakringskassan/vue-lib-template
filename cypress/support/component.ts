@@ -1,38 +1,16 @@
-import { type App } from "vue";
-import { mount } from "cypress/vue";
+import { mount } from "@forsakringskassan/cypress-config/support";
 import { injectSpritesheet } from "@fkui/icon-lib-default/dist/f/injectSpritesheet";
-import {
-    config,
-    setRunningContext,
-    FormatPlugin,
-    TestPlugin,
-    TranslationPlugin,
-    ValidationPlugin,
-} from "@fkui/vue";
 import "@fkui/theme-default";
 import "./main.scss";
 import "./common";
 
-config.teleportTarget = "#teleport";
-
 Cypress.Commands.add("mount", (component, options = {}) => {
-    // Setup options object
     options.global ??= {};
     options.global.plugins ??= [];
-    options.global.config ??= {};
-    options.global.config.compilerOptions ??= {};
-    options.global.config.compilerOptions.whitespace = "preserve";
 
-    /* Installing validationPlugin */
+    /* handle warnings as errors */
     options.global.plugins.push({
-        install(app: App) {
-            app.use(FormatPlugin);
-            app.use(ValidationPlugin);
-            app.use(TestPlugin);
-            app.use(TranslationPlugin);
-            setRunningContext(app);
-
-            /* handle warnings as errors */
+        install(app) {
             app.config.warnHandler = (msg) => {
                 const mochaRunner = Cypress.mocha.getRunner();
                 const body = mochaRunner.test?.body ?? "";
