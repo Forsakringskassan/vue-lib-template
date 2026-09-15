@@ -17,11 +17,6 @@ export default async (context) => {
             "api-extractor.lib.json",
             "api-extractor.selectors.json",
             "babel.config.js",
-            "cypress/fixtures/example.json",
-            "cypress/support/**",
-            "cypress/tsconfig.json",
-            "cypress/types/**",
-            "cypress.config.ts",
             "docs/build.mts",
             "docs/package.json",
             "docs/src/**",
@@ -36,6 +31,11 @@ export default async (context) => {
             "tsconfig.lib.json",
             "tsconfig.selectors.json",
             "vite.config.mts",
+
+            /* cypress configuration */
+            "cypress/**",
+            "cypress.config.ts",
+            "!cypress/e2e/**",
         ],
         ignoredFiles: [
             ".github/**",
