@@ -62,6 +62,10 @@ export default async (context) => {
             "cypress/types/cy-mount.d.ts",
             "cypress/types/forced-colors.d.ts",
 
+            /* renamed files */
+            "etc/vue-lib-template-selectors.api.md",
+            "etc/vue-lib-template.api.md",
+
             /* replaced by FcCatInfo */
             "docs/components/AwesomeComponent.md",
             "src/examples/DummyExample.vue",
