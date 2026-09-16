@@ -64,6 +64,7 @@ export default async (context) => {
 
             /* replaced by FcCatInfo */
             "docs/components/AwesomeComponent.md",
+            "src/examples/DummyExample.vue",
             "src/AwesomeComponent.cy.ts",
             "src/AwesomeComponent.vue",
             "src/AwesomeComponentLogic.spec.ts",
