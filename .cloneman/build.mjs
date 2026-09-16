@@ -61,6 +61,13 @@ export default async (context) => {
             "cypress/support/component-index.html",
             "cypress/types/cy-mount.d.ts",
             "cypress/types/forced-colors.d.ts",
+
+            /* replaced by FcCatInfo */
+            "docs/components/AwesomeComponent.md",
+            "src/AwesomeComponent.cy.ts",
+            "src/AwesomeComponent.vue",
+            "src/AwesomeComponentLogic.spec.ts",
+            "src/awesome-component-logic.ts",
         ],
     });
 
