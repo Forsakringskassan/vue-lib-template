@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## [1.2.4](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.2.3...v1.2.4) (2026-09-16)
+
+### Bug Fixes
+
+* **deps:** update dependency @forsakringskassan/docs-generator to v3.8.0 ([4bfe210](https://github.com/Forsakringskassan/vue-lib-template/commit/4bfe21065dc503b35746953ed8242490915007dc))
+* remove obsolete cypress config files from repo ([b0e22e9](https://github.com/Forsakringskassan/vue-lib-template/commit/b0e22e9657eb3cb6b602487d112a2219d92a5017))
+* remove obsolete example component from repo ([e9e237b](https://github.com/Forsakringskassan/vue-lib-template/commit/e9e237bb9e8bdc62336d1059d547ceb8f70b442e))
+
 ## [1.2.3](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.2.2...v1.2.3) (2026-09-16)
 
 ### Bug Fixes
