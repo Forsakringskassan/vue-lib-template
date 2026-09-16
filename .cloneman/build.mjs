@@ -55,6 +55,12 @@ export default async (context) => {
             "project.code-workspace", // replaced with .vscode folder
             "tsconfig-consumer.json", // replaced by @fkui/tsconfig
             "vite.config.ts", // replaced by vite.config.mts
+
+            /* obsolete cypress configuration files */
+            "cypress/support/commands/forced-colors.ts",
+            "cypress/support/component-index.html",
+            "cypress/types/cy-mount.d.ts",
+            "cypress/types/forced-colors.d.ts",
         ],
     });
 
