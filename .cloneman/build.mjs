@@ -69,6 +69,12 @@ export default async (context) => {
             "src/AwesomeComponentLogic.spec.ts",
             "src/awesome-component-logic.ts",
         ],
+        uninstallDependencies: [
+            /* bundled in @forsakringskassan/cypress-config */
+            "@forsakringskassan/cypress-axe",
+            "cypress-html-validate",
+            "mocha-multi-reporters",
+        ],
     });
 
     template.addParameter("repo-url", {
