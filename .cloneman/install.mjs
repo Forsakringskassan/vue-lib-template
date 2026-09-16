@@ -17,7 +17,7 @@ export default async (context) => {
     });
 
     /* update placeholder names with the real application name (from package.json) */
-    const placeholder = "@forsakringskassan/vue-lib-template";
+    const placeholder = /"@forsakringskassan\/vue-lib-template(?:\/[^"]+)?"/g;
     await replaceInFile("tsconfig.lib.json", placeholder, scopedName);
     await replaceInFile("tsconfig.cypress.json", placeholder, scopedName);
     await replaceInFile("tsconfig.selectors.json", placeholder, scopedName);
