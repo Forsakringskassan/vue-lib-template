@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.2.3](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.2.2...v1.2.3) (2026-09-16)
+
+### Bug Fixes
+
+* **docs:** fix issue resolving own library when building docs ([7f2ff62](https://github.com/Forsakringskassan/vue-lib-template/commit/7f2ff627515d478d9d34b4e71c2760b5af907c65))
+
 ## [1.2.2](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.2.1...v1.2.2) (2026-09-16)
 
 ### Bug Fixes
