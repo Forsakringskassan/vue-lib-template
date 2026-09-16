@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## [1.2.5](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.2.4...v1.2.5) (2026-09-16)
+
+### Bug Fixes
+
+* path alias for selectors in cypress ([0f82755](https://github.com/Forsakringskassan/vue-lib-template/commit/0f827557fdf9329ba39401895ebcab88372c8917))
+* replace package name in `cypress/tsconfig.json` as well ([496886c](https://github.com/Forsakringskassan/vue-lib-template/commit/496886c249c0e6e83757764d082cdbb58055eaa9))
+* use quoted name when replacing name ([d766a31](https://github.com/Forsakringskassan/vue-lib-template/commit/d766a31a850bd0ba2b8e05c19fd15b7698e0bce5))
+
 ## [1.2.4](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.2.3...v1.2.4) (2026-09-16)
 
 ### Bug Fixes
