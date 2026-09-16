@@ -19,6 +19,7 @@ const docs = new Generator(import.meta.url, {
         "@fkui/date",
         "@fkui/logic",
         "@fkui/vue",
+        pkg.name,
     ],
 });
 
