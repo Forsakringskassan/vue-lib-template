@@ -10,7 +10,7 @@
     "@fkui/icon-lib-default": "6.57.1",
     "@fkui/vue": "6.57.1",
     "@forsakringskassan/apimock-express": "4.1.0",
-    "@forsakringskassan/docs-generator": "3.6.4",
+    "@forsakringskassan/docs-generator": "3.8.0",
     "@tsconfig/node24": "24.0.5",
     "@tsconfig/recommended": "1.0.13",
     "http-server": "14.1.1",
