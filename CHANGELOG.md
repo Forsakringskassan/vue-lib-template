@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.2.6](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.2.5...v1.2.6) (2026-09-16)
+
+### Bug Fixes
+
+* **deps:** remove dependencies bundled in cypress-config ([17ec04c](https://github.com/Forsakringskassan/vue-lib-template/commit/17ec04c0859d677aae8a8ea1015b1f72f79851ef))
+
 ## [1.2.5](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.2.4...v1.2.5) (2026-09-16)
 
 ### Bug Fixes
