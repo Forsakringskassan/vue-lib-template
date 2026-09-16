@@ -16,6 +16,8 @@ const docs = new Generator(import.meta.url, {
     setupPath: path.resolve(import.meta.dirname, "src/setup.ts"),
     vendor: [
         { package: "vue", alias: "vue/dist/vue.esm-bundler.js" },
+        "@fkui/date",
+        "@fkui/logic",
         "@fkui/vue",
     ],
 });
