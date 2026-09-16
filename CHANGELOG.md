@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## [1.2.2](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.2.1...v1.2.2) (2026-09-16)
+
+### Bug Fixes
+
+* **deps:** update @forsakringskassan/eslint-config monorepo to v15.9.10 ([c63872b](https://github.com/Forsakringskassan/vue-lib-template/commit/c63872b54ac54c08b7245028c0478457bcf39fe5))
+* **deps:** update dependency @forsakringskassan/vite-lib-config to v5.12.1 ([e46fc32](https://github.com/Forsakringskassan/vue-lib-template/commit/e46fc32fe2126c786242afbded14228d938d5cb5))
+* **docs:** vendorize `@fkui/date` and `@fkui/logic` when building docs ([9f42fa6](https://github.com/Forsakringskassan/vue-lib-template/commit/9f42fa66a10eedbfa65c032a2673d37c46617bed))
+* **docs:** vendorize repository library when building docs ([66bac81](https://github.com/Forsakringskassan/vue-lib-template/commit/66bac81b717d615a6faeecc798d2c534ea9b603e))
+* only replace quotes package name ([e89b7ff](https://github.com/Forsakringskassan/vue-lib-template/commit/e89b7ff8aaa7da8e30a35dfe46f11f5602ed6ed8))
+* update exported subpath for "style.css" in "package.json" ([68e3e7e](https://github.com/Forsakringskassan/vue-lib-template/commit/68e3e7e292c0968b1e23c8aa7b9411356a3e1b16))
+
 ## [1.2.1](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.2.0...v1.2.1) (2026-09-15)
 
 ### Bug Fixes
