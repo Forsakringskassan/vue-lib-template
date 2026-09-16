@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [1.2.7](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.2.6...v1.2.7) (2026-09-16)
+
+### Bug Fixes
+
+* remove obsolete example component from repo ([64632af](https://github.com/Forsakringskassan/vue-lib-template/commit/64632afc053b7d521ca58b41ea37dd8958f359dd))
+* remove old api reports (renamed) ([2a3e5a2](https://github.com/Forsakringskassan/vue-lib-template/commit/2a3e5a2383e3d32baa1d4a76fcad97395f5b7f80))
+
 ## [1.2.6](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.2.5...v1.2.6) (2026-09-16)
 
 ### Bug Fixes
