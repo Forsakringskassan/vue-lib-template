@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## [1.2.10](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.2.9...v1.2.10) (2026-09-17)
+
+### Bug Fixes
+
+* .htmlvalidate ignore as managed file ([b0c6d5d](https://github.com/Forsakringskassan/vue-lib-template/commit/b0c6d5d9bfea04f4ff8cc4c064083d745b7b1c05))
+* default empty string as subpath ([1c6fc48](https://github.com/Forsakringskassan/vue-lib-template/commit/1c6fc48513ce4d54a85ad35ad9ff342e0994d244))
+* ignore dist folder for html-validate ([7fb78b5](https://github.com/Forsakringskassan/vue-lib-template/commit/7fb78b58c7759067cc594947586dac661ad063d5))
+
 ## [1.2.9](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.2.8...v1.2.9) (2026-09-17)
 
 ### Bug Fixes
