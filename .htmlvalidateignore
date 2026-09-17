@@ -2,6 +2,7 @@
 # Changes will be overwritten!
 
 # generated files
+dist/
 docs/public/
 docs/node_modules/
 docs/temp/
