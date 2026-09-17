@@ -78,11 +78,6 @@ export async function build({ buildTemplate }: BuildContext): Promise<void> {
         ],
     });
 
-    template.addParameter("repo-url", {
-        description: "URL to repository",
-        required: true,
-    });
-
     /* install hook to verify application uses the correct template (we cannot put
      * this in the package `prepare` directly as this project is not managed by
      * cloneman and thus fails the check). */
