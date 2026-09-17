@@ -42,7 +42,7 @@
   "scripts": {
     "build": "run-s build:lib build:dts build:api build:cloneman",
     "build:api": "fk-api-extractor api-extractor.*.json",
-    "build:cloneman": "cloneman build -o temp/cloneman",
+    "build:cloneman": "tsc -p .cloneman/tsconfig.json && cloneman build -o temp/cloneman",
     "build:docs": "npm run -w docs build",
     "build:dts": "vue-tsc -b",
     "build:lib": "fk-build-vue-lib --clean --selectors",
