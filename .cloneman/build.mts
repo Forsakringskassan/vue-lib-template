@@ -1,11 +1,7 @@
+import { type BuildContext } from "cloneman";
 import pkg from "../package.json" with { type: "json" };
 
-/**
- * @param {import("cloneman").BuildContext} context
- */
-export default async (context) => {
-    const { buildTemplate } = context;
-
+export async function build({ buildTemplate }: BuildContext): Promise<void> {
     const template = await buildTemplate(pkg.name, {
         managedFiles: [
             ".agents/**",
@@ -140,4 +136,4 @@ export default async (context) => {
         packageRules: undefined,
     });
     await template.renovateIgnoreDependencies();
-};
+}

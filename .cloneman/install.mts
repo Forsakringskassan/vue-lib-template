@@ -1,7 +1,6 @@
-/**
- * @param {import("cloneman").InstallContext} context
- */
-export default async (context) => {
+import { type InstallContext } from "cloneman";
+
+export async function install(context: InstallContext): Promise<void> {
     const { getParameter, updateJsonFile, getApplicationName, replaceInFile } =
         context;
     const scopedName = getApplicationName();
@@ -30,4 +29,4 @@ export default async (context) => {
             "./style.css": `./dist/esm/${unscopedName}.css`,
         },
     });
-};
+}
