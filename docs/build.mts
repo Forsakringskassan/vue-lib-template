@@ -4,7 +4,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
     Generator,
-    extractDocsProcessor,
+    extractMarkdownProcessor,
     frontMatterFileReader,
     manifestProcessor,
     vueFileReader,
@@ -27,7 +27,7 @@ const docs = new Generator(import.meta.url, {
         "@fkui/vue",
     ],
     processors: [
-        extractDocsProcessor({
+        extractMarkdownProcessor({
             outputFolder: path.join(import.meta.dirname, "../dist/docs"),
         }),
         manifestProcessor(),
