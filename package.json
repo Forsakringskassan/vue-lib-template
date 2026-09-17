@@ -23,6 +23,13 @@
       "types": "./dist/types/index.d.ts",
       "import": "./dist/esm/index.esm.js"
     },
+    "./docs": {
+      "types": "./dist/docs/index.d.mts",
+      "import": "./dist/docs/index.mjs"
+    },
+    "./docs/links.json": {
+      "default": "./dist/docs/links.json"
+    },
     "./selectors": {
       "types": "./dist/types/selectors.d.ts",
       "import": "./dist/esm/selectors.esm.js"
