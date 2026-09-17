@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.2.8](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.2.7...v1.2.8) (2026-09-17)
+
+### Bug Fixes
+
+* replace subpaths correctly in tsconfig ([f63d191](https://github.com/Forsakringskassan/vue-lib-template/commit/f63d19161051782c92efabe5f02e8a0db4121492))
+
 ## [1.2.7](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.2.6...v1.2.7) (2026-09-16)
 
 ### Bug Fixes
