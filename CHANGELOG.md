@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## [1.2.9](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.2.8...v1.2.9) (2026-09-17)
+
+### Bug Fixes
+
+* better boilerplate for src/mocks/index.mts ([b521e11](https://github.com/Forsakringskassan/vue-lib-template/commit/b521e119d3790e968fd6d9cfa9330f9c099dea12))
+* **deps:** update [@fkui](https://github.com/fkui) packages to v6.58.0 ([8b99a27](https://github.com/Forsakringskassan/vue-lib-template/commit/8b99a27f98da4d9780388d41628775d507d9ce99))
+* **deps:** update dependency @forsakringskassan/cypress-config to v1.9.2 ([4bcebc8](https://github.com/Forsakringskassan/vue-lib-template/commit/4bcebc808e6a6715d32588efdc10f22d5f3bf3c8))
+* **deps:** update dependency @forsakringskassan/docs-generator to v3.9.0 ([8f46597](https://github.com/Forsakringskassan/vue-lib-template/commit/8f465973041431bf8c29535ebf9ac54a907520f1))
+* **deps:** update dependency cloneman to v1.24.0 ([dbc8053](https://github.com/Forsakringskassan/vue-lib-template/commit/dbc8053c68650458f6dc858b29b90d57f63522f0))
+* update template with latest cloneman changes ([d36e5b1](https://github.com/Forsakringskassan/vue-lib-template/commit/d36e5b1dd0df674b7391acf4c721ea8aeeef9349))
+* use correct renovate preset ([578a584](https://github.com/Forsakringskassan/vue-lib-template/commit/578a584f1ccba2ede5c87ecd0cc4976e28de5ec5))
+
 ## [1.2.8](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.2.7...v1.2.8) (2026-09-17)
 
 ### Bug Fixes
