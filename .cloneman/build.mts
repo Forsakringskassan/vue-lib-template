@@ -132,7 +132,7 @@ export async function build({ buildTemplate }: BuildContext): Promise<void> {
     /* rewrite the repository "renovate.json" config (we want different config
      * for the template repository and for the consumers using the template) */
     await template.updateJson("renovate.json", {
-        lockFileMaintenance: undefined,
+        extends: ["local>npm-packages/renovate-config-fk:lib"],
         packageRules: undefined,
     });
     await template.renovateIgnoreDependencies();
