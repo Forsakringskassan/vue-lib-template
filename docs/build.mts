@@ -4,7 +4,7 @@ import { copyFileSync } from "node:fs";
 import path from "node:path";
 import {
     Generator,
-    extractDocsProcessor,
+    extractMarkdownProcessor,
     frontMatterFileReader,
     manifestProcessor,
     vueFileReader,
@@ -27,7 +27,7 @@ const docs = new Generator(import.meta.url, {
         "@fkui/vue",
     ],
     processors: [
-        extractDocsProcessor({
+        extractMarkdownProcessor({
             outputFolder: path.join(import.meta.dirname, "../dist/docs"),
         }),
         manifestProcessor(),
