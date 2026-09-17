@@ -8,6 +8,7 @@ export async function build({ buildTemplate }: BuildContext): Promise<void> {
             ".editorconfig",
             ".gitignore",
             ".htmlvalidate.json",
+            ".htmlvalidateignore",
             ".prettierignore",
             ".vscode/**",
             "api-extractor.lib.json",
