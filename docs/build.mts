@@ -2,6 +2,7 @@
 
 import { copyFileSync } from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 import {
     Generator,
     frontMatterFileReader,
@@ -31,6 +32,12 @@ docs.compileScript("main", "./src/main.js", {
 });
 
 docs.compileStyle("main", "./src/main.scss", {
+    appendTo: "head",
+});
+
+const styleUrl = import.meta.resolve(`../dist/esm/style.css`);
+const stylePath = fileURLToPath(styleUrl); // workaround for https://github.com/Forsakringskassan/docs-generator/issues/499
+docs.compileStyle("lib", stylePath, {
     appendTo: "head",
 });
 
