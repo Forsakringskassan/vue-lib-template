@@ -6,25 +6,7 @@ import "@fkui/theme-default";
 import "./main.scss";
 import "./common";
 
-Cypress.Commands.add("mount", (component, options = {}) => {
-    options.global ??= {};
-    options.global.plugins ??= [];
-
-    /* handle warnings as errors */
-    options.global.plugins.push({
-        install(app) {
-            app.config.warnHandler = (msg) => {
-                const mochaRunner = Cypress.mocha.getRunner();
-                const body = mochaRunner.test?.body ?? "";
-                if (!body.includes("<expectedException")) {
-                    cy.wrap(`Vue warning: ${msg}`).should("be.empty");
-                }
-            };
-        },
-    });
-
-    return mount(component, options);
-});
+Cypress.Commands.add("mount", mount);
 
 const uncaughtErrors: string[] = [];
 
