@@ -1,6 +1,5 @@
 /* This file is managed by @forsakringskassan/vue-lib-template. Changes will be overwritten! */
 
-import { copyFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
@@ -45,6 +44,10 @@ docs.compileScript("mocks", "./src/bundle-mocks.mjs", {
     appendTo: "head",
 });
 
+const mswUrl = import.meta.resolve("msw/mockServiceWorker.js");
+const mswPath = fileURLToPath(mswUrl); // workaround for https://github.com/Forsakringskassan/docs-generator/issues/499
+docs.compileWorker("msw", mswPath);
+
 await docs.build([
     {
         include: ["**/*.md"],
@@ -56,8 +59,3 @@ await docs.build([
         fileReader: vueFileReader,
     },
 ]);
-
-copyFileSync(
-    "../node_modules/msw/lib/mockServiceWorker.js",
-    "./public/mock-service-worker.js",
-);
