@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## [1.2.11](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.2.10...v1.2.11) (2026-09-18)
+
+### Bug Fixes
+
+* **deps:** update dependency @forsakringskassan/cypress-config to v1.10.0 ([bc0a99a](https://github.com/Forsakringskassan/vue-lib-template/commit/bc0a99a4f1f4365b55f1f5aa47993d8e47b43f09))
+* **deps:** update dependency @forsakringskassan/docs-generator to v3.10.0 ([bcf63f2](https://github.com/Forsakringskassan/vue-lib-template/commit/bcf63f2b03036e4e8935154c1e5181bf52920dcd))
+* **deps:** update dependency @forsakringskassan/docs-generator to v3.10.1 ([19a24a1](https://github.com/Forsakringskassan/vue-lib-template/commit/19a24a1a18944d83c525659f16ae214942e9fc16))
+* **deps:** update dependency @forsakringskassan/vite-lib-config to v5.12.2 ([e37e8b1](https://github.com/Forsakringskassan/vue-lib-template/commit/e37e8b127102358c6edbb08ce1180ff040131fcc))
+* **deps:** update dependency @forsakringskassan/vite-lib-config to v5.12.3 ([60935a9](https://github.com/Forsakringskassan/vue-lib-template/commit/60935a96c78d2541522deda90b5a16da2a871c8e))
+* **deps:** update dependency @forsakringskassan/vite-lib-config to v5.12.4 ([#64](https://github.com/Forsakringskassan/vue-lib-template/issues/64)) ([ae568c3](https://github.com/Forsakringskassan/vue-lib-template/commit/ae568c308931628255144a9e19eca874d9c50752))
+* **deps:** update dependency cloneman to v1.24.1 ([b5190dd](https://github.com/Forsakringskassan/vue-lib-template/commit/b5190ddf9afdbf903ae2acc16f6edac06edf29d9))
+* **deps:** update ext/npm-pkg-lint action to v5.3.0 ([#59](https://github.com/Forsakringskassan/vue-lib-template/issues/59)) ([842a082](https://github.com/Forsakringskassan/vue-lib-template/commit/842a082b7898185a55f325e1d2fd8204d537eb22))
+* **docs:** include library styling when building documentation ([73d3798](https://github.com/Forsakringskassan/vue-lib-template/commit/73d3798cd502b4169c74621fe18dd2936badc528))
+* **docs:** use compileWorker instead of copying msw files ([2e086dd](https://github.com/Forsakringskassan/vue-lib-template/commit/2e086ddbdd82ad92cfa2385f7f411b47a6317f83))
+* handling warnings as errors is included by default in cypress-config ([c9c8334](https://github.com/Forsakringskassan/vue-lib-template/commit/c9c8334d780a0d1f2aee59060cfd3bc84377b007))
+* prettier ignore dynamic lines ([32d8837](https://github.com/Forsakringskassan/vue-lib-template/commit/32d8837349c22044fe1b0453d70d7178255b1b3f))
+
 ## [1.2.10](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.2.9...v1.2.10) (2026-09-17)
 
 ### Bug Fixes
