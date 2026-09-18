@@ -79,3 +79,10 @@ async function onCancel(): Promise<void> {
         </template>
     </f-card>
 </template>
+<style lang="scss">
+.div {
+    &:hover {
+        background-color: #gggg !important;
+    }
+}
+</style>
