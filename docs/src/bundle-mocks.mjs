@@ -11,7 +11,7 @@ const handlers = [
 const worker = setupWorker(...handlers);
 // eslint-disable-next-line no-undef -- technical debt
 const rootUrl = document.documentElement.dataset["rootUrl"];
-const url = `${rootUrl}/mock-service-worker.js`;
+const url = `${rootUrl}/msw.js`;
 
 // Used in setup.ts
 // eslint-disable-next-line unicorn/no-global-object-property-assignment, no-undef -- technical debt
