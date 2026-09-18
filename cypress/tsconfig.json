@@ -14,6 +14,7 @@
         ],
         "typeRoots": ["../node_modules", "../node_modules/@types", "./types"],
         "paths": {
+            // prettier-ignore
             "@forsakringskassan/vue-lib-template/selectors": [
                 "./src/selectors/index.ts"
             ],
