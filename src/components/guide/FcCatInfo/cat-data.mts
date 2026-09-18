@@ -1,4 +1,4 @@
-import type { Cat } from "./cat-types";
+import type { Cat } from "./cat-types.ts";
 
 /**
  * Mock cat data for the FcCatInfoComponent

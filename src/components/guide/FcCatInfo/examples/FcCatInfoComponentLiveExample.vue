@@ -3,7 +3,7 @@ import { defineComponent } from "vue";
 import { FCheckboxField, FSelectField } from "@fkui/vue";
 import { LiveExample } from "@forsakringskassan/docs-live-example";
 import FcCatInfoComponent from "../FcCatInfoComponent.vue";
-import { getCatIds } from "../cat-data.js";
+import { getCatIds } from "../cat-data.mts";
 
 export default defineComponent({
     name: "FcCatInfoComponentLiveExample",
