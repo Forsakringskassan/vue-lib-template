@@ -7,9 +7,11 @@
     ],
     "compilerOptions": {
         "paths": {
+            // prettier-ignore
             "@forsakringskassan/vue-lib-template/selectors": [
                 "./src/selectors/index.ts"
             ],
+            // prettier-ignore
             "@forsakringskassan/vue-lib-template": ["./src/index.ts"]
         }
     }
