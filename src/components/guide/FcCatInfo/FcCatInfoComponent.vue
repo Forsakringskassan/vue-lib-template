@@ -79,3 +79,8 @@ async function onCancel(): Promise<void> {
         </template>
     </f-card>
 </template>
+<style lang="scss">
+.div {
+    background-color: #ggg;
+}
+</style>
