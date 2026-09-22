@@ -61,7 +61,7 @@
     "postpublish": "release-postpublish",
     "start": "vite --",
     "start:docs": "npm start -w docs",
-    "stylelint": "stylelint \"src/**/*.{css,scss}\"",
+    "stylelint": "stylelint \"src/**/*.{css,scss,vue}\"",
     "stylelint:fix": "npm run stylelint -- --fix",
     "pretest": "npm run lint",
     "test": "vitest run",
