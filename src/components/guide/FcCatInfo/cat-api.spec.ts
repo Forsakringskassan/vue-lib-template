@@ -58,6 +58,35 @@ describe("catGetById", () => {
         );
     });
 
+    it("should append id before hash fragment", async () => {
+        expect.assertions(1);
+        vi.mocked(fetch).mockResolvedValue({
+            ok: true,
+            json: () => Promise.resolve({}),
+        } as Response);
+
+        setCatApiPath("/custom-api/cats#details");
+        await catGetById("whiskers-001");
+
+        expect(fetch).toHaveBeenCalledWith(
+            "/custom-api/cats?id=whiskers-001#details",
+        );
+    });
+
+    it("should reject absolute api path", () => {
+        expect.assertions(1);
+        expect(() => {
+            setCatApiPath("https://api.example.com/cat");
+        }).toThrow("catApiPath must be a relative path");
+    });
+
+    it("should reject protocol-relative api path", () => {
+        expect.assertions(1);
+        expect(() => {
+            setCatApiPath("//api.example.com/cat");
+        }).toThrow("catApiPath must be a relative path");
+    });
+
     it("should throw an error with API message when response is not ok", async () => {
         expect.assertions(1);
         const errorResponse = { error: "Cat with ID 'unknown' not found" };
