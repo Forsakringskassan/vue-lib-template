@@ -24,8 +24,24 @@ describe("catGetById", () => {
 
         const result = await catGetById("whiskers-001");
 
-        expect(fetch).toHaveBeenCalledWith("/api/cat?id=whiskers-001");
+        expect(fetch).toHaveBeenCalledWith(
+            new URL("/api/cat?id=whiskers-001", window.location.origin),
+        );
         expect(result).toEqual(mockCat);
+    });
+
+    it("should use a custom api path", async () => {
+        expect.assertions(1);
+        vi.mocked(fetch).mockResolvedValue({
+            ok: true,
+            json: () => Promise.resolve({}),
+        } as Response);
+
+        await catGetById("whiskers-001", "/custom-api/cats");
+
+        expect(fetch).toHaveBeenCalledWith(
+            new URL("/custom-api/cats?id=whiskers-001", window.location.origin),
+        );
     });
 
     it("should throw an error with API message when response is not ok", async () => {

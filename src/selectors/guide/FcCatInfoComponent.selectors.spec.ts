@@ -9,7 +9,30 @@ import { FcCatInfoComponentSelectors } from "./FcCatInfoComponent.selectors";
 vi.mock(import("../../components/guide/FcCatInfo/cat-api"));
 
 beforeEach(() => {
+    vi.mocked(catGetById).mockReset();
     vi.mocked(catGetById).mockResolvedValue(cats[0]);
+});
+
+it("should fetch cat with default api path", async () => {
+    expect.assertions(1);
+    mount(FcCatInfoComponent, {
+        props: { catId: cats[0].id },
+    });
+
+    await vi.waitFor(() => {
+        expect(catGetById).toHaveBeenCalledWith(cats[0].id, "/api/cat");
+    });
+});
+
+it("should fetch cat with configured api path", async () => {
+    expect.assertions(1);
+    mount(FcCatInfoComponent, {
+        props: { catId: cats[0].id, catApiPath: "/custom-api/cats" },
+    });
+
+    await vi.waitFor(() => {
+        expect(catGetById).toHaveBeenCalledWith(cats[0].id, "/custom-api/cats");
+    });
 });
 
 it("should use the default selector", () => {

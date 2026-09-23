@@ -15,11 +15,17 @@ interface Props {
      * Whether the cat information should be editable
      */
     isEditable?: boolean;
+    /**
+     * API path for the cat endpoint
+     */
+    catApiPath?: string;
 }
 
-const props = defineProps<Props>();
+const props = withDefaults(defineProps<Props>(), {
+    catApiPath: "/api/cat",
+});
 
-const { loading, cat, fetchCat, updateCat } = useCatInfo();
+const { loading, cat, fetchCat, updateCat } = useCatInfo(props.catApiPath);
 
 const editForm = ref({ id: "", name: "", age: 0, breed: "", color: "", favoriteFood: "" });
 
