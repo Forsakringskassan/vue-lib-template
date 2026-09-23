@@ -35,6 +35,23 @@ it("should fetch cat with configured api path", async () => {
     });
 });
 
+it("should refetch cat when api path prop changes", async () => {
+    expect.assertions(2);
+    const wrapper = mount(FcCatInfoComponent, {
+        props: { catId: cats[0].id, catApiPath: "/api/cat" },
+    });
+
+    await vi.waitFor(() => {
+        expect(catGetById).toHaveBeenCalledWith(cats[0].id, "/api/cat");
+    });
+
+    await wrapper.setProps({ catApiPath: "/custom-api/cats" });
+
+    await vi.waitFor(() => {
+        expect(catGetById).toHaveBeenCalledWith(cats[0].id, "/custom-api/cats");
+    });
+});
+
 it("should use the default selector", () => {
     expect.assertions(2);
     const wrapper = mount(FcCatInfoComponent, {

@@ -30,8 +30,8 @@ const { loading, cat, fetchCat, updateCat } = useCatInfo();
 const editForm = ref({ id: "", name: "", age: 0, breed: "", color: "", favoriteFood: "" });
 
 watch(
-    () => props.catId,
-    async (newCatId) => {
+    () => [props.catId, props.catApiPath],
+    async ([newCatId]) => {
         if (!newCatId) {
             return;
         }
