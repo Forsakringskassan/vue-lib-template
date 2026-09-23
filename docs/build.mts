@@ -1,7 +1,6 @@
 /* This file is managed by @forsakringskassan/vue-lib-template. Changes will be overwritten! */
 
 import path from "node:path";
-import { fileURLToPath } from "node:url";
 import {
     type Processor,
     Generator,
@@ -57,9 +56,8 @@ docs.compileStyle("main", "./src/main.scss", {
     appendTo: "head",
 });
 
-const styleUrl = import.meta.resolve(`../dist/esm/style.css`);
-const stylePath = fileURLToPath(styleUrl); // workaround for https://github.com/Forsakringskassan/docs-generator/issues/499
-docs.compileStyle("lib", stylePath, {
+const styleUrl = new URL(import.meta.resolve(`../dist/esm/style.css`));
+docs.compileStyle("lib", styleUrl, {
     appendTo: "head",
 });
 
@@ -67,9 +65,8 @@ docs.compileScript("mocks", "./src/bundle-mocks.mjs", {
     appendTo: "head",
 });
 
-const mswUrl = import.meta.resolve("msw/mockServiceWorker.js");
-const mswPath = fileURLToPath(mswUrl); // workaround for https://github.com/Forsakringskassan/docs-generator/issues/499
-docs.compileWorker("mock-service-worker", mswPath);
+const mswUrl = new URL(import.meta.resolve("msw/mockServiceWorker.js"));
+docs.compileWorker("mock-service-worker", mswUrl);
 
 await docs.build([
     {
