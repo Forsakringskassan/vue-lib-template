@@ -77,14 +77,21 @@ describe("catGetById", () => {
         expect.assertions(1);
         expect(() => {
             setCatApiPath("https://api.example.com/cat");
-        }).toThrow("catApiPath must be a relative path");
+        }).toThrow("catApiPath must be a root-relative path");
     });
 
     it("should reject protocol-relative api path", () => {
         expect.assertions(1);
         expect(() => {
             setCatApiPath("//api.example.com/cat");
-        }).toThrow("catApiPath must be a relative path");
+        }).toThrow("catApiPath must be a root-relative path");
+    });
+
+    it("should reject path without leading slash", () => {
+        expect.assertions(1);
+        expect(() => {
+            setCatApiPath("api/cat");
+        }).toThrow("catApiPath must be a root-relative path");
     });
 
     it("should throw an error with API message when response is not ok", async () => {
