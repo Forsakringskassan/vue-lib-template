@@ -54,7 +54,7 @@ docs.compileScript("mocks", "./src/bundle-mocks.mjs", {
 
 const mswUrl = import.meta.resolve("msw/mockServiceWorker.js");
 const mswPath = fileURLToPath(mswUrl); // workaround for https://github.com/Forsakringskassan/docs-generator/issues/499
-docs.compileWorker("msw", mswPath);
+docs.compileWorker("mock-service-worker", mswPath);
 
 await docs.build([
     {
