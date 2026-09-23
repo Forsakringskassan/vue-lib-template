@@ -115,5 +115,4 @@ describe("useCatInfo", () => {
         expect(cat.value!.name).toBe("Sir Muffin III");
         expect(cat.value!.breed).toBe("Maine Coon");
     });
-
 });
