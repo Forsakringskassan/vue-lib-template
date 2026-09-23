@@ -7,11 +7,11 @@ import type { Cat } from "./cat-types";
  * Business logic for the FcCatInfoComponent.
  * Manages fetching and updating cat information from mock backend.
  */
-export function useCatInfo(apiPath: string = "/api/cat"): {
+export function useCatInfo(): {
     loading: Ref<boolean>;
     cat: Ref<Cat | null>;
     error: Ref<string | null>;
-    fetchCat: (catId: string) => Promise<void>;
+    fetchCat: (catId: string, apiPath?: string) => Promise<void>;
     updateCat: (newCat: Cat) => void;
 } {
     const loading = ref(false);
@@ -21,7 +21,10 @@ export function useCatInfo(apiPath: string = "/api/cat"): {
     /**
      * Fetch cat data from mock backend
      */
-    async function fetchCat(catId: string): Promise<void> {
+    async function fetchCat(
+        catId: string,
+        apiPath: string = "/api/cat",
+    ): Promise<void> {
         loading.value = true;
         error.value = null;
 

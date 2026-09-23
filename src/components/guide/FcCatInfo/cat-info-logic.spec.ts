@@ -119,7 +119,7 @@ describe("useCatInfo", () => {
 
     it("should use configured api path when fetching cat", async () => {
         expect.assertions(1);
-        const { fetchCat } = useCatInfo("/custom-api/cats");
+        const { fetchCat } = useCatInfo();
         vi.mocked(catGetById).mockResolvedValue({
             id: "whiskers-001",
             name: "Whiskers McFluffington",
@@ -129,7 +129,7 @@ describe("useCatInfo", () => {
             favoriteFood: "Tuna",
         });
 
-        await fetchCat("whiskers-001");
+        await fetchCat("whiskers-001", "/custom-api/cats");
 
         expect(catGetById).toHaveBeenCalledWith(
             "whiskers-001",

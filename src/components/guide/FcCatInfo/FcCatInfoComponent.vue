@@ -25,7 +25,7 @@ const props = withDefaults(defineProps<Props>(), {
     catApiPath: "/api/cat",
 });
 
-const { loading, cat, fetchCat, updateCat } = useCatInfo(props.catApiPath);
+const { loading, cat, fetchCat, updateCat } = useCatInfo();
 
 const editForm = ref({ id: "", name: "", age: 0, breed: "", color: "", favoriteFood: "" });
 
@@ -36,7 +36,7 @@ watch(
             return;
         }
 
-        await fetchCat(newCatId);
+        await fetchCat(newCatId, props.catApiPath);
         if (cat.value) {
             editForm.value = { ...cat.value };
         }
@@ -59,7 +59,7 @@ async function onCancel(): Promise<void> {
         return;
     }
 
-    await fetchCat(props.catId);
+    await fetchCat(props.catId, props.catApiPath);
     if (cat.value) {
         editForm.value = { ...cat.value };
     }
