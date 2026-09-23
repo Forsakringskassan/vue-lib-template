@@ -73,6 +73,21 @@ describe("catGetById", () => {
         );
     });
 
+    it("should preserve matrix-style path parameters", async () => {
+        expect.assertions(1);
+        vi.mocked(fetch).mockResolvedValue({
+            ok: true,
+            json: () => Promise.resolve({}),
+        } as Response);
+
+        setCatApiPath("/custom-api/cats;v=2");
+        await catGetById("whiskers-001");
+
+        expect(fetch).toHaveBeenCalledWith(
+            "/custom-api/cats;v=2?id=whiskers-001",
+        );
+    });
+
     it("should reject absolute api path", () => {
         expect.assertions(1);
         expect(() => {
