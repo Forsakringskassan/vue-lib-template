@@ -40,7 +40,7 @@ describe("catGetById", () => {
         expect(fetch).toHaveBeenCalledWith("/custom-api/cats?id=whiskers-001");
     });
 
-    it("should append id when custom api path already has query parameters", async () => {
+    it("should replace existing id when custom api path already has query parameters", async () => {
         expect.assertions(1);
         vi.mocked(fetch).mockResolvedValue({
             ok: true,
@@ -50,7 +50,7 @@ describe("catGetById", () => {
         await catGetById("whiskers-001", "/custom-api/cats?source=test&id=old");
 
         expect(fetch).toHaveBeenCalledWith(
-            "/custom-api/cats?source=test&id=old&id=whiskers-001",
+            "/custom-api/cats?source=test&id=whiskers-001",
         );
     });
 
