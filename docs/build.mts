@@ -3,6 +3,7 @@
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
+    type Processor,
     Generator,
     extractMarkdownProcessor,
     frontMatterFileReader,
@@ -11,11 +12,24 @@ import {
 } from "@forsakringskassan/docs-generator";
 import pkg from "../package.json" with { type: "json" };
 
+function teleportTarget(): Processor {
+    return {
+        after: "generate-docs",
+        name: "fkui:teleport",
+        async handler(context) {
+            context.addTemplateBlock("body:end", "teleport-target", {
+                filename: "partials/teleport.html",
+            });
+        },
+    };
+}
+
 const docs = new Generator(import.meta.url, {
     site: { name: pkg.name, lang: "sv" },
     outputFolder: path.resolve(import.meta.dirname, "public"),
     exampleFolders: [path.resolve(import.meta.dirname, "../src")],
     setupPath: path.resolve(import.meta.dirname, "src/setup.ts"),
+    templateFolders: ["./templates"],
     vendor: [
         { package: "vue", alias: "vue/dist/vue.esm-bundler.js" },
         {
@@ -31,6 +45,7 @@ const docs = new Generator(import.meta.url, {
             outputFolder: path.join(import.meta.dirname, "../dist/docs"),
         }),
         manifestProcessor(),
+        teleportTarget(),
     ],
 });
 
