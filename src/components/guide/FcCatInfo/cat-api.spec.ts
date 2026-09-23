@@ -24,9 +24,7 @@ describe("catGetById", () => {
 
         const result = await catGetById("whiskers-001");
 
-        expect(fetch).toHaveBeenCalledWith(
-            new URL("/api/cat?id=whiskers-001", window.location.origin),
-        );
+        expect(fetch).toHaveBeenCalledWith("/api/cat?id=whiskers-001");
         expect(result).toEqual(mockCat);
     });
 
@@ -39,9 +37,7 @@ describe("catGetById", () => {
 
         await catGetById("whiskers-001", "/custom-api/cats");
 
-        expect(fetch).toHaveBeenCalledWith(
-            new URL("/custom-api/cats?id=whiskers-001", window.location.origin),
-        );
+        expect(fetch).toHaveBeenCalledWith("/custom-api/cats?id=whiskers-001");
     });
 
     it("should throw an error with API message when response is not ok", async () => {
