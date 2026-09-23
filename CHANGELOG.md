@@ -1,5 +1,33 @@
 # CHANGELOG
 
+## [1.3.0](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.2.11...v1.3.0) (2026-09-23)
+
+### Features
+
+* add selectors tests for FcCatInfoComponent ([230d022](https://github.com/Forsakringskassan/vue-lib-template/commit/230d022bf4924462ab437737152bcc253bce049a))
+* **docs:** bundle component documentation in deliverable ([5b27cb7](https://github.com/Forsakringskassan/vue-lib-template/commit/5b27cb7febda8e1d8ea9517aec859cb1d2082e0a))
+* **docs:** bundle component documentation in deliverable ([c39c1f2](https://github.com/Forsakringskassan/vue-lib-template/commit/c39c1f26f987309e817d85403f29af81e96231db))
+
+### Bug Fixes
+
+* **deps:** update @forsakringskassan/eslint-config monorepo ([bdbb610](https://github.com/Forsakringskassan/vue-lib-template/commit/bdbb610b30fc939431cfbccd7bcc9d217c1f585d))
+* **deps:** update @forsakringskassan/eslint-config monorepo to v15.10.0 ([c2e49c9](https://github.com/Forsakringskassan/vue-lib-template/commit/c2e49c996695ade6556b17c9a6a3f78d2f066d33))
+* **deps:** update @forsakringskassan/prettier-config monorepo to v3.7.10 ([028ba40](https://github.com/Forsakringskassan/vue-lib-template/commit/028ba40f3012caee5c3d9f5ba715917a4e10c270))
+* **deps:** update @forsakringskassan/prettier-config monorepo to v3.7.9 ([a9736d4](https://github.com/Forsakringskassan/vue-lib-template/commit/a9736d43712625fcb67bce95604cd4c45b12769d))
+* **deps:** update cypress-io/github-action action to v7.4.4 ([14d2a39](https://github.com/Forsakringskassan/vue-lib-template/commit/14d2a39d3d11ffae737d8ee0d5126d5459664801))
+* **deps:** update dependency @forsakringskassan/docs-generator to v3.11.0 ([49f49bc](https://github.com/Forsakringskassan/vue-lib-template/commit/49f49bc57dbe2ee58db024b7259ae2c93b5056f7))
+* **deps:** update dependency @forsakringskassan/docs-generator to v3.11.1 ([172bfa6](https://github.com/Forsakringskassan/vue-lib-template/commit/172bfa62559b72301d85dc2ef74728cadd733930))
+* **deps:** update dependency @forsakringskassan/stylelint-config to v3.5.0 ([1977718](https://github.com/Forsakringskassan/vue-lib-template/commit/197771824baab238b7540d7d37f5507147033557))
+* **deps:** update dependency @html-validate/release-scripts to v7.6.12 ([a24a36a](https://github.com/Forsakringskassan/vue-lib-template/commit/a24a36acdbe90ff2c0627c2163096f3eee9ffeb7))
+* **deps:** update dependency @types/node to v24.13.5 ([b3b73cf](https://github.com/Forsakringskassan/vue-lib-template/commit/b3b73cf3c704a20c7fc2cba356b96b573e839ec3))
+* **deps:** update dependency @vue/test-utils to v2.5.1 ([05ca7aa](https://github.com/Forsakringskassan/vue-lib-template/commit/05ca7aad085d90b6185446a5ea6e87876d5ccc5e))
+* **deps:** update dependency cypress to v16.1.0 ([e465c5c](https://github.com/Forsakringskassan/vue-lib-template/commit/e465c5c5d7384132139680c6973cdc298315d5cf))
+* **deps:** update dependency html-validate to v11.16.0 ([ca64b09](https://github.com/Forsakringskassan/vue-lib-template/commit/ca64b09deaa5f55b476038d8e55184242ed93f6f))
+* **deps:** update dependency npm-pkg-lint to v5.3.1 ([1252601](https://github.com/Forsakringskassan/vue-lib-template/commit/1252601910b44a15c2478d35e370444c1b310477))
+* **deps:** update dependency vitest to v5.0.1 ([275d9fb](https://github.com/Forsakringskassan/vue-lib-template/commit/275d9fbbc1fed40d0dcac20acb46fafa57afdd36))
+* **deps:** update ext/npm-pkg-lint action to v5.3.1 ([fbd278b](https://github.com/Forsakringskassan/vue-lib-template/commit/fbd278bc8ac7acc9162f4a0c7b7d0ea0892e6ead))
+* **deps:** update vue monorepo to v3.5.43 ([5b528a3](https://github.com/Forsakringskassan/vue-lib-template/commit/5b528a33921627fd33cb3acd4ab48d6aff25240c))
+
 ## [1.2.11](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.2.10...v1.2.11) (2026-09-18)
 
 ### Bug Fixes
