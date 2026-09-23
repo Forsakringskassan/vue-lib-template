@@ -11,7 +11,7 @@ export function useCatInfo(): {
     loading: Ref<boolean>;
     cat: Ref<Cat | null>;
     error: Ref<string | null>;
-    fetchCat: (catId: string, apiPath?: string) => Promise<void>;
+    fetchCat: (catId: string) => Promise<void>;
     updateCat: (newCat: Cat) => void;
 } {
     const loading = ref(false);
@@ -21,16 +21,13 @@ export function useCatInfo(): {
     /**
      * Fetch cat data from mock backend
      */
-    async function fetchCat(
-        catId: string,
-        apiPath: string = "/api/cat",
-    ): Promise<void> {
+    async function fetchCat(catId: string): Promise<void> {
         loading.value = true;
         error.value = null;
 
         try {
             // Get cat from mock backend
-            const fetchedCat = await catGetById(catId, apiPath);
+            const fetchedCat = await catGetById(catId);
             cat.value = { ...fetchedCat };
         } catch (err) {
             error.value =

@@ -15,28 +15,22 @@ interface Props {
      * Whether the cat information should be editable
      */
     isEditable?: boolean;
-    /**
-     * API path for the cat endpoint
-     */
-    catApiPath?: string;
 }
 
-const props = withDefaults(defineProps<Props>(), {
-    catApiPath: "/api/cat",
-});
+const props = defineProps<Props>();
 
 const { loading, cat, fetchCat, updateCat } = useCatInfo();
 
 const editForm = ref({ id: "", name: "", age: 0, breed: "", color: "", favoriteFood: "" });
 
 watch(
-    () => [props.catId, props.catApiPath],
-    async ([newCatId]) => {
+    () => props.catId,
+    async (newCatId) => {
         if (!newCatId) {
             return;
         }
 
-        await fetchCat(newCatId, props.catApiPath);
+        await fetchCat(newCatId);
         if (cat.value) {
             editForm.value = { ...cat.value };
         }
@@ -59,7 +53,7 @@ async function onCancel(): Promise<void> {
         return;
     }
 
-    await fetchCat(props.catId, props.catApiPath);
+    await fetchCat(props.catId);
     if (cat.value) {
         editForm.value = { ...cat.value };
     }

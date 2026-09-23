@@ -1,12 +1,13 @@
 import type { Cat } from "./cat-types";
+import { getCatApiPath } from "./cat-api-config";
 
 /**
  * @internal
  */
 export async function catGetById(
     id: string,
-    apiPath: string = "/api/cat",
 ): Promise<Cat> {
+    const apiPath = getCatApiPath();
     const url = new URL(apiPath, "http://localhost");
     url.searchParams.set("id", id);
     const requestPath = /^(?:[a-z]+:)?\/\//iu.test(apiPath)

@@ -19,7 +19,7 @@ describe("useCatInfo", () => {
     });
 
     it("should set loading then data for valid cat ID", async () => {
-        expect.assertions(6);
+        expect.assertions(5);
         const { loading, cat, error, fetchCat } = useCatInfo();
         const mockCat = {
             id: "whiskers-001",
@@ -42,7 +42,6 @@ describe("useCatInfo", () => {
         expect(cat.value).not.toBeNull();
         expect(cat.value?.name).toBe("Whiskers McFluffington");
         expect(error.value).toBeNull();
-        expect(catGetById).toHaveBeenCalledWith("whiskers-001", "/api/cat");
     });
 
     it("should set error for invalid cat ID", async () => {
@@ -117,23 +116,4 @@ describe("useCatInfo", () => {
         expect(cat.value!.breed).toBe("Maine Coon");
     });
 
-    it("should use configured api path when fetching cat", async () => {
-        expect.assertions(1);
-        const { fetchCat } = useCatInfo();
-        vi.mocked(catGetById).mockResolvedValue({
-            id: "whiskers-001",
-            name: "Whiskers McFluffington",
-            age: 3,
-            breed: "European Shorthair",
-            color: "Orange Tabby",
-            favoriteFood: "Tuna",
-        });
-
-        await fetchCat("whiskers-001", "/custom-api/cats");
-
-        expect(catGetById).toHaveBeenCalledWith(
-            "whiskers-001",
-            "/custom-api/cats",
-        );
-    });
 });
