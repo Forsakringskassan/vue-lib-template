@@ -8,7 +8,7 @@ export async function catGetById(
     apiPath: string = "/api/cat",
 ): Promise<Cat> {
     const url = new URL(apiPath, "http://localhost");
-    url.searchParams.set("id", id);
+    url.searchParams.append("id", id);
     const requestPath = /^(?:[a-z]+:)?\/\//iu.test(apiPath)
         ? url.href
         : `${url.pathname}${url.search}${url.hash}`;
