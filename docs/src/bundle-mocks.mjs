@@ -18,5 +18,6 @@ const url = `${rootUrl}/mock-service-worker.js`;
 window.bundleMocks = worker.start({
     serviceWorker: {
         url,
+        options: { type: "module" },
     },
 });
