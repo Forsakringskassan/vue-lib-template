@@ -34,6 +34,14 @@ export async function build({ buildTemplate }: BuildContext): Promise<void> {
             "tsconfig.selectors.json",
             "vite.config.mts",
         ],
+        partiallyManagedFiles: [
+            {
+                filename: "src/theme.scss",
+                include: {
+                    above: "--- This notice must be kept ---",
+                },
+            },
+        ],
         ignoredFiles: [
             ".github/**",
             ".npmrc", // does not work internally yet

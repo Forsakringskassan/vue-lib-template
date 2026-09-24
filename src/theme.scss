@@ -1,0 +1,28 @@
+/**
+ * Theme selection.
+ *
+ * This file can be customized to set theme and related features for:
+ *
+ * - Local builds (`npm start`)
+ * - Cypress component tests
+ * - Documentation
+ *
+ * It is not included in the production build.
+ *
+ * --- This notice must be kept ---
+ */
+
+@use "@fkui/theme-default" as theme with (
+    $global: false
+);
+
+@use "@fkui/font-default" as font with (
+    $global: false
+);
+
+@include font.font-face;
+
+:root {
+    @include theme.auto;
+    @include font.font-family;
+}
