@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## [1.4.0](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.3.0...v1.4.0) (2026-09-24)
+
+### Features
+
+* move everything theme-related into a single file ([c73027f](https://github.com/Forsakringskassan/vue-lib-template/commit/c73027f85913aca05150bf2fd425ad57690bc9d3))
+
+### Bug Fixes
+
+* avoid conflicting name `msw` ([f2c3f89](https://github.com/Forsakringskassan/vue-lib-template/commit/f2c3f89f0e93a6d40210565ac00a322f2834fac0))
+* **deps:** update [@fkui](https://github.com/fkui) packages to v6.59.0 ([#70](https://github.com/Forsakringskassan/vue-lib-template/issues/70)) ([3401fb2](https://github.com/Forsakringskassan/vue-lib-template/commit/3401fb2e424d449536804659520d705b035f4c1c))
+* **deps:** update @forsakringskassan/eslint-config monorepo to v15.11.0 ([7e5b774](https://github.com/Forsakringskassan/vue-lib-template/commit/7e5b774d9edf6f663d81a9985c62148248ecd3ea))
+* **deps:** update dependency @forsakringskassan/docs-generator to v3.12.0 ([fd7066b](https://github.com/Forsakringskassan/vue-lib-template/commit/fd7066b625958f1af861938ee5f6ccb78c9a7534))
+* **deps:** update dependency @types/node to v24.13.6 ([#69](https://github.com/Forsakringskassan/vue-lib-template/issues/69)) ([6750fc0](https://github.com/Forsakringskassan/vue-lib-template/commit/6750fc0b0dd45149460bcfe71754a9f2125ed753))
+* **deps:** update dependency cloneman to v1.25.0 ([03cd04a](https://github.com/Forsakringskassan/vue-lib-template/commit/03cd04aeb9db7983c994b92db8b57ef132698542))
+* **docs:** add teleport target for documentation examples ([245deac](https://github.com/Forsakringskassan/vue-lib-template/commit/245deac3a0fe25b444fcba8d8433b8123c141316))
+* load service worker as module ([583d6ea](https://github.com/Forsakringskassan/vue-lib-template/commit/583d6ea206e1aeccf83b58caa4803ddfc238594d))
+
 ## [1.3.0](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.2.11...v1.3.0) (2026-09-23)
 
 ### Features
