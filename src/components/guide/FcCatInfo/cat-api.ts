@@ -1,10 +1,16 @@
+import { getCatApiPath } from "./cat-api-config";
 import type { Cat } from "./cat-types";
 
 /**
  * @internal
  */
 export async function catGetById(id: string): Promise<Cat> {
-    const response = await fetch(`/api/cat?id=${id}`);
+    const apiPath = getCatApiPath();
+    const url = new URL(apiPath, "http://localhost");
+    url.searchParams.set("id", id);
+    const requestPath = `${url.pathname}${url.search}${url.hash}`;
+
+    const response = await fetch(requestPath);
 
     if (!response.ok) {
         const errorData = (await response.json()) as { error?: string };

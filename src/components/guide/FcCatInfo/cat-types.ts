@@ -1,4 +1,5 @@
 /**
+ * @public
  * Type definitions for cats
  */
 export interface Cat {

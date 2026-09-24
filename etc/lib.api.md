@@ -9,10 +9,29 @@ import { ComponentProvideOptions } from 'vue';
 import { DefineComponent } from 'vue';
 import { PublicProps } from 'vue';
 
+// @public
+export interface Cat {
+    // (undocumented)
+    age: number;
+    // (undocumented)
+    breed: string;
+    // (undocumented)
+    color: string;
+    // (undocumented)
+    favoriteFood: string;
+    // (undocumented)
+    id: string;
+    // (undocumented)
+    name: string;
+}
+
 // Warning: (ae-forgotten-export) The symbol "__VLS_export" needs to be exported by the entry point index.d.ts
 //
 // @public (undocumented)
 export const FcCatInfoComponent: typeof __VLS_export;
+
+// @public
+export function setCatApiPath(path: string): void;
 
 // (No @packageDocumentation comment for this package)
 

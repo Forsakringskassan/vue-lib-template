@@ -1,1 +1,1 @@
-export { FcCatInfoComponent } from "./FcCatInfo";
+export * from "./FcCatInfo";

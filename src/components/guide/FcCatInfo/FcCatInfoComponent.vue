@@ -62,8 +62,8 @@ async function onCancel(): Promise<void> {
 
 <template>
     <f-card>
-        <template #header>
-            <h2>Kattinformation</h2>
+        <template #header="{ headingSlotClass }">
+            <h2 :class="headingSlotClass">Kattinformation</h2>
         </template>
         <template #default>
             <div>
