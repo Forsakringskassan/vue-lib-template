@@ -1,10 +1,13 @@
 import type { Cat } from "./cat-types";
 
+const apiUrl = import.meta.env.VITE_CAT_API_URL;
+
 /**
  * @internal
  */
 export async function catGetById(id: string): Promise<Cat> {
-    const response = await fetch(`/api/cat?id=${id}`);
+    const query = new URLSearchParams({ id }).toString();
+    const response = await fetch(`${apiUrl}?${query}`);
 
     if (!response.ok) {
         const errorData = (await response.json()) as { error?: string };
