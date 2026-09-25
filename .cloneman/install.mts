@@ -1,5 +1,15 @@
 import { type InstallContext } from "cloneman";
 
+async function enableDeployDocs(context: InstallContext): Promise<void> {
+    const { getParameter, replaceInFile } = context;
+    const url = getParameter("docs-repo-url");
+    if (url === "") {
+        return;
+    }
+    await replaceInFile("Jenkinsfile", /deploy:/, "false", "true");
+    await replaceInFile("Jenkinsfile", /repositoryUrl:/, "null", `"${url}"`);
+}
+
 export async function install(context: InstallContext): Promise<void> {
     const { getApplicationName, replaceInFile } = context;
     const scopedName = getApplicationName();
@@ -13,4 +23,7 @@ export async function install(context: InstallContext): Promise<void> {
     await replaceInFile("tsconfig.lib.json", placeholder, quotedName);
     await replaceInFile("tsconfig.cypress.json", placeholder, quotedName);
     await replaceInFile("tsconfig.selectors.json", placeholder, quotedName);
+
+    /* enable deployment of documentation if a documentation url is provided */
+    await enableDeployDocs(context);
 }
