@@ -10,18 +10,22 @@ import {
 } from "@fkui/vue";
 import { type SetupOptions } from "@forsakringskassan/docs-generator";
 
+/* this is resolved from the importmap (mapped to the bundle with the same name
+ * compiled in `docs/build.mts`) */
+import { apimockReady } from "#apimock";
+
 export async function setup(options: SetupOptions): Promise<void> {
     const { rootComponent, selector } = options;
 
-    // Set in bundle-mocks.mjs, wait on mock service worker to be ready.
-    if (window.bundleMocks) {
-        await window.bundleMocks;
-    }
+    /* wait for apimock to be ready before we mount the example */
+    await apimockReady;
+
     const app = createApp({
         render() {
             return h(FErrorHandlingApp, { defaultComponent: rootComponent });
         },
     });
+
     setRunningContext(app);
     app.use(ErrorPlugin, {
         captureWarnings: true,

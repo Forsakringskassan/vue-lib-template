@@ -2,6 +2,9 @@
   "name": "docs",
   "version": "0.0.0",
   "private": true,
+  "imports": {
+    "#apimock": "./src/bundle-mocks.ts"
+  },
   "scripts": {
     "build": "node build.mts",
     "start": "http-server public"
