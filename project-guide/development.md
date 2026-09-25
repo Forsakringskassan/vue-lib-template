@@ -85,6 +85,23 @@ npm start catinfo
 
 This uses fuzzy search to find and start the best matching file in `src/examples/` (e.g., `CatInfoExample.vue`).
 
+## API URL configuration
+
+The cat example reads its endpoint from the Vite environment variable `VITE_CAT_API_URL`.
+Development uses `.env.development` with the local mock endpoint:
+
+```bash
+VITE_CAT_API_URL=/api/cat
+```
+
+Production uses `.env.production` with the production endpoint:
+
+```bash
+VITE_CAT_API_URL=/prod/rest/api/cat
+```
+
+Vite selects the file based on the current mode. Restart the development server after changing an env file, and rebuild after changing the production value.
+
 ## Documentation commands
 
 Documentation is maintained in `docs/` and generated with [`@forsakringskassan/docs-generator`](https://forsakringskassan.github.io/docs-generator/latest/). A typical local workflow is:
