@@ -22,6 +22,7 @@ export async function build({ buildTemplate }: BuildContext): Promise<void> {
             "docs/build.mts",
             "docs/package.json",
             "docs/src/**",
+            "docs/templates/**",
             "docs/tsconfig.json",
             "eslint.config.mjs",
             "Jenkinsfile",
