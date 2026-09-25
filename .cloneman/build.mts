@@ -70,6 +70,7 @@ export async function build({ buildTemplate }: BuildContext): Promise<void> {
             /* renamed files */
             "etc/vue-lib-template-selectors.api.md",
             "etc/vue-lib-template.api.md",
+            "docs/src/bundle-mocks.mjs",
 
             /* replaced by FcCatInfo */
             "docs/components/AwesomeComponent.md",

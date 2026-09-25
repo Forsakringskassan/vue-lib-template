@@ -61,12 +61,12 @@ docs.compileStyle("lib", styleUrl, {
     appendTo: "head",
 });
 
-docs.compileScript("mocks", "./src/bundle-mocks.mjs", {
-    appendTo: "head",
+docs.compileScript("#apimock", "./src/bundle-mocks.ts", {
+    appendTo: "none",
 });
 
 const mswUrl = new URL(import.meta.resolve("msw/mockServiceWorker.js"));
-docs.compileWorker("mock-service-worker", mswUrl);
+docs.compileWorker("#mock-service-worker", mswUrl);
 
 await docs.build([
     {
