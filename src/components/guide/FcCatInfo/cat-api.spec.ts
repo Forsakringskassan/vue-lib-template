@@ -1,9 +1,14 @@
-import { beforeEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { catGetById } from "./cat-api";
 
 describe("catGetById", () => {
     beforeEach(() => {
         vi.stubGlobal("fetch", vi.fn());
+        vi.stubEnv("VITE_CAT_API_URL", "/api/cat");
+    });
+
+    afterEach(() => {
+        vi.unstubAllEnvs();
     });
 
     it("should return a cat when the response is ok", async () => {
