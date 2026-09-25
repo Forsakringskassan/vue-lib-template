@@ -1,4 +1,4 @@
 ---
-title: Guide
+title: Komponenter
 layout: article
 ---
