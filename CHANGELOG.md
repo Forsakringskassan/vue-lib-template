@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.5.1](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.5.0...v1.5.1) (2026-09-25)
+
+### Bug Fixes
+
+* **docs:** add guide index and topnav ([f0e3849](https://github.com/Forsakringskassan/vue-lib-template/commit/f0e38496f10c39adf9b9984d1730254a2716ef27))
+
 ## [1.5.0](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.4.0...v1.5.0) (2026-09-25)
 
 ### Features
