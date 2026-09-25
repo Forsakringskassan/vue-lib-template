@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## [1.5.0](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.4.0...v1.5.0) (2026-09-25)
+
+### Features
+
+* add url parameter for deploying documentaiton ([33f5a7e](https://github.com/Forsakringskassan/vue-lib-template/commit/33f5a7eb1a95dd5e594da1d44a75aa812fe59bc5))
+* use `setupWorkers` from apimock ([c65b9d5](https://github.com/Forsakringskassan/vue-lib-template/commit/c65b9d5ed38ae52f84fbd9c44a4833cdaac06012))
+
+### Bug Fixes
+
+* **deps:** update dependency @forsakringskassan/apimock-express to v4.2.0 ([f126587](https://github.com/Forsakringskassan/vue-lib-template/commit/f1265872818586a719a85bb8f0ad341984d944b2))
+* **deps:** update dependency @forsakringskassan/apimock-express to v4.2.1 ([3c3f904](https://github.com/Forsakringskassan/vue-lib-template/commit/3c3f9042df7ccb48eef4c838e63235c21b046609))
+* **deps:** update dependency @forsakringskassan/docs-generator to v3.12.1 ([#73](https://github.com/Forsakringskassan/vue-lib-template/issues/73)) ([3c4d07e](https://github.com/Forsakringskassan/vue-lib-template/commit/3c4d07e30dec80f3a9b52c1e408c39a0211eeb03))
+* **deps:** update dependency cloneman to v1.25.1 ([e88b183](https://github.com/Forsakringskassan/vue-lib-template/commit/e88b1837d9445ae42b3b4552d22897e458931a8a))
+
 ## [1.4.0](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.3.0...v1.4.0) (2026-09-24)
 
 ### Features
