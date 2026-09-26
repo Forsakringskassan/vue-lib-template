@@ -113,7 +113,7 @@
     "@forsakringskassan/eslint-config-vue": "15.11.2",
     "@forsakringskassan/prettier-config": "3.7.10",
     "@forsakringskassan/stylelint-config": "3.5.0",
-    "@forsakringskassan/vite-lib-config": "5.12.4",
+    "@forsakringskassan/vite-lib-config": "5.12.5",
     "@forsakringskassan/vitest-config-jsdom": "5.0.0",
     "@html-validate/release-scripts": "7.6.12",
     "@types/node": "24.13.6",
