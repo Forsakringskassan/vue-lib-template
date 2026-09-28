@@ -6,10 +6,7 @@ export async function build({ buildTemplate }: BuildContext): Promise<void> {
         managedFiles: [
             ".agents/**",
             ".editorconfig",
-            ".gitignore",
             ".htmlvalidate.json",
-            ".htmlvalidateignore",
-            ".prettierignore",
             ".vscode/**",
             "api-extractor.lib.json",
             "api-extractor.selectors.json",
@@ -36,6 +33,24 @@ export async function build({ buildTemplate }: BuildContext): Promise<void> {
             "vite.config.mts",
         ],
         partiallyManagedFiles: [
+            {
+                filename: ".gitignore",
+                include: {
+                    above: "--- Add local changes below ---",
+                },
+            },
+            {
+                filename: ".htmlvalidateignore",
+                include: {
+                    above: "--- Add local changes below ---",
+                },
+            },
+            {
+                filename: ".prettierignore",
+                include: {
+                    above: "--- Add local changes below ---",
+                },
+            },
             {
                 filename: "src/theme.scss",
                 include: {

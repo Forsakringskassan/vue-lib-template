@@ -1,8 +1,12 @@
-# This file is managed by @forsakringskassan/vue-lib-template.
-# Changes will be overwritten!
+# This file is partially managed by @forsakringskassan/vue-lib-template.
+#
+# Place your own rules below the "Add local changes below" comment.
+# Rules above that line may be overwritten.
 
 # generated files
 dist/
 docs/public/
 docs/node_modules/
 docs/temp/
+
+# --- Add local changes below ---
