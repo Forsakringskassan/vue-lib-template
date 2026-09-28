@@ -93,10 +93,17 @@ export async function build({ buildTemplate }: BuildContext): Promise<void> {
         ],
     });
 
+    template.addParameter("code-repo-url", {
+        description: "URL to code repository",
+        required: true,
+        help: "Format: https://example.net/project/repo.git",
+        pattern: "https://.*.git",
+    });
+
     template.addParameter("docs-repo-url", {
         description: "URL to repository to deploy documentation to",
         defaultValue: "",
-        help: "Format: ssh://user@host/project/repo.git",
+        help: "Format: ssh://user@example.net:project/repo.git",
         required: false,
         pattern: "ssh://.*.git",
     });
