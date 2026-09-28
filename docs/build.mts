@@ -66,7 +66,13 @@ docs.compileScript("#apimock", "./src/bundle-mocks.ts", {
 });
 
 const mswUrl = new URL(import.meta.resolve("msw/mockServiceWorker.js"));
-docs.compileWorker("#mock-service-worker", mswUrl);
+docs.compileWorker("#mock-service-worker", mswUrl, {
+    /* this format must match `docs/src/bunde-mocks.ts`, we use iife over esm
+     * until we can properly deploy everywhere (when deployed internally the
+     * service worker refused to load due to a redirect 302), if this is changed
+     * make sure it runs when deployed internally */
+    format: "iife",
+});
 
 await docs.build([
     {
