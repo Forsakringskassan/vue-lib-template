@@ -6,5 +6,6 @@ import mocks from "../../src/mocks/index.mjs";
 const workerUrl = import.meta.resolve("#mock-service-worker");
 
 export const apimockReady = setupWorker(workerUrl, mocks, {
-    type: "module",
+    /* this format must match `docs/build.mts` */
+    type: "classic",
 });
