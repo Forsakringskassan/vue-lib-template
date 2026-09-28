@@ -70,7 +70,6 @@
     "start:docs": "npm start -w docs",
     "stylelint": "stylelint \"src/**/*.{css,scss,vue}\"",
     "stylelint:fix": "npm run stylelint -- --fix",
-    "pretest": "npm run lint",
     "test": "vitest run",
     "unit": "vitest run --no-coverage"
   },
