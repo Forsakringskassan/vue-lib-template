@@ -41,3 +41,7 @@ The `vue-lib-template` template repository, which this component library is base
 - [Mock registration](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/mocks/index.mts)
 
 When comparing your implementation with this example, focus on the separation between rendering, business logic, test selectors, mocks, and examples. The example is just a reference for structure.
+
+## When using the library
+
+The library build does not run [Autoprefixer](https://github.com/postcss/autoprefixer) through PostCSS. Consumers are expected to use it in their own build process to add the required browser prefixes.
