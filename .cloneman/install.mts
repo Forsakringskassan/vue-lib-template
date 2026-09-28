@@ -1,5 +1,18 @@
 import { type InstallContext } from "cloneman";
 
+async function updatePackagejson(context: InstallContext): Promise<void> {
+    const { getParameter, updateJsonFile } = context;
+
+    /* write repository url to "package.json" */
+    const repoUrl = getParameter("code-repo-url");
+    await updateJsonFile("package.json", {
+        repository: {
+            type: "git",
+            url: `git+${repoUrl}`,
+        },
+    });
+}
+
 async function enableDeployDocs(context: InstallContext): Promise<void> {
     const { getParameter, replaceInFile } = context;
     const url = getParameter("docs-repo-url");
@@ -13,6 +26,8 @@ async function enableDeployDocs(context: InstallContext): Promise<void> {
 export async function install(context: InstallContext): Promise<void> {
     const { getApplicationName, replaceInFile } = context;
     const scopedName = getApplicationName();
+
+    await updatePackagejson(context);
 
     /* update placeholder names with the real application name (from package.json) */
     const placeholder = /"@forsakringskassan\/vue-lib-template(\/[^"]+)?"/g;
