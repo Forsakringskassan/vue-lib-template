@@ -1,5 +1,7 @@
-# This file is managed by @forsakringskassan/vue-lib-template.
-# Changes will be overwritten!
+# This file is partially managed by @forsakringskassan/vue-lib-template.
+#
+# Place your own rules below the "Add local changes below" comment.
+# Rules above that line may be overwritten.
 
 # vite dev
 # /src/vite-dev/app.vue
@@ -25,3 +27,5 @@ test-results/
 *.njsproj
 *.sln
 *.sw?
+
+# --- Add local changes below ---
