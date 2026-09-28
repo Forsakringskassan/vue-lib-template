@@ -64,7 +64,7 @@ Use the repository scripts from the root of the project unless stated otherwise.
 | `npm run build:api`      | Update API Extractor reports for the public package surface.                    |
 | **`npm run build:docs`** | Build the documentation site into `docs/public/`.                               |
 | **`npm run start:docs`** | Serve the generated documentation site locally at `http://localhost:8080`.      |
-| **`npm test`**           | Run the full test command, including the configured pre-test checks.            |
+| **`npm test`**           | Run Vitest                                                                      |
 | **`npm run unit`**       | Run Vitest without coverage. Useful for a quick unit-test loop.                 |
 | **`npm run lint`**       | Run Prettier, ESLint, Stylelint, and HTML validation checks.                    |
 | **`npm run lint:fix`**   | Apply available automatic formatting and lint fixes. Review the resulting diff. |
