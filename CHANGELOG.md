@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## [1.5.2](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.5.1...v1.5.2) (2026-09-28)
+
+### Bug Fixes
+
+* **deps:** update @forsakringskassan/eslint-config monorepo ([858ec0b](https://github.com/Forsakringskassan/vue-lib-template/commit/858ec0b8a73362692be0352655728694df8a040f))
+* **deps:** update @forsakringskassan/eslint-config monorepo to v15.11.3 ([545b724](https://github.com/Forsakringskassan/vue-lib-template/commit/545b724968f2dd5a494de6552cdf39dd52382d15))
+* **deps:** update @forsakringskassan/eslint-config monorepo to v15.11.4 ([2fd19ec](https://github.com/Forsakringskassan/vue-lib-template/commit/2fd19eca9378285bef59090faa40d1e062b11716))
+* **deps:** update @forsakringskassan/eslint-config monorepo to v15.11.5 ([3615232](https://github.com/Forsakringskassan/vue-lib-template/commit/36152327f97101678f79d7d8f9d6b1338cbd83d3))
+* **deps:** update @forsakringskassan/prettier-config monorepo to v3.7.11 ([5f4eca9](https://github.com/Forsakringskassan/vue-lib-template/commit/5f4eca9fce5b950de234ad53545cb5d932ec2f84))
+* **deps:** update dependency @forsakringskassan/vite-lib-config to v5.12.5 ([d760009](https://github.com/Forsakringskassan/vue-lib-template/commit/d7600098867b35e0d38bf174031592c4643e9f3a))
+* **deps:** update dependency vite to v8.3.1 ([d834a15](https://github.com/Forsakringskassan/vue-lib-template/commit/d834a15b1d018d587d3ad04b9a4ef16d17ae388d))
+* **docs:** add missing template folder ([677ab32](https://github.com/Forsakringskassan/vue-lib-template/commit/677ab325bc01753d6af20f5064ebb34ef52a604c))
+
 ## [1.5.1](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.5.0...v1.5.1) (2026-09-25)
 
 ### Bug Fixes
