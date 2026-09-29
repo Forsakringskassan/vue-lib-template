@@ -47,7 +47,8 @@ The reference implementation shows this pattern in [FcCatInfoComponentLiveExampl
 
 See the [docs-live-example README](https://github.com/Forsakringskassan/docs-live-example/blob/main/README.md) for the implementation details behind interactive examples.
 
-A runnable example is part of the documentation contract, not optional decoration. Add at least one for every component and verify it through `npm run build:docs` and the local documentation server.
+A runnable example is part of the documentation contract, not optional decoration.
+Add at least one for every component and verify it through `npm run build` and the local documentation server.
 
 ## Explain usage and constraints
 
