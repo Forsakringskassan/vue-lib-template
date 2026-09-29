@@ -55,25 +55,24 @@ Refer to [FcCatInfoComponent.vue](https://github.com/Forsakringskassan/vue-lib-t
 
 Use the repository scripts from the root of the project unless stated otherwise. The most important commands for daily development are marked in **bold**.
 
-| Command                  | Use it for                                                                      |
-| ------------------------ | ------------------------------------------------------------------------------- |
-| **`npm start`**          | Start the Vite development server using `src/vite-dev/app.vue`.                 |
-| **`npm run build`**      | Build the library, declaration files, API reports, and the Cloneman template.   |
-| `npm run build:lib`      | Build the distributable JavaScript and CSS library bundle.                      |
-| `npm run build:dts`      | Check and emit TypeScript declaration files.                                    |
-| `npm run build:api`      | Update API Extractor reports for the public package surface.                    |
-| **`npm run build:docs`** | Build the documentation site into `docs/public/`.                               |
-| **`npm run start:docs`** | Serve the generated documentation site locally at `http://localhost:8080`.      |
-| **`npm test`**           | Run Vitest                                                                      |
-| **`npm run unit`**       | Run Vitest without coverage. Useful for a quick unit-test loop.                 |
-| **`npm run lint`**       | Run Prettier, ESLint, Stylelint, and HTML validation checks.                    |
-| **`npm run lint:fix`**   | Apply available automatic formatting and lint fixes. Review the resulting diff. |
-| `npm run prettier:check` | Check formatting without changing files.                                        |
-| `npm run prettier:write` | Format supported files.                                                         |
-| `npm run eslint`         | Run ESLint with its cache.                                                      |
-| `npm run stylelint`      | Check styles in `src/**/*.css` and `src/**/*.scss`.                             |
-| `npm run html-validate`  | Validate HTML, Vue files, and Markdown examples.                                |
-| `npm run clean`          | Remove generated `dist/` and `temp/` files.                                     |
+| Command                  | Use it for                                                                                  |
+| ------------------------ | ------------------------------------------------------------------------------------------- |
+| **`npm start`**          | Start the Vite development server using `src/vite-dev/app.vue`.                             |
+| **`npm run build`**      | Build the library, declaration files, API reports, documentation and the Cloneman template. |
+| `npm run build:lib`      | Build the distributable JavaScript and CSS library bundle.                                  |
+| `npm run build:dts`      | Check and emit TypeScript declaration files.                                                |
+| `npm run build:api`      | Update API Extractor reports for the public package surface.                                |
+| **`npm run start:docs`** | Serve the generated documentation site locally at `http://localhost:8080`.                  |
+| **`npm test`**           | Run Vitest                                                                                  |
+| **`npm run unit`**       | Run Vitest without coverage. Useful for a quick unit-test loop.                             |
+| **`npm run lint`**       | Run Prettier, ESLint, Stylelint, and HTML validation checks.                                |
+| **`npm run lint:fix`**   | Apply available automatic formatting and lint fixes. Review the resulting diff.             |
+| `npm run prettier:check` | Check formatting without changing files.                                                    |
+| `npm run prettier:write` | Format supported files.                                                                     |
+| `npm run eslint`         | Run ESLint with its cache.                                                                  |
+| `npm run stylelint`      | Check styles in `src/**/*.css` and `src/**/*.scss`.                                         |
+| `npm run html-validate`  | Validate HTML, Vue files, and Markdown examples.                                            |
+| `npm run clean`          | Remove generated `dist/` and `temp/` files.                                                 |
 
 ## Running examples
 
@@ -103,7 +102,7 @@ Restart the development server after changing the value in an env file.
 Documentation is maintained in `docs/` and generated with [`@forsakringskassan/docs-generator`](https://forsakringskassan.github.io/docs-generator/latest/). A typical local workflow is:
 
 ```bash
-npm run build:docs
+npm run build
 npm run start:docs
 ```
 
