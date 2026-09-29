@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## [1.6.0](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.5.2...v1.6.0) (2026-09-29)
+
+### Features
+
+* build docs during regular build ([aa95e4a](https://github.com/Forsakringskassan/vue-lib-template/commit/aa95e4a6c129dcda048161c4fd0548baba6b3e88))
+* make cat API endpoint configurable via env ([b14a635](https://github.com/Forsakringskassan/vue-lib-template/commit/b14a63595ae9d38a3e3b79f1b9e2cbed724f16c6))
+
+### Bug Fixes
+
+* add `code-repo-url` parameter mapped to `repository` in `package.json` ([a740daf](https://github.com/Forsakringskassan/vue-lib-template/commit/a740daf193183612543923f2ef8b87b348575323))
+* **deps:** update dependency @forsakringskassan/docs-generator to v3.13.0 ([8ab7ea1](https://github.com/Forsakringskassan/vue-lib-template/commit/8ab7ea15420c3aa59e73e2f8ce9fc8fe9ccadf62))
+* **deps:** update dependency @forsakringskassan/docs-generator to v3.14.0 ([ba01830](https://github.com/Forsakringskassan/vue-lib-template/commit/ba01830516060425bbd97d5aae5fcf3acc1d6f78))
+* **deps:** update dependency @types/node to v24.19.0 ([bf6283f](https://github.com/Forsakringskassan/vue-lib-template/commit/bf6283fe8ab47129e55701465707f31dae9b6dfd))
+* **deps:** update dependency vitest to v5.0.2 ([222717a](https://github.com/Forsakringskassan/vue-lib-template/commit/222717a4f053520e3381bec701609e072a8f42cd))
+* partially ignore files (refs SFKUI-8275) ([ed6f25f](https://github.com/Forsakringskassan/vue-lib-template/commit/ed6f25fc2b1ef520caad32ed264fa961f10ec081))
+* revert to using iife/classical worker instead of esm/module ([6037a66](https://github.com/Forsakringskassan/vue-lib-template/commit/6037a6631a38692db9bceee6e61b3781a9c92d1e))
+
 ## [1.5.2](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.5.1...v1.5.2) (2026-09-28)
 
 ### Bug Fixes
