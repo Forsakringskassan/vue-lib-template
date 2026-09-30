@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## [1.6.1](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.6.0...v1.6.1) (2026-09-30)
+
+### Bug Fixes
+
+* **deps:** update [@fkui](https://github.com/fkui) packages to v6.60.0 ([9bf2717](https://github.com/Forsakringskassan/vue-lib-template/commit/9bf2717b162df81465d9bdcdd9f1cc146484b738))
+* **deps:** update dependency @forsakringskassan/docs-generator to v3.15.0 ([34e0819](https://github.com/Forsakringskassan/vue-lib-template/commit/34e08199d897afe7164ab177179b4d7137b1324a))
+* **deps:** update dependency cloneman to v1.26.0 ([203b649](https://github.com/Forsakringskassan/vue-lib-template/commit/203b6491035ec1646b24ce36e2e70f0a6522ecaf))
+* **deps:** update dependency html-validate to v11.16.1 ([c775c5f](https://github.com/Forsakringskassan/vue-lib-template/commit/c775c5f2565e5db4d199048e81a6de6263524b82))
+
 ## [1.6.0](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.5.2...v1.6.0) (2026-09-29)
 
 ### Features
