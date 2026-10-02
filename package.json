@@ -121,7 +121,7 @@
     "@vue/test-utils": "2.5.1",
     "cloneman": "1.26.0",
     "core-js": "3.50.0",
-    "cypress": "16.1.0",
+    "cypress": "16.1.1",
     "html-validate": "11.16.1",
     "html-validate-markdown": "6.0.0",
     "html-validate-vue": "9.3.1",
