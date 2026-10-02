@@ -1,5 +1,5 @@
 import { defineMock } from "@forsakringskassan/apimock-express/helpers";
-import { cats } from "../../components/guide/FcCatInfo/cat-data.ts";
+import { cats } from "../../components/guide/FcCatInfo/cat-data.mts";
 import type { Cat } from "../../components/guide/FcCatInfo/cat-types.ts";
 
 export default defineMock<Cat | { error: string }>({
