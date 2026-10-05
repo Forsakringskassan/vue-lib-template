@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import FcCatInfoComponent from "../FcCatInfoComponent.vue";
+import FcCatInfo from "../cat-info.vue";
 
 const selectedCatId = ref("whiskers-001");
 const isEditable = ref(false);
@@ -8,7 +8,7 @@ const isEditable = ref(false);
 
 <template>
     <div class="cat-example__component">
-        <fc-cat-info-component :cat-id="selectedCatId" :is-editable />
+        <fc-cat-info :cat-id="selectedCatId" :is-editable />
     </div>
 </template>
 

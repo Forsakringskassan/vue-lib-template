@@ -15,7 +15,7 @@ Put the component page in `docs/components/` and give it the same base name as t
 title: Cat information
 status: Draft
 layout: component
-component: FcCatInfoComponent
+component: FcCatInfo
 ---
 ```
 
@@ -29,21 +29,21 @@ A standard runnable example is included with an `import` fence:
 
 ````md
 ```import
-CatInfoExample.vue
+my-component-example.vue
 ```
 ````
 
-The corresponding example is [`FcCatInfoComponentExample.vue`](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/FcCatInfo/examples/FcCatInfoComponentExample.vue). Keep the example focused on a realistic use case and make its initial state useful without extra setup.
+The corresponding example is [`cat-info-example.vue`](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/examples/cat-info-example.vue). Keep the example focused on a realistic use case and make its initial state useful without extra setup.
 
-Prefer a live example when the documentation needs interactive controls or a richer demonstration. Include a file ending in `LiveExample.vue` with the `live-example` variant:
+Prefer a live example when the documentation needs interactive controls or a richer demonstration. Include a kebab-case file ending in `-live-example.vue` with the `live-example` variant:
 
 ````md
 ```import live-example
-FcCatInfoComponentLiveExample.vue
+cat-info-live-example.vue
 ```
 ````
 
-The reference implementation shows this pattern in [FcCatInfoComponentLiveExample.vue](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/FcCatInfo/examples/FcCatInfoComponentLiveExample.vue) and its [documentation page](https://github.com/Forsakringskassan/vue-lib-template/blob/main/docs/guide/index.md).
+The reference implementation shows this pattern in [cat-info-live-example.vue](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/examples/cat-info-live-example.vue) and its [documentation page](https://github.com/Forsakringskassan/vue-lib-template/blob/main/docs/guide/cat-info.md).
 
 See the [docs-live-example README](https://github.com/Forsakringskassan/docs-live-example/blob/main/README.md) for the implementation details behind interactive examples.
 
@@ -70,10 +70,10 @@ Add the Vue API block for every component page:
 ## API
 
 ::: api
-vue:FcCatInfoComponent
+vue:cat-info
 :::
 ```
 
-The component name must match the Vue component passed to the generator. Public props, events, slots, and documented types are extracted from the component source and its declarations. Keep public API comments accurate because they are part of the generated documentation.
+The component name must match the Vue SFC's base filename. Public props, events, slots, and documented types are extracted from the component source and its declarations. Keep public API comments accurate because they are part of the generated documentation.
 
 If the component has translation keys, add the corresponding translation API block. Do not add empty sections for features the component does not use.

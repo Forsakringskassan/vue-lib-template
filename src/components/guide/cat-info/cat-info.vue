@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { ref, watch } from "vue";
 import { FCard, FLoader } from "@fkui/vue";
-import CatInfoEdit from "./CatInfoEdit.vue";
-import CatInfoShow from "./CatInfoShow.vue";
+import CatInfoEdit from "./cat-info-edit.vue";
 import { useCatInfo } from "./cat-info-logic.js";
+import CatInfoShow from "./cat-info-show.vue";
 import { type Cat } from "./cat-types.js";
 
 interface Props {

@@ -10,7 +10,7 @@ Use Vitest for composables, business rules, data transformations. Keep these tes
 
 Run tests with `npm run unit`.
 
-The cat information logic is tested in [`cat-info-logic.spec.ts`](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/FcCatInfo/cat-info-logic.spec.ts). It mocks the API module and verifies loading, successful data, errors, and updates:
+The cat information logic is tested in [`cat-info-logic.spec.ts`](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/cat-info-logic.spec.ts). It mocks the API module and verifies loading, successful data, errors, and updates:
 
 ```ts
 import { expect, it, vi } from "vitest";
@@ -71,7 +71,7 @@ See the [apimock-express README](https://github.com/Forsakringskassan/apimock-ex
 
 ## Cypress component tests
 
-Use Cypress for user-visible component behavior: rendering, loading states, form interaction, emitted actions, error states, and accessibility-related behavior. The current example is [`FcCatInfoComponent.cy.ts`](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/FcCatInfo/FcCatInfoComponent.cy.ts).
+Use Cypress for user-visible component behavior: rendering, loading states, form interaction, emitted actions, error states, and accessibility-related behavior. The current example is [`cat-info.cy.ts`](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/cat-info.cy.ts).
 
 The current package does not define a dedicated Cypress npm script, so run Cypress through `npx`:
 
@@ -81,7 +81,7 @@ The current package does not define a dedicated Cypress npm script, so run Cypre
 Mount the component with realistic props and wait for state changes through visible behavior:
 
 ```ts
-cy.mount(FcCatInfoComponent, {
+cy.mount(FcCatInfo, {
     props: {
         catId: testCat.id,
         isEditable: false,
@@ -96,7 +96,7 @@ Do not use arbitrary timeouts to wait for the API. Assert on a loading element, 
 
 ### Selectors
 
-Keep reusable selectors in a `selectors/` file instead of scattering CSS selectors through specs. The [`FcCatInfoComponent` selector helper](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/selectors/guide/FcCatInfoComponent.selectors.ts) uses [`data-test`](https://designsystem.forsakringskassan.se/latest/functions/plugins/testplugin.html) attributes and supports scoping a component instance.
+Keep reusable selectors in a `selectors/` file instead of scattering CSS selectors through specs. The [`FcCatInfoSelectors` helper](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/selectors/guide/cat-info.selectors.ts) uses [`data-test`](https://designsystem.forsakringskassan.se/latest/functions/plugins/testplugin.html) attributes and supports scoping a component instance.
 
 Selectors should describe stable test targets.
 

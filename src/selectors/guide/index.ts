@@ -1,1 +1,1 @@
-export { FcCatInfoComponentSelectors } from "./FcCatInfoComponent.selectors";
+export { FcCatInfoSelectors } from "./cat-info.selectors";

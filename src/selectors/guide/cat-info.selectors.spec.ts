@@ -1,12 +1,12 @@
 import { TestPlugin, ValidationPlugin } from "@fkui/vue";
 import { mount } from "@vue/test-utils";
 import { beforeEach, expect, it, vi } from "vitest";
-import FcCatInfoComponent from "../../components/guide/FcCatInfo/FcCatInfoComponent.vue";
-import { catGetById } from "../../components/guide/FcCatInfo/cat-api";
-import { cats } from "../../components/guide/FcCatInfo/cat-data";
-import { FcCatInfoComponentSelectors } from "./FcCatInfoComponent.selectors";
+import { catGetById } from "../../components/guide/cat-info/cat-api";
+import { cats } from "../../components/guide/cat-info/cat-data";
+import FcCatInfo from "../../components/guide/cat-info/cat-info.vue";
+import { FcCatInfoSelectors } from "./cat-info.selectors";
 
-vi.mock(import("../../components/guide/FcCatInfo/cat-api"));
+vi.mock(import("../../components/guide/cat-info/cat-api"));
 
 beforeEach(() => {
     vi.mocked(catGetById).mockResolvedValue(cats[0]);
@@ -14,10 +14,10 @@ beforeEach(() => {
 
 it("should use the default selector", () => {
     expect.assertions(2);
-    const wrapper = mount(FcCatInfoComponent, {
+    const wrapper = mount(FcCatInfo, {
         props: { catId: cats[0].id },
     });
-    const { selector } = FcCatInfoComponentSelectors();
+    const { selector } = FcCatInfoSelectors();
 
     expect(selector).toBe(":scope");
     expect(wrapper.find(selector).exists()).toBe(true);
@@ -25,13 +25,11 @@ it("should use the default selector", () => {
 
 it("should find the component with an explicit selector", () => {
     expect.assertions(2);
-    const wrapper = mount(FcCatInfoComponent, {
+    const wrapper = mount(FcCatInfo, {
         attrs: { "data-test": "my-cat-info" },
         props: { catId: cats[0].id },
     });
-    const { selector } = FcCatInfoComponentSelectors(
-        '[data-test="my-cat-info"]',
-    );
+    const { selector } = FcCatInfoSelectors('[data-test="my-cat-info"]');
 
     expect(selector).toBe('[data-test="my-cat-info"]');
     expect(wrapper.find(selector).exists()).toBe(true);
@@ -39,10 +37,10 @@ it("should find the component with an explicit selector", () => {
 
 it("should find the loading container", () => {
     expect.assertions(1);
-    const wrapper = mount(FcCatInfoComponent, {
+    const wrapper = mount(FcCatInfo, {
         props: { catId: cats[0].id },
     });
-    const { loadingContainer } = FcCatInfoComponentSelectors();
+    const { loadingContainer } = FcCatInfoSelectors();
 
     expect(wrapper.get(loadingContainer()).text()).toContain(
         "Hämtar kattinformation...",
@@ -51,10 +49,10 @@ it("should find the loading container", () => {
 
 it("should find all view mode elements", async () => {
     expect.assertions(5);
-    const wrapper = mount(FcCatInfoComponent, {
+    const wrapper = mount(FcCatInfo, {
         props: { catId: cats[0].id, isEditable: false },
     });
-    const selectors = FcCatInfoComponentSelectors();
+    const selectors = FcCatInfoSelectors();
 
     await vi.waitFor(() => {
         if (!wrapper.find(selectors.viewContainer()).exists()) {
@@ -72,13 +70,13 @@ it("should find all view mode elements", async () => {
 
 it("should find all edit mode inputs", async () => {
     expect.assertions(6);
-    const wrapper = mount(FcCatInfoComponent, {
+    const wrapper = mount(FcCatInfo, {
         props: { catId: cats[0].id, isEditable: true },
         global: {
             plugins: [TestPlugin, ValidationPlugin],
         },
     });
-    const selectors = FcCatInfoComponentSelectors();
+    const selectors = FcCatInfoSelectors();
 
     await vi.waitFor(() => {
         if (!wrapper.find(selectors.editContainer()).exists()) {

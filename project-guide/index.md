@@ -31,12 +31,12 @@ Here are the most important locations you need to know:
 
 The `vue-lib-template` template repository, which this component library is based on, contains a small cat information component that demonstrates the recommended structure. It is useful as a starting point when creating a new component:
 
-- [Component](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/FcCatInfo/FcCatInfoComponent.vue)
-- [Runnable example](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/FcCatInfo/examples/FcCatInfoComponentExample.vue)
-- [Live-example](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/FcCatInfo/examples/FcCatInfoComponentLiveExample.vue)
-- [Unit tests](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/FcCatInfo/cat-info-logic.spec.ts)
-- [Cypress component tests](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/FcCatInfo/FcCatInfoComponent.cy.ts)
-- [Cypress selectors](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/selectors/guide/FcCatInfoComponent.selectors.ts)
+- [Component](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/cat-info.vue)
+- [Runnable example](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/examples/cat-info-example.vue)
+- [Live example](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/examples/cat-info-live-example.vue)
+- [Unit tests](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/cat-info-logic.spec.ts)
+- [Cypress component tests](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/cat-info.cy.ts)
+- [Cypress selectors](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/selectors/guide/cat-info.selectors.ts)
 - [API mock](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/mocks/guide/cat-api.mock.mts)
 - [Mock registration](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/mocks/index.mts)
 
