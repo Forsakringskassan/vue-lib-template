@@ -1,6 +1,6 @@
 import { defineMock } from "@forsakringskassan/apimock-express/helpers";
-import { cats } from "../../components/guide/FcCatInfo/cat-data.ts";
-import type { Cat } from "../../components/guide/FcCatInfo/cat-types.ts";
+import { cats } from "../../components/guide/cat-info/cat-data.ts";
+import type { Cat } from "../../components/guide/cat-info/cat-types.ts";
 
 export default defineMock<Cat | { error: string }>({
     meta: {

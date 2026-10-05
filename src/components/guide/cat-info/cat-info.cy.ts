@@ -1,15 +1,15 @@
 import { FLoaderSelectors } from "@fkui/vue/selectors";
-import { FcCatInfoComponentSelectors } from "../../../selectors/guide/FcCatInfoComponent.selectors";
-import FcCatInfoComponent from "./FcCatInfoComponent.vue";
+import { FcCatInfoSelectors } from "../../../selectors/guide/cat-info.selectors";
 import { cats } from "./cat-data";
+import FcCatInfo from "./cat-info.vue";
 
-describe("FcCatInfoComponent", () => {
+describe("FcCatInfo", () => {
     const testCat = cats[0];
-    const catInfoSelectors = FcCatInfoComponentSelectors();
+    const catInfoSelectors = FcCatInfoSelectors();
     const loaderSelectors = FLoaderSelectors();
 
     it("verifies loading text", () => {
-        cy.mount(FcCatInfoComponent, {
+        cy.mount(FcCatInfo, {
             props: {
                 catId: testCat.id,
             },
@@ -23,7 +23,7 @@ describe("FcCatInfoComponent", () => {
     });
 
     it("verifies all fields in view mode have correct data", () => {
-        cy.mount(FcCatInfoComponent, {
+        cy.mount(FcCatInfo, {
             props: {
                 catId: testCat.id,
                 isEditable: false,
@@ -44,7 +44,7 @@ describe("FcCatInfoComponent", () => {
     });
 
     it("verifies all fields in edit mode have correct data", () => {
-        cy.mount(FcCatInfoComponent, {
+        cy.mount(FcCatInfo, {
             props: {
                 catId: testCat.id,
                 isEditable: true,

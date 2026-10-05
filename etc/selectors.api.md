@@ -5,7 +5,7 @@
 ```ts
 
 // @public
-export function FcCatInfoComponentSelectors(selector?: string): Readonly<{
+export function FcCatInfoSelectors(selector?: string): Readonly<{
     readonly selector: string;
     loadingContainer(): string;
     viewContainer(): string;

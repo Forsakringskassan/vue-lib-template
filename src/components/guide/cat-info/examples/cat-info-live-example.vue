@@ -2,11 +2,11 @@
 import { defineComponent } from "vue";
 import { FCheckboxField, FSelectField } from "@fkui/vue";
 import { LiveExample } from "@forsakringskassan/docs-live-example";
-import FcCatInfoComponent from "../FcCatInfoComponent.vue";
 import { getCatIds } from "../cat-data.js";
+import FcCatInfo from "../cat-info.vue";
 
 export default defineComponent({
-    name: "FcCatInfoComponentLiveExample",
+    name: "FcCatInfoLiveExample",
     components: { LiveExample, FSelectField, FCheckboxField },
     data() {
         return {
@@ -17,14 +17,14 @@ export default defineComponent({
     },
     computed: {
         components(): object {
-            return { FcCatInfoComponent };
+            return { FcCatInfo };
         },
         editableAttr(): string {
             return this.isEditable ? " is-editable" : "";
         },
         template(): string {
             return /* HTML */ `
-                <fc-cat-info-component cat-id="${this.selectedCatId}" ${this.editableAttr} />
+                <fc-cat-info cat-id="${this.selectedCatId}" ${this.editableAttr} />
             `;
         },
     },

@@ -11,24 +11,24 @@ To get up and running quickly:
 
 ## Architecture: Three Layers
 
-We recommend separating Appearance, Logic, and Types into three distinct layers to keep the codebase maintainable. You can find an example component, [`FcCatInfoComponent`](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/FcCatInfo/FcCatInfoComponent.vue), which demonstrates how this structure can be applied in practice:
+We recommend separating Appearance, Logic, and Types into three distinct layers to keep the codebase maintainable. You can find an example component, [`FcCatInfo`](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/cat-info.vue), which demonstrates how this structure can be applied in practice:
 
 ### 1. Type Layer
 
-In the example [cat-types.ts](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/FcCatInfo/cat-types.ts), we define _what_ the data is using TypeScript interfaces.
+In the example [cat-types.ts](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/cat-types.ts), we define _what_ the data is using TypeScript interfaces.
 
 - **Why?** It ensures that both the logic and the component know exactly which fields (e.g., `name`, `age`) exist.
 
 ### 2. Logic Layer
 
-In the example [cat-info-logic.ts](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/FcCatInfo/cat-info-logic.ts), we create a so-called "composable" (a function that starts with `use...`, e.g., `useCatInfo`).
+In the example [cat-info-logic.ts](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/cat-info-logic.ts), we create a so-called "composable" (a function that starts with `use...`, e.g., `useCatInfo`).
 
 - This is where we handle API calls, state (loading, error), and calculations.
 - **Why?** It makes the logic easy to test with Vitest without needing to start a full browser.
 
 ### 3. UI Layer
 
-Refer to [FcCatInfoComponent.vue](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/FcCatInfo/FcCatInfoComponent.vue) for the actual Vue component. This should be "thin".
+Refer to [cat-info.vue](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/cat-info.vue) for the actual Vue component. This should be "thin".
 
 - It imports the logic from `useCatInfo`.
 - It uses components from `@fkui/vue` (such as `FCard` or `FLoader`) to follow the design system.
@@ -36,19 +36,19 @@ Refer to [FcCatInfoComponent.vue](https://github.com/Forsakringskassan/vue-lib-t
 
 ## Implementation Flow
 
-1. **Create the files**: Create `MyComponent.vue`, `my-component-logic.ts`, and `my-component-types.ts`.
+1. **Create the files**: Create `my-component.vue`, `my-component-logic.ts`, and `my-component-types.ts`.
 2. **Implement logic**: Create your `useMyComponent` function and export it.
 3. **Build UI**: Import the logic into the `.vue` file and connect variables to the template.
 4. **Export**: Open `src/components/index.ts` and add:
 
     ```typescript
-    export { default as MyComponent } from "./MyComponent.vue";
+    export { default as FcMyComponent } from "./my-component.vue";
     ```
 
 ## Styling
 
 - For small amounts of styling, it is perfectly fine to use `<style lang="scss"></style>` directly within the `.vue` file.
-- For more extensive styles, create a dedicated SCSS file for the component (e.g., `MyComponent.scss`) and import it in the `.vue` file.
+- For more extensive styles, create a dedicated SCSS file for the component (e.g., `my-component.scss`) and import it in the `.vue` file.
 - Use `style.scss` for styles that should apply to the entire library.
 
 ## Common commands
@@ -82,7 +82,7 @@ You can run a specific example file directly by passing a name to the start comm
 npm start catinfo
 ```
 
-This uses fuzzy search to find and start the best matching file in `src/examples/` (e.g., `CatInfoExample.vue`).
+This uses fuzzy search to find and start the best matching file in `src/examples/` (e.g., `cat-info-example.vue`).
 
 ## API URL configuration
 

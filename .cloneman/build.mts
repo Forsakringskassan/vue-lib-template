@@ -17,6 +17,7 @@ export async function build({ buildTemplate }: BuildContext): Promise<void> {
             "cypress/types/**",
             "cypress.config.ts",
             "docs/build.mts",
+            "docs/guide/**",
             "docs/package.json",
             "docs/src/**",
             "docs/templates/**",
@@ -26,6 +27,9 @@ export async function build({ buildTemplate }: BuildContext): Promise<void> {
             "LICENSE.md",
             "README.md",
             "renovate.json",
+            "src/components/guide/**",
+            "src/mocks/guide/**",
+            "src/selectors/guide/**",
             "tsconfig.cypress.json",
             "tsconfig.json",
             "tsconfig.lib.json",
@@ -99,6 +103,12 @@ export async function build({ buildTemplate }: BuildContext): Promise<void> {
             "src/AwesomeComponent.vue",
             "src/AwesomeComponentLogic.spec.ts",
             "src/awesome-component-logic.ts",
+
+            /* guide folders are continously replaced */
+            "docs/guide/**",
+            "src/components/guide/**",
+            "src/mocks/guide/**",
+            "src/selectors/guide/**",
         ],
         uninstallDependencies: [
             /* bundled in @forsakringskassan/cypress-config */
