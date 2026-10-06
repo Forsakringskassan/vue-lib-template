@@ -1,5 +1,29 @@
 # CHANGELOG
 
+## [1.6.2](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.6.1...v1.6.2) (2026-10-06)
+
+### Bug Fixes
+
+* **deps:** update @forsakringskassan/eslint-config monorepo ([0b4dbfd](https://github.com/Forsakringskassan/vue-lib-template/commit/0b4dbfdf65e7eb3a862148478283cccda25fa393))
+* **deps:** update @forsakringskassan/eslint-config monorepo to v15.11.10 ([a81c89d](https://github.com/Forsakringskassan/vue-lib-template/commit/a81c89d5f3c880843d4bd34b96d3cfaa2fd1bf50))
+* **deps:** update @forsakringskassan/eslint-config monorepo to v15.11.11 ([2a721ce](https://github.com/Forsakringskassan/vue-lib-template/commit/2a721ce6d769990c5b433f490e0ffa31a4d7adf3))
+* **deps:** update @forsakringskassan/eslint-config monorepo to v15.11.12 ([04df8b3](https://github.com/Forsakringskassan/vue-lib-template/commit/04df8b3ee0e55b2c0d87484bc650fee7bc94036c))
+* **deps:** update @forsakringskassan/eslint-config monorepo to v15.11.9 ([1d32855](https://github.com/Forsakringskassan/vue-lib-template/commit/1d3285518d3d8801bdd4cd6e55ff20dd67daa8b0))
+* **deps:** update @forsakringskassan/vitest-config monorepo to v5.0.1 ([1667132](https://github.com/Forsakringskassan/vue-lib-template/commit/16671321deff4183a626dba40c1ea284324ee8fe))
+* **deps:** update cypress-io/github-action action to v7.4.5 ([81fe7b0](https://github.com/Forsakringskassan/vue-lib-template/commit/81fe7b0e5e9c88127c0cccc98f75191bbf89cde4))
+* **deps:** update cypress-io/github-action action to v7.4.6 ([579211e](https://github.com/Forsakringskassan/vue-lib-template/commit/579211e3984c8679646f07b5328bd3c5dab51bb6))
+* **deps:** update dependency @forsakringskassan/docs-generator to v3.15.1 ([b84c16b](https://github.com/Forsakringskassan/vue-lib-template/commit/b84c16bc788652138ec803c1495f3b595207984e))
+* **deps:** update dependency @forsakringskassan/docs-generator to v3.15.2 ([05ce023](https://github.com/Forsakringskassan/vue-lib-template/commit/05ce02368850f7f0969a926d89b1cb86b0dea887))
+* **deps:** update dependency @forsakringskassan/docs-generator to v3.16.0 ([66d9125](https://github.com/Forsakringskassan/vue-lib-template/commit/66d9125e122c98302768e238b3fa2d6dcd2d82d6))
+* **deps:** update dependency @forsakringskassan/docs-live-example to v3.0.3 ([867a7ef](https://github.com/Forsakringskassan/vue-lib-template/commit/867a7ef043a7d511553944a4d18bbb68746b6806))
+* **deps:** update dependency @forsakringskassan/stylelint-config to v3.5.1 ([58f157c](https://github.com/Forsakringskassan/vue-lib-template/commit/58f157c012964261e9bdf9ff6e3ba1fa0effe878))
+* **deps:** update dependency @forsakringskassan/vite-lib-config to v5.13.0 ([a9f3705](https://github.com/Forsakringskassan/vue-lib-template/commit/a9f3705eab92a4206d0ed8eed65dae1393a8cc70))
+* **deps:** update dependency @types/node to v24.19.1 ([228654e](https://github.com/Forsakringskassan/vue-lib-template/commit/228654e7fcdf6a5359a9fd568cd5e951b2a8fe41))
+* **deps:** update dependency cypress to v16.1.1 ([7a233dc](https://github.com/Forsakringskassan/vue-lib-template/commit/7a233dc992e0cb9d5c46a7bc4da0a91b296ceff4))
+* **deps:** update dependency vite to v8.3.2 ([a3f7bf4](https://github.com/Forsakringskassan/vue-lib-template/commit/a3f7bf48c30492947bdd17355d1b150e4cdd648e))
+* **deps:** update dependency vitest to v5.0.3 ([3dd5303](https://github.com/Forsakringskassan/vue-lib-template/commit/3dd5303c3e7b3d561e92594fa0bb181683b369bc))
+* **deps:** update dependency vue-tsc to v3.3.12 ([6a333f8](https://github.com/Forsakringskassan/vue-lib-template/commit/6a333f86da55bc3d712170259353c2ae0207126c))
+
 ## [1.6.1](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.6.0...v1.6.1) (2026-09-30)
 
 ### Bug Fixes
