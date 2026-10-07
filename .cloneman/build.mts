@@ -84,6 +84,7 @@ export async function build({ buildTemplate }: BuildContext): Promise<void> {
             "project.code-workspace", // replaced with .vscode folder
             "tsconfig-consumer.json", // replaced by @fkui/tsconfig
             "vite.config.ts", // replaced by vite.config.mts
+            "src/vite-dev/app.vue", // npm start uses default entry from @forsakringskassan/vite-lib-config
 
             /* obsolete cypress configuration files */
             "cypress/support/commands/forced-colors.ts",
