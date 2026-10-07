@@ -122,7 +122,7 @@
     "cloneman": "1.27.1",
     "core-js": "3.50.0",
     "cypress": "16.1.1",
-    "html-validate": "11.16.1",
+    "html-validate": "11.16.2",
     "html-validate-markdown": "6.0.0",
     "html-validate-vue": "9.3.1",
     "mocha-junit-reporter": "2.2.1",
