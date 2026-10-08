@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.7.3](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.7.2...v1.7.3) (2026-10-08)
+
+### Bug Fixes
+
+* **deps:** update ext/npm-pkg-lint action to v5.4.0 ([e3dcbb1](https://github.com/Forsakringskassan/vue-lib-template/commit/e3dcbb1f95801d16328daef32e0a00c1587143e7))
+
 ## [1.7.2](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.7.1...v1.7.2) (2026-10-08)
 
 ### Bug Fixes
