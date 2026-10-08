@@ -2,8 +2,7 @@
 import { defineComponent } from "vue";
 import { FCheckboxField, FSelectField } from "@fkui/vue";
 import { LiveExample } from "@forsakringskassan/docs-live-example";
-import { getCatIds } from "../cat-data.js";
-import FcCatInfo from "../cat-info.vue";
+import { FcCatInfo } from "@forsakringskassan/vue-lib-template";
 
 export default defineComponent({
     name: "FcCatInfoLiveExample",
@@ -12,7 +11,6 @@ export default defineComponent({
         return {
             selectedCatId: "whiskers-001",
             isEditable: false,
-            catIds: getCatIds(),
         };
     },
     computed: {
