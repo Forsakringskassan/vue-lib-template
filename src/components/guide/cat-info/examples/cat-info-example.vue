@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import FcCatInfo from "../cat-info.vue";
+import { FcCatInfo } from "@forsakringskassan/vue-lib-template";
 
 const selectedCatId = ref("whiskers-001");
 const isEditable = ref(false);

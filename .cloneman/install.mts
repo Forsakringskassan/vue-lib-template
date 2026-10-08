@@ -38,6 +38,16 @@ export async function install(context: InstallContext): Promise<void> {
     await replaceInFile("tsconfig.lib.json", placeholder, quotedName);
     await replaceInFile("tsconfig.cypress.json", placeholder, quotedName);
     await replaceInFile("tsconfig.selectors.json", placeholder, quotedName);
+    await replaceInFile(
+        "src/components/guide/cat-info/examples/cat-info-example.vue",
+        placeholder,
+        quotedName,
+    );
+    await replaceInFile(
+        "src/components/guide/cat-info/examples/cat-info-live-example.vue",
+        placeholder,
+        quotedName,
+    );
 
     /* enable deployment of documentation if a documentation url is provided */
     await enableDeployDocs(context);
