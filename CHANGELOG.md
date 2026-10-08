@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [1.7.1](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.7.0...v1.7.1) (2026-10-08)
+
+### Bug Fixes
+
+* update example lib import ([9e4d239](https://github.com/Forsakringskassan/vue-lib-template/commit/9e4d2396c12992943a652b529df5e1c138ed3a30))
+* update example unit tests ([3cd420c](https://github.com/Forsakringskassan/vue-lib-template/commit/3cd420cb5eea35b580bd439e92625336557f0da7))
+
 ## [1.7.0](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.6.3...v1.7.0) (2026-10-08)
 
 ### Features
