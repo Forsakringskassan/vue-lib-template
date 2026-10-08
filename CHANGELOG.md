@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## [1.6.3](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.6.2...v1.6.3) (2026-10-08)
+
+### Bug Fixes
+
+* **deps:** update [@fkui](https://github.com/fkui) packages to v6.61.0 ([928478f](https://github.com/Forsakringskassan/vue-lib-template/commit/928478f2603851890fd76e839f0ceeed63245bc5))
+* **deps:** update dependency @forsakringskassan/docs-generator to v3.17.0 ([16d26de](https://github.com/Forsakringskassan/vue-lib-template/commit/16d26deb69870f0dd658c031c5dabc511d1cb2ac))
+* **deps:** update dependency @forsakringskassan/docs-generator to v3.18.0 ([87297cf](https://github.com/Forsakringskassan/vue-lib-template/commit/87297cf127997c5047f5cc0723871ffbad588142))
+* **deps:** update dependency cloneman to v1.27.1 ([fc4c733](https://github.com/Forsakringskassan/vue-lib-template/commit/fc4c733d1685b5e3f095fb1b733ccbfb42575468))
+* **deps:** update dependency html-validate to v11.16.2 ([0dca63a](https://github.com/Forsakringskassan/vue-lib-template/commit/0dca63a057613d45fa51fcf9fd1bdf41479d2762))
+* **deps:** update dependency npm-pkg-lint to v5.4.0 ([fc51192](https://github.com/Forsakringskassan/vue-lib-template/commit/fc5119220d29f9a970176ce2ccab79b8cf3b4a0e))
+
 ## [1.6.2](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.6.1...v1.6.2) (2026-10-06)
 
 ### Bug Fixes
