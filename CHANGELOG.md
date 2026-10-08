@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.7.0](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.6.3...v1.7.0) (2026-10-08)
+
+### Features
+
+* using fallback entry from @forsakringskassan/vite-lib-config ([265baf0](https://github.com/Forsakringskassan/vue-lib-template/commit/265baf07a97855be19fb93af41d6fba9d8a0d91c))
+
 ## [1.6.3](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.6.2...v1.6.3) (2026-10-08)
 
 ### Bug Fixes
