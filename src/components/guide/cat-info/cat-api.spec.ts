@@ -1,5 +1,4 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
-import { catGetById } from "./cat-api";
 
 describe("catGetById", () => {
     vi.stubEnv("VITE_CAT_API_URL", "/api/cat");
@@ -10,6 +9,7 @@ describe("catGetById", () => {
 
     it("should return a cat when the response is ok", async () => {
         expect.assertions(2);
+        const { catGetById } = await import("./cat-api");
         const mockCat = {
             id: "whiskers-001",
             name: "Whiskers McFluffington",
@@ -32,6 +32,7 @@ describe("catGetById", () => {
 
     it("should throw an error with API message when response is not ok", async () => {
         expect.assertions(1);
+        const { catGetById } = await import("./cat-api");
         const errorResponse = { error: "Cat with ID 'unknown' not found" };
 
         vi.mocked(fetch).mockResolvedValue({
@@ -46,6 +47,7 @@ describe("catGetById", () => {
 
     it("should throw a generic error when response is not ok and no error message is provided", async () => {
         expect.assertions(1);
+        const { catGetById } = await import("./cat-api");
         vi.mocked(fetch).mockResolvedValue({
             ok: false,
             json: () => Promise.resolve({}),
@@ -58,6 +60,7 @@ describe("catGetById", () => {
 
     it("should throw an error when fetch fails", async () => {
         expect.assertions(1);
+        const { catGetById } = await import("./cat-api");
         vi.mocked(fetch).mockRejectedValue(new Error("Network failure"));
 
         await expect(catGetById("whiskers-001")).rejects.toThrow(
