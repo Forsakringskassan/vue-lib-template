@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.7.5](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.7.4...v1.7.5) (2026-10-09)
+
+### Bug Fixes
+
+* **deps:** update dependency @forsakringskassan/cypress-config to v1.10.1 ([a146655](https://github.com/Forsakringskassan/vue-lib-template/commit/a14665554784ad7d84ef3375b4db0a3270321ddd))
+
 ## [1.7.4](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.7.3...v1.7.4) (2026-10-09)
 
 ### Bug Fixes
