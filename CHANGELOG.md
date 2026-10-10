@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.7.9](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.7.8...v1.7.9) (2026-10-10)
+
+### Bug Fixes
+
+* **deps:** update dependency @forsakringskassan/docs-generator to v3.19.0 ([2f57ddf](https://github.com/Forsakringskassan/vue-lib-template/commit/2f57ddf302879efc680a6a2895b7639dfa716375))
+
 ## [1.7.8](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.7.7...v1.7.8) (2026-10-10)
 
 ### Bug Fixes
