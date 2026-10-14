@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.7.18](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.7.17...v1.7.18) (2026-10-14)
+
+### Bug Fixes
+
+* **deps:** update dependency vue-tsc to v3.3.13 ([fa4e718](https://github.com/Forsakringskassan/vue-lib-template/commit/fa4e71822f7863900eb2488c3fe8f4fa8bdb30a9))
+
 ## [1.7.17](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.7.16...v1.7.17) (2026-10-14)
 
 ### Bug Fixes
