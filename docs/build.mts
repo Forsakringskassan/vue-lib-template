@@ -11,6 +11,12 @@ import {
 } from "@forsakringskassan/docs-generator";
 import pkg from "../package.json" with { type: "json" };
 
+declare module "@forsakringskassan/docs-generator" {
+    interface ExtractedDocsMetadata {
+        fkmetaid: string;
+    }
+}
+
 function teleportTarget(): Processor {
     return {
         after: "generate-docs",
@@ -42,6 +48,12 @@ const docs = new Generator(import.meta.url, {
     processors: [
         extractMarkdownProcessor({
             outputFolder: path.join(import.meta.dirname, "../dist/docs"),
+            version: pkg.version,
+            metadata() {
+                return {
+                    fkmetaid: "00000000-0000-0000-0000-000000000002",
+                };
+            },
         }),
         manifestProcessor(),
         teleportTarget(),
