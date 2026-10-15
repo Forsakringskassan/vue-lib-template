@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.9.0](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.8.0...v1.9.0) (2026-10-15)
+
+### Features
+
+* esm default ([910fa3d](https://github.com/Forsakringskassan/vue-lib-template/commit/910fa3d920c436fa8195daeb79fbe7799f10688b))
+
 ## [1.8.0](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.7.22...v1.8.0) (2026-10-15)
 
 ### Features
