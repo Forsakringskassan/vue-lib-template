@@ -1,5 +1,11 @@
 import type { Cat } from "./cat-types";
 
+declare global {
+    interface ImportMetaEnv {
+        readonly VITE_CAT_API_URL: string;
+    }
+}
+
 const apiUrl = import.meta.env.VITE_CAT_API_URL;
 
 /**
