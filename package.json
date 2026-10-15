@@ -18,6 +18,7 @@
   },
   "license": "MIT",
   "author": "Försäkringskassan",
+  "type": "module",
   "exports": {
     ".": {
       "types": "./dist/types/index.d.ts",
