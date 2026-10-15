@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.8.0](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.7.22...v1.8.0) (2026-10-15)
+
+### Features
+
+* add version and metadata to extracted documentation ([df02381](https://github.com/Forsakringskassan/vue-lib-template/commit/df023815bb6a4f1aca4539d3b8feae216c3b39e8))
+
 ## [1.7.22](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.7.21...v1.7.22) (2026-10-15)
 
 ### Bug Fixes
