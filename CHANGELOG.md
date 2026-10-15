@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.9.2](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.1...v1.9.2) (2026-10-15)
+
+### Bug Fixes
+
+* move Vite env type to cat API ([5df19d3](https://github.com/Forsakringskassan/vue-lib-template/commit/5df19d3bc887f8c5e7803110c53d8955a6574559))
+
 ## [1.9.1](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.0...v1.9.1) (2026-10-15)
 
 ### Bug Fixes
