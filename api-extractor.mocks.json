@@ -1,0 +1,19 @@
+/* This file is managed by @forsakringskassan/vue-lib-template. Changes will be overwritten! */
+
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/api-extractor/v7/api-extractor.schema.json",
+    "extends": "@forsakringskassan/vite-lib-config/api-extractor/api-extractor.json",
+    "mainEntryPointFilePath": "<projectFolder>/temp/types/mocks/index.d.mts",
+    "compiler": {
+        "tsconfigFilePath": "<projectFolder>/tsconfig.lib.json"
+    },
+    "apiReport": {
+        "reportFileName": "mocks.api.md"
+    },
+    "docModel": {
+        "enabled": true
+    },
+    "dtsRollup": {
+        "publicTrimmedFilePath": "<projectFolder>/dist/types/mocks.d.ts"
+    }
+}
