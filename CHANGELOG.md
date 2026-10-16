@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.9.6](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.5...v1.9.6) (2026-10-16)
+
+### Bug Fixes
+
+* **deps:** update vue monorepo to v3.5.44 ([ee9f095](https://github.com/Forsakringskassan/vue-lib-template/commit/ee9f095afcb6bb887f4ef83a20f99c3787a03b8c))
+
 ## [1.9.5](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.4...v1.9.5) (2026-10-16)
 
 ### Bug Fixes
