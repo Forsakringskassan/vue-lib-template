@@ -22,6 +22,7 @@ async function updatePackageName(context: InstallContext): Promise<void> {
     const placeholder = /"@forsakringskassan\/vue-lib-template(\/[^"]+)?"/g;
     const filenames = [
         "cypress/tsconfig.json",
+        "docs/index.md",
         "etc/lib.api.md",
         "etc/selectors.api.md",
         "etc/tsconfig.json",
