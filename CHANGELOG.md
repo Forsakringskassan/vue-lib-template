@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [1.9.5](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.4...v1.9.5) (2026-10-16)
+
+### Bug Fixes
+
+* **cloneman:** replace package name in `docs/index.md` site name ([f6942d7](https://github.com/Forsakringskassan/vue-lib-template/commit/f6942d7e48f2592386f824348cb439807e0380ee))
+* **cloneman:** replace package name in `etc/*` api reports ([9fcf343](https://github.com/Forsakringskassan/vue-lib-template/commit/9fcf343c86907d3199d1cfc94512e219d5e7dce7))
+
 ## [1.9.4](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.3...v1.9.4) (2026-10-16)
 
 ### Bug Fixes
