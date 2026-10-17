@@ -32,8 +32,8 @@ async function updatePackageName(context: InstallContext): Promise<void> {
         "tsconfig.selectors.json",
     ];
     for (const filename of filenames) {
-        await replaceInFile(filename, placeholder, (_, subpath) => {
-            return `"${scopedName}${subpath ?? ""}"`;
+        await replaceInFile(filename, placeholder, (_, subpath = "") => {
+            return `"${scopedName}${subpath}"`;
         });
     }
 }
