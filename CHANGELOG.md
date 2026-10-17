@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.9.8](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.7...v1.9.8) (2026-10-17)
+
+### Bug Fixes
+
+* **deps:** update dependency @html-validate/release-scripts to v7.6.16 ([a36888b](https://github.com/Forsakringskassan/vue-lib-template/commit/a36888b7245c673fe5f29a9a6367d9f9d21be97b))
+
 ## [1.9.7](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.6...v1.9.7) (2026-10-17)
 
 ### Bug Fixes
