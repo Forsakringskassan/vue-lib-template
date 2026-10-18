@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.9.12](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.11...v1.9.12) (2026-10-18)
+
+### Bug Fixes
+
+* **deps:** update dependency vitest to v5.0.5 ([af7ffcc](https://github.com/Forsakringskassan/vue-lib-template/commit/af7ffcce3e9f35a3f4cb37cb940e622cc70d98e9))
+
 ## [1.9.11](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.10...v1.9.11) (2026-10-18)
 
 ### Bug Fixes
