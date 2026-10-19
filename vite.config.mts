@@ -9,4 +9,12 @@ export default defineConfig({
     fk: {
         mocks,
     },
+    build: {
+        lib: {
+            entry: {
+                index: "src/index.ts",
+                mocks: "src/mocks/index.mts",
+            },
+        },
+    },
 });

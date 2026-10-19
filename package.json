@@ -28,6 +28,10 @@
       "types": "./dist/docs/index.d.mts",
       "import": "./dist/docs/index.mjs"
     },
+    "./mocks": {
+      "types": "./dist/types/mocks.d.ts",
+      "import": "./dist/esm/mocks.esm.js"
+    },
     "./docs/links.json": {
       "default": "./dist/docs/links.json"
     },

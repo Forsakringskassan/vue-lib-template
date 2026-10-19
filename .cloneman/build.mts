@@ -9,6 +9,7 @@ export async function build({ buildTemplate }: BuildContext): Promise<void> {
             ".htmlvalidate.json",
             ".vscode/**",
             "api-extractor.lib.json",
+            "api-extractor.mocks.json",
             "api-extractor.selectors.json",
             "babel.config.js",
             "cypress/fixtures/example.json",
