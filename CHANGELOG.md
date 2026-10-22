@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.9.19](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.18...v1.9.19) (2026-10-22)
+
+### Bug Fixes
+
+* **deps:** update dependency core-js to v3.51.0 ([22304a3](https://github.com/Forsakringskassan/vue-lib-template/commit/22304a3b1f86e268cc90f3ac8208d8f82c094e81))
+
 ## [1.9.18](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.17...v1.9.18) (2026-10-22)
 
 ### Bug Fixes
