@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.9.18](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.17...v1.9.18) (2026-10-22)
+
+### Bug Fixes
+
+* remove reference to non-existing `etc/tsconfig.json` ([30347ea](https://github.com/Forsakringskassan/vue-lib-template/commit/30347ea3a77313c97409283011ab4c6379a1b5ba))
+
 ## [1.9.17](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.16...v1.9.17) (2026-10-21)
 
 ### Bug Fixes
