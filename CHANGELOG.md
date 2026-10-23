@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.9.21](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.20...v1.9.21) (2026-10-23)
+
+### Bug Fixes
+
+* **deps:** update dependency @forsakringskassan/apimock-express to v4.3.0 ([8b5d8ee](https://github.com/Forsakringskassan/vue-lib-template/commit/8b5d8ee9828d4ae5d77264a36a9822f2b06ece78))
+
 ## [1.9.20](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.19...v1.9.20) (2026-10-23)
 
 ### Bug Fixes
