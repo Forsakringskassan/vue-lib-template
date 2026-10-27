@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/vue-lib-template",
-  "version": "1.9.28",
+  "version": "1.9.29",
   "description": "Vue library template based on Cloneman",
   "keywords": [
     "template",
