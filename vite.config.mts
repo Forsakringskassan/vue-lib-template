@@ -2,7 +2,7 @@
 
 import { defineConfig } from "@forsakringskassan/vite-lib-config/vite";
 import { defineTestConfig } from "@forsakringskassan/vitest-config-jsdom";
-import mocks from "./src/mocks/index.mts";
+import mocks from "./src/mocks/index.ts";
 
 export default defineConfig({
     test: defineTestConfig(),

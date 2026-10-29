@@ -52,6 +52,14 @@ async function enableDeployDocs(context: InstallContext): Promise<void> {
 }
 
 export async function install(context: InstallContext): Promise<void> {
+    /*
+     * This file rename was made in version 1.9.x and should be removed in a future major version
+     * https://github.com/Forsakringskassan/vue-lib-template/pull/109
+     */
+    await context.renameFile("src/mocks/index.mts", "src/mocks/index.ts", {
+        graceful: true,
+    });
+
     await updatePackagejson(context);
     await updatePackageName(context);
     await enableDeployDocs(context);
