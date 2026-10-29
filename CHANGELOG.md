@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.9.34](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.33...v1.9.34) (2026-10-29)
+
+### Bug Fixes
+
+* fix package name in cat live example ([8cf29db](https://github.com/Forsakringskassan/vue-lib-template/commit/8cf29db29df13ddd153de47747b07a165815991c)), closes [#107](https://github.com/Forsakringskassan/vue-lib-template/issues/107)
+
 ## [1.9.33](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.32...v1.9.33) (2026-10-29)
 
 ### Bug Fixes
