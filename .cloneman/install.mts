@@ -26,6 +26,7 @@ async function updatePackageName(context: InstallContext): Promise<void> {
         "etc/lib.api.md",
         "etc/selectors.api.md",
         "src/components/guide/cat-info/examples/cat-info-example.vue",
+        "src/components/guide/cat-info/examples/cat-info-live-example.vue",
         "tsconfig.cypress.json",
         "tsconfig.lib.json",
         "tsconfig.selectors.json",
