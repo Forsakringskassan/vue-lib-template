@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.9.32](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.31...v1.9.32) (2026-10-29)
+
+### Bug Fixes
+
+* **deps:** update [@fkui](https://github.com/fkui) packages to v6.63.0 ([7d51e5e](https://github.com/Forsakringskassan/vue-lib-template/commit/7d51e5e182e385ac8827db45fac759fbc9bc12ef))
+
 ## [1.9.31](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.30...v1.9.31) (2026-10-28)
 
 ### Bug Fixes
