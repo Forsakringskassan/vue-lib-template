@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.9.35](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.34...v1.9.35) (2026-10-29)
+
+### Bug Fixes
+
+* **deps:** update cypress-io/github-action action to v7.4.8 ([5af4454](https://github.com/Forsakringskassan/vue-lib-template/commit/5af44548d7891921988f490072c50132dd961ae4))
+
 ## [1.9.34](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.33...v1.9.34) (2026-10-29)
 
 ### Bug Fixes
