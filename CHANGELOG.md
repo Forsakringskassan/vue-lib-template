@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.9.40](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.39...v1.9.40) (2026-10-30)
+
+### Bug Fixes
+
+* rename mocks.mts -> mocks.ts ([934079d](https://github.com/Forsakringskassan/vue-lib-template/commit/934079d1b0e06ce52b70287bfa32386db08d22b6))
+
 ## [1.9.39](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.38...v1.9.39) (2026-10-30)
 
 ### Bug Fixes
