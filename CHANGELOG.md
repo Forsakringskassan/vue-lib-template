@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.9.42](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.41...v1.9.42) (2026-11-01)
+
+### Bug Fixes
+
+* **deps:** update dependency cypress to v16.2.1 ([3e3a8c9](https://github.com/Forsakringskassan/vue-lib-template/commit/3e3a8c9091839aef325209aaa75116d70edd8d8d))
+
 ## [1.9.41](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.40...v1.9.41) (2026-10-31)
 
 ### Bug Fixes
