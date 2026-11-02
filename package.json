@@ -31,6 +31,10 @@
     "./docs/links.json": {
       "default": "./dist/docs/links.json"
     },
+    "./mocks": {
+      "types": "./dist/types/mocks.d.ts",
+      "import": "./dist/esm/mocks.esm.js"
+    },
     "./selectors": {
       "types": "./dist/types/selectors.d.ts",
       "import": "./dist/esm/selectors.esm.js"
@@ -53,7 +57,7 @@
     "build:api": "fk-api-extractor api-extractor.*.json",
     "build:cloneman": "tsc -p .cloneman/tsconfig.json && cloneman build -o temp/cloneman",
     "build:dts": "vue-tsc -b",
-    "build:lib": "fk-build-vue-lib --clean --selectors",
+    "build:lib": "fk-build-vue-lib --clean --mocks --selectors",
     "clean": "rimraf -g dist temp",
     "eslint": "eslint --cache .",
     "eslint:fix": "eslint --fix .",
