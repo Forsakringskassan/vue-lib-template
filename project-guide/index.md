@@ -18,7 +18,8 @@ Read the detailed guides in this order:
 Here are the most important locations you need to know:
 
 - `src/`: This is where all your source code lives.
-    - `index.ts`: The "Main Entrance". Everything you want others to be able to import from your library must be exported from here.
+    - `index.ts`: The "Main Entrance".
+      Everything you want others to be able to import from your library must be exported from here.
     - `style.scss`: Global styles for your library.
     - `components/`: Contains the library's component files.
     - `mocks/`: Contains API mocks and mock-related files for testing.
@@ -29,7 +30,8 @@ Here are the most important locations you need to know:
 
 ## A current reference implementation
 
-The `vue-lib-template` template repository, which this component library is based on, contains a small cat information component that demonstrates the recommended structure. It is useful as a starting point when creating a new component:
+The `vue-lib-template` template repository, which this component library is based on, contains a small cat information component that demonstrates the recommended structure.
+It is useful as a starting point when creating a new component:
 
 - [Component](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/cat-info.vue)
 - [Runnable example](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/examples/cat-info-example.vue)
@@ -40,8 +42,10 @@ The `vue-lib-template` template repository, which this component library is base
 - [API mock](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/mocks/guide/cat-api.mock.mts)
 - [Mock registration](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/mocks/index.mts)
 
-When comparing your implementation with this example, focus on the separation between rendering, business logic, test selectors, mocks, and examples. The example is just a reference for structure.
+When comparing your implementation with this example, focus on the separation between rendering, business logic, test selectors, mocks, and examples.
+The example is just a reference for structure.
 
 ## When using the library
 
-The library build does not run [Autoprefixer](https://github.com/postcss/autoprefixer) through PostCSS. Consumers are expected to use it in their own build process to add the required browser prefixes.
+The library build does not run [Autoprefixer](https://github.com/postcss/autoprefixer) through PostCSS.
+Consumers are expected to use it in their own build process to add the required browser prefixes.

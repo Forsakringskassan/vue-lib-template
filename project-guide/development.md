@@ -11,7 +11,8 @@ To get up and running quickly:
 
 ## Architecture: Three Layers
 
-We recommend separating Appearance, Logic, and Types into three distinct layers to keep the codebase maintainable. You can find an example component, [`FcCatInfo`](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/cat-info.vue), which demonstrates how this structure can be applied in practice:
+We recommend separating Appearance, Logic, and Types into three distinct layers to keep the codebase maintainable.
+You can find an example component, [`FcCatInfo`](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/cat-info.vue), which demonstrates how this structure can be applied in practice:
 
 ### 1. Type Layer
 
@@ -28,11 +29,13 @@ In the example [cat-info-logic.ts](https://github.com/Forsakringskassan/vue-lib-
 
 ### 3. UI Layer
 
-Refer to [cat-info.vue](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/cat-info.vue) for the actual Vue component. This should be "thin".
+Refer to [cat-info.vue](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/cat-info.vue) for the actual Vue component.
+This should be "thin".
 
 - It imports the logic from `useCatInfo`.
 - It uses components from `@fkui/vue` (such as `FCard` or `FLoader`) to follow the design system.
-- **Focus**: The UI layer should only care about _how to display_ the data and _which user actions_ to trigger. The "brain" is in the logic layer.
+- **Focus**: The UI layer should only care about _how to display_ the data and _which user actions_ to trigger.
+  The "brain" is in the logic layer.
 
 ## Implementation Flow
 
@@ -53,7 +56,8 @@ Refer to [cat-info.vue](https://github.com/Forsakringskassan/vue-lib-template/bl
 
 ## Common commands
 
-Use the repository scripts from the root of the project unless stated otherwise. The most important commands for daily development are marked in **bold**.
+Use the repository scripts from the root of the project unless stated otherwise.
+The most important commands for daily development are marked in **bold**.
 
 | Command                  | Use it for                                                                                  |
 | ------------------------ | ------------------------------------------------------------------------------------------- |
@@ -64,9 +68,9 @@ Use the repository scripts from the root of the project unless stated otherwise.
 | `npm run build:api`      | Update API Extractor reports for the public package surface.                                |
 | **`npm run start:docs`** | Serve the generated documentation site locally at `http://localhost:8080`.                  |
 | **`npm test`**           | Run Vitest                                                                                  |
-| **`npm run unit`**       | Run Vitest without coverage. Useful for a quick unit-test loop.                             |
+| **`npm run unit`**       | Run Vitest without coverage for a quick unit-test loop.                                     |
 | **`npm run lint`**       | Run Prettier, ESLint, Stylelint, and HTML validation checks.                                |
-| **`npm run lint:fix`**   | Apply available automatic formatting and lint fixes. Review the resulting diff.             |
+| **`npm run lint:fix`**   | Apply available automatic formatting and lint fixes, then review the resulting diff.        |
 | `npm run prettier:check` | Check formatting without changing files.                                                    |
 | `npm run prettier:write` | Format supported files.                                                                     |
 | `npm run eslint`         | Run ESLint with its cache.                                                                  |
@@ -93,17 +97,20 @@ The repository's `.env` sets the local mock endpoint:
 VITE_CAT_API_URL=/api/cat
 ```
 
-If you need to vary variables between different environments, create additional `.env` files for each mode, for example `.env.development` and `.env.production`. See the [Vite documentation](https://vite.dev/guide/env-and-mode#env-variables).
+If you need to vary variables between different environments, create additional `.env` files for each mode, for example `.env.development` and `.env.production`.
+See the [Vite documentation](https://vite.dev/guide/env-and-mode#env-variables).
 
 Restart the development server after changing the value in an env file.
 
 ## Documentation commands
 
-Documentation is maintained in `docs/` and generated with [`@forsakringskassan/docs-generator`](https://forsakringskassan.github.io/docs-generator/latest/). A typical local workflow is:
+Documentation is maintained in `docs/` and generated with [`@forsakringskassan/docs-generator`](https://forsakringskassan.github.io/docs-generator/latest/).
+A typical local workflow is:
 
 ```bash
 npm run build
 npm run start:docs
 ```
 
-The generated site is build output. Edit Markdown and Vue examples in the source locations, then build again.
+The generated site is build output.
+Edit Markdown and Vue examples in the source locations, then build again.
