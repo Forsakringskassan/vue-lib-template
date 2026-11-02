@@ -1,4 +1,4 @@
-# Component library project guide
+# Component library guide
 
 This guide explains how to develop, test, document, and release this Vue component library.
 The documentation in `docs/` describes the library's components, while this guide focuses on the technical aspects of the component library.
@@ -30,17 +30,9 @@ Here are the most important locations you need to know:
 
 ## A current reference implementation
 
-The `vue-lib-template` template repository, which this component library is based on, contains a small cat information component that demonstrates the recommended structure.
-It is useful as a starting point when creating a new component:
-
-- [Component](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/cat-info.vue)
-- [Runnable example](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/examples/cat-info-example.vue)
-- [Live example](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/examples/cat-info-live-example.vue)
-- [Unit tests](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/cat-info-logic.spec.ts)
-- [Cypress component tests](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/cat-info.cy.ts)
-- [Cypress selectors](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/selectors/guide/cat-info.selectors.ts)
-- [API mock](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/mocks/guide/cat-api.mock.mts)
-- [Mock registration](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/mocks/index.mts)
+[`vue-lib-example`](https://github.com/Forsakringskassan/vue-lib-example) is a repository based on `vue-lib-template`.
+It contains a small cat information component that demonstrates the recommended structure.
+It is useful as a starting point when creating a new component.
 
 When comparing your implementation with this example, focus on the separation between rendering, business logic, test selectors, mocks, and examples.
 The example is just a reference for structure.

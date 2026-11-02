@@ -1,6 +1,6 @@
 # Commits and releases
 
-[← Back to project guide](./index.md)
+[← Back to library guide](./index.md)
 
 Keep commits small enough to review and describe one coherent change.
 A component feature may still need several files, but its implementation, tests, examples, and documentation should tell one story.

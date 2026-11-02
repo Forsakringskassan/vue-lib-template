@@ -1,6 +1,6 @@
 # Cloneman and template updates
 
-[← Back to project guide](./index.md)
+[← Back to library guide](./index.md)
 
 [Cloneman](https://github.com/Forsakringskassan/cloneman/blob/main/README.md) creates a new component-library repository from a template and keeps files marked as managed in sync with later template updates.
 
@@ -11,7 +11,7 @@ It provides a consistent foundation for configuration, tooling, documentation su
 ## What is managed
 
 Files selected by the template are managed centrally.
-In this template that includes build and lint configuration, Cypress support, documentation infrastructure, and this `project-guide/` directory.
+In this template that includes build and lint configuration, Cypress support, documentation infrastructure, and this `library-guide/` directory.
 A generated repository also receives the template's dependency and script changes according to Cloneman's update rules.
 
 A managed file may be updated when the template is updated.

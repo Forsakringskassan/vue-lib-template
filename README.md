@@ -25,7 +25,7 @@ Libraries based on it stay up to date, with the same standards, the same structu
 
 ## Getting started
 
-Projects are created with [Cloneman](https://github.com/Forsakringskassan/cloneman), which creates a project from a template and later helps you update it.
+Libraries are created with [Cloneman](https://github.com/Forsakringskassan/cloneman), which creates a library from a template and later helps you update it.
 Run:
 
 ```bash
@@ -41,7 +41,7 @@ npm install
 npm run build
 ```
 
-The generated project contains its own [README](./project-guide/index.md) with instructions for daily development, testing, documentation and releases.
+The generated project contains its own [README](./library-guide/index.md) with instructions for daily development, testing, documentation and releases.
 
 ## What you get
 

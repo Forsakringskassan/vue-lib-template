@@ -1,48 +1,18 @@
 # Development
 
-[← Back to project guide](./index.md)
+[← Back to library guide](./index.md)
 
 To get up and running quickly:
 
 1. **Install dependencies**: `npm install`
 2. **Start development server**: `npm start`
-3. **Run a specific example**: `npm start <name>` (e.g., `npm start catinfo`)
+3. **Run a specific example**: `npm start <name>` (e.g., `npm start my-component`)
 4. **Run tests**: `npm test`
-
-## Architecture: Three Layers
-
-We recommend separating Appearance, Logic, and Types into three distinct layers to keep the codebase maintainable.
-You can find an example component, [`FcCatInfo`](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/cat-info.vue), which demonstrates how this structure can be applied in practice:
-
-### 1. Type Layer
-
-In the example [cat-types.ts](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/cat-types.ts), we define _what_ the data is using TypeScript interfaces.
-
-- **Why?** It ensures that both the logic and the component know exactly which fields (e.g., `name`, `age`) exist.
-
-### 2. Logic Layer
-
-In the example [cat-info-logic.ts](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/cat-info-logic.ts), we create a so-called "composable" (a function that starts with `use...`, e.g., `useCatInfo`).
-
-- This is where we handle API calls, state (loading, error), and calculations.
-- **Why?** It makes the logic easy to test with Vitest without needing to start a full browser.
-
-### 3. UI Layer
-
-Refer to [cat-info.vue](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/cat-info.vue) for the actual Vue component.
-This should be "thin".
-
-- It imports the logic from `useCatInfo`.
-- It uses components from `@fkui/vue` (such as `FCard` or `FLoader`) to follow the design system.
-- **Focus**: The UI layer should only care about _how to display_ the data and _which user actions_ to trigger.
-  The "brain" is in the logic layer.
 
 ## Implementation Flow
 
-1. **Create the files**: Create `my-component.vue`, `my-component-logic.ts`, and `my-component-types.ts`.
-2. **Implement logic**: Create your `useMyComponent` function and export it.
-3. **Build UI**: Import the logic into the `.vue` file and connect variables to the template.
-4. **Export**: Open `src/components/index.ts` and add:
+1. **Create the component**: Create `my-component.vue`.
+2. **Export**: Open `src/components/index.ts` and add:
 
     ```typescript
     export { default as FcMyComponent } from "./my-component.vue";
@@ -83,24 +53,10 @@ The most important commands for daily development are marked in **bold**.
 You can run a specific example file directly by passing a name to the start command:
 
 ```bash
-npm start catinfo
+npm start my-component
 ```
 
-This uses fuzzy search to find and start the best matching file in `src/examples/` (e.g., `cat-info-example.vue`).
-
-## API URL configuration
-
-The cat example reads its endpoint from the Vite environment variable `VITE_CAT_API_URL` in `.env`.
-The repository's `.env` sets the local mock endpoint:
-
-```bash
-VITE_CAT_API_URL=/api/cat
-```
-
-If you need to vary variables between different environments, create additional `.env` files for each mode, for example `.env.development` and `.env.production`.
-See the [Vite documentation](https://vite.dev/guide/env-and-mode#env-variables).
-
-Restart the development server after changing the value in an env file.
+This uses fuzzy search to find and start the best matching file in `examples`-folders (e.g., `my-component-example.vue`).
 
 ## Documentation commands
 

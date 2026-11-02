@@ -1,6 +1,6 @@
 # Testing and quality checks
 
-[← Back to project guide](./index.md)
+[← Back to library guide](./index.md)
 
 Use different tools for different questions.
 Unit tests check isolated logic quickly.
@@ -14,26 +14,6 @@ Keep these tests independent from the browser whenever possible.
 
 Run tests with `npm run unit`.
 
-The cat information logic is tested in [`cat-info-logic.spec.ts`](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/cat-info-logic.spec.ts).
-It mocks the API module and verifies loading, successful data, errors, and updates:
-
-```ts
-import { expect, it, vi } from "vitest";
-import { catGetById } from "./cat-api";
-import { useCatInfo } from "./cat-info-logic";
-
-vi.mock("./cat-api");
-
-it("loads a cat", async () => {
-    vi.mocked(catGetById).mockResolvedValue({ id: "cat-001", name: "Milo" });
-
-    const { cat, fetchCat } = useCatInfo();
-    await fetchCat("cat-001");
-
-    expect(cat.value?.name).toBe("Milo");
-});
-```
-
 ## API mocks with apimock-express
 
 Prefer [@forsakringskassan/apimock-express](https://github.com/Forsakringskassan/apimock-express) when a component calls an HTTP API.
@@ -41,28 +21,6 @@ A mock documents the endpoint contract and lets the documentation site and Cypre
 
 Prefer inline mocks when the mock is only needed by a single test or example.
 See the [inline mocks documentation](https://github.com/Forsakringskassan/apimock-express#inline-mocks) for details.
-
-The local example is [`cat-api.mock.mts`](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/mocks/guide/cat-api.mock.mts):
-
-```ts
-import { defineMock } from "@forsakringskassan/apimock-express/helpers";
-
-export default defineMock<ResponseType>({
-    meta: {
-        url: "/resource",
-        method: "GET",
-    },
-    defaultResponse(params) {
-        const id = params.parameters?.id;
-
-        return {
-            status: 200,
-            body: createResponse(id),
-            delay: 300,
-        };
-    },
-});
-```
 
 To add a new mock:
 
@@ -80,34 +38,23 @@ See the [apimock-express README](https://github.com/Forsakringskassan/apimock-ex
 ## Cypress component tests
 
 Use Cypress for user-visible component behavior: rendering, loading states, form interaction, emitted actions, error states, and accessibility-related behavior.
-The current example is [`cat-info.cy.ts`](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/cat-info.cy.ts).
 
 The current package does not define a dedicated Cypress npm script, so run Cypress through `npx`:
 
 - **Interactive runner** (for development): `npx cypress open --component`
 - **CLI runner** (for CI checks): `npx cypress run --component`
 
-Mount the component with realistic props and wait for state changes through visible behavior:
+Mount the component with realistic props and wait for state changes through visible behavior.
 
-```ts
-cy.mount(FcCatInfo, {
-    props: {
-        catId: testCat.id,
-        isEditable: false,
-    },
-});
+Use component selectors for accessing elements.
 
-cy.get(catInfoSelectors.loadingContainer()).should("not.exist");
-cy.get(catInfoSelectors.viewContainer()).should("be.visible");
-```
-
-Do not use arbitrary timeouts to wait for the API.
+Do not use arbitrary timeouts to wait for callbacks.
 Assert on a loading element, a success element, or an error message instead.
 
 ### Selectors
 
 Keep reusable selectors in a `selectors/` file instead of scattering CSS selectors through specs.
-The [`FcCatInfoSelectors` helper](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/selectors/guide/cat-info.selectors.ts) uses [`data-test`](https://designsystem.forsakringskassan.se/latest/functions/plugins/testplugin.html) attributes and supports scoping a component instance.
+Use [`data-test`](https://designsystem.forsakringskassan.se/latest/functions/plugins/testplugin.html) attributes.
 
 Selectors should describe stable test targets.
 

@@ -1,6 +1,6 @@
 # Component documentation
 
-[← Back to project guide](./index.md)
+[← Back to library guide](./index.md)
 
 Component documentation is written in Markdown and generated into the separate site under `docs/`.
 The repository-level guide you are reading is ordinary README documentation; it is not processed by docs-generator.
@@ -15,10 +15,10 @@ Start with the required front matter:
 
 ```md
 ---
-title: Cat information
+title: My component
 status: Draft
 layout: component
-component: FcCatInfo
+component: FcMyComponent
 ---
 ```
 
@@ -39,7 +39,6 @@ my-component-example.vue
 ```
 ````
 
-The corresponding example is [`cat-info-example.vue`](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/examples/cat-info-example.vue).
 Keep the example focused on a realistic use case and make its initial state useful without extra setup.
 
 Prefer a live example when the documentation needs interactive controls or a richer demonstration.
@@ -50,8 +49,6 @@ Include a kebab-case file ending in `-live-example.vue` with the `live-example` 
 cat-info-live-example.vue
 ```
 ````
-
-The reference implementation shows this pattern in [cat-info-live-example.vue](https://github.com/Forsakringskassan/vue-lib-template/blob/main/src/components/guide/cat-info/examples/cat-info-live-example.vue) and its [documentation page](https://github.com/Forsakringskassan/vue-lib-template/blob/main/docs/guide/cat-info.md).
 
 See the [docs-live-example README](https://github.com/Forsakringskassan/docs-live-example/blob/main/README.md) for the implementation details behind interactive examples.
 
@@ -80,7 +77,7 @@ Add the Vue API block for every component page:
 ## API
 
 ::: api
-vue:cat-info
+vue:my-component
 :::
 ```
 
