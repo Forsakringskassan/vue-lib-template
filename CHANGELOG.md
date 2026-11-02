@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.9.45](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.44...v1.9.45) (2026-11-02)
+
+### Bug Fixes
+
+* **deps:** update dependency vue-tsc to v3.3.14 ([5198bac](https://github.com/Forsakringskassan/vue-lib-template/commit/5198bac4a04d06698b2ad8d7a34d4cee9b173968))
+
 ## [1.9.44](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.43...v1.9.44) (2026-11-01)
 
 ### Bug Fixes
