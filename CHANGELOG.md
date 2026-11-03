@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.9.47](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.46...v1.9.47) (2026-11-03)
+
+### Bug Fixes
+
+* **deps:** update @forsakringskassan/eslint-config monorepo to v15.13.4 ([2c500d6](https://github.com/Forsakringskassan/vue-lib-template/commit/2c500d649ec4e314414a4ff5e3d7ddcf27e3d092))
+
 ## [1.9.46](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.45...v1.9.46) (2026-11-02)
 
 ### Bug Fixes
