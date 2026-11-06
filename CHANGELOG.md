@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.10.0](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.56...v1.10.0) (2026-11-06)
+
+### Features
+
+* expose mocks ([29422ef](https://github.com/Forsakringskassan/vue-lib-template/commit/29422ef672ac921066fbd0f99bddb1bbc5db1d36))
+
 ## [1.9.56](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.9.55...v1.9.56) (2026-11-06)
 
 ### Bug Fixes
