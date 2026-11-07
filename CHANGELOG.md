@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.10.7](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.6...v1.10.7) (2026-11-07)
+
+### Bug Fixes
+
+* **deps:** update forsakringskassan/eslint-config action to v15.13.8 ([236409e](https://github.com/Forsakringskassan/vue-lib-template/commit/236409ead29560a0d2576581c2d9957352f8f293))
+
 ## [1.10.6](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.5...v1.10.6) (2026-11-07)
 
 ### Bug Fixes
