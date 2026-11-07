@@ -101,7 +101,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "7.29.7",
+    "@babel/core": "7.29.13",
     "@babel/preset-env": "7.29.7",
     "@fkui/design": "6.64.1",
     "@fkui/font-default": "6.64.0",
