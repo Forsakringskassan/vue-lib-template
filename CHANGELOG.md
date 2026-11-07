@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.10.3](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.2...v1.10.3) (2026-11-07)
+
+### Bug Fixes
+
+* **deps:** update dependency rimraf to v6.1.4 ([7c66449](https://github.com/Forsakringskassan/vue-lib-template/commit/7c664497f39c6136c5cc76b4c85165a50dd49aca))
+
 ## [1.10.2](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.1...v1.10.2) (2026-11-06)
 
 ### Bug Fixes
