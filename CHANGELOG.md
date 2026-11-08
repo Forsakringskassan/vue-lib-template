@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.10.8](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.7...v1.10.8) (2026-11-08)
+
+### Bug Fixes
+
+* **deps:** update dependency @babel/core to v7.29.13 ([352857b](https://github.com/Forsakringskassan/vue-lib-template/commit/352857b000d1a5d46966057f2e1d201e363111a0))
+
 ## [1.10.7](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.6...v1.10.7) (2026-11-07)
 
 ### Bug Fixes
