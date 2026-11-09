@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.10.13](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.12...v1.10.13) (2026-11-09)
+
+### Bug Fixes
+
+* **deps:** update @forsakringskassan/vitest-config monorepo to v5.1.0 ([112aeed](https://github.com/Forsakringskassan/vue-lib-template/commit/112aeed9b99761baefdc069108b0bb4cf299ca47))
+
 ## [1.10.12](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.11...v1.10.12) (2026-11-08)
 
 ### Bug Fixes
