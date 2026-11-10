@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.10.14](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.13...v1.10.14) (2026-11-10)
+
+### Bug Fixes
+
+* **deps:** update dependency cloneman to v1.31.0 ([c01c91f](https://github.com/Forsakringskassan/vue-lib-template/commit/c01c91fb00afa142ab391bdc50e5d2c4ab320a94))
+
 ## [1.10.13](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.12...v1.10.13) (2026-11-09)
 
 ### Bug Fixes
