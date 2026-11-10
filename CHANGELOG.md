@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.10.16](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.15...v1.10.16) (2026-11-10)
+
+### Bug Fixes
+
+* **deps:** update dependency html-validate to v11.19.0 ([84c769c](https://github.com/Forsakringskassan/vue-lib-template/commit/84c769c4d2f47e14b78419a3d87dc86a0aedfa6f))
+
 ## [1.10.15](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.14...v1.10.15) (2026-11-10)
 
 ### Bug Fixes
