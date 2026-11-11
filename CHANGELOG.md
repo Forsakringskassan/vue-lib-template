@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.10.18](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.17...v1.10.18) (2026-11-11)
+
+### Bug Fixes
+
+* **deps:** update dependency @forsakringskassan/stylelint-config to v3.5.2 ([7d22876](https://github.com/Forsakringskassan/vue-lib-template/commit/7d228766c498c96bb4fc47dedf49fa507869cf5c))
+
 ## [1.10.17](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.16...v1.10.17) (2026-11-11)
 
 ### Bug Fixes
