@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.10.24](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.23...v1.10.24) (2026-11-13)
+
+### Bug Fixes
+
+* **deps:** update @forsakringskassan/eslint-config monorepo ([dcd4385](https://github.com/Forsakringskassan/vue-lib-template/commit/dcd4385003f718fe6ad086da7bdfd76760b67aa4))
+
 ## [1.10.23](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.22...v1.10.23) (2026-11-13)
 
 ### Bug Fixes
