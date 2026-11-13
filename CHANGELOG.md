@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.10.25](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.24...v1.10.25) (2026-11-13)
+
+### Bug Fixes
+
+* **deps:** update [@fkui](https://github.com/fkui) packages to v6.65.1 ([10e2a91](https://github.com/Forsakringskassan/vue-lib-template/commit/10e2a919d22fb947630019e8a908381c3856d2a3))
+
 ## [1.10.24](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.23...v1.10.24) (2026-11-13)
 
 ### Bug Fixes
