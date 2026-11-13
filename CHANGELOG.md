@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.10.23](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.22...v1.10.23) (2026-11-13)
+
+### Bug Fixes
+
+* **deps:** update dependency vite to v8.3.7 ([622b7ee](https://github.com/Forsakringskassan/vue-lib-template/commit/622b7ee5267f6efd7576eeb15c37e63719fa8419))
+
 ## [1.10.22](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.21...v1.10.22) (2026-11-12)
 
 ### Bug Fixes
