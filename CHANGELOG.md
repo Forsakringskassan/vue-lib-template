@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.10.27](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.26...v1.10.27) (2026-11-14)
+
+### Bug Fixes
+
+* **deps:** update dependency cypress to v16.3.0 ([76d641d](https://github.com/Forsakringskassan/vue-lib-template/commit/76d641d88511577894e2d20f5a8cb9423d1af963))
+
 ## [1.10.26](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.25...v1.10.26) (2026-11-13)
 
 ### Bug Fixes
