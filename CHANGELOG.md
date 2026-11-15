@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.10.29](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.28...v1.10.29) (2026-11-15)
+
+### Bug Fixes
+
+* **deps:** update @forsakringskassan/prettier-config monorepo to v3.7.14 ([1828ade](https://github.com/Forsakringskassan/vue-lib-template/commit/1828ade210e1784d98378ab880e89ee08e9a37d1))
+
 ## [1.10.28](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.27...v1.10.28) (2026-11-14)
 
 ### Bug Fixes
