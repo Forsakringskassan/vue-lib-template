@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.10.32](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.31...v1.10.32) (2026-11-15)
+
+### Bug Fixes
+
+* **deps:** update dependency @tsconfig/recommended to v1.0.14 ([e6d471b](https://github.com/Forsakringskassan/vue-lib-template/commit/e6d471be6023e8aa4b5a5a2a6cdfe2a8b046386a))
+
 ## [1.10.31](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.30...v1.10.31) (2026-11-15)
 
 ### Bug Fixes
