@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.10.31](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.30...v1.10.31) (2026-11-15)
+
+### Bug Fixes
+
+* **deps:** update dependency @tsconfig/node24 to v24.0.6 ([b8058fb](https://github.com/Forsakringskassan/vue-lib-template/commit/b8058fb07a1fdb1ba3f4ccf5d94cfe55b7324416))
+
 ## [1.10.30](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.29...v1.10.30) (2026-11-15)
 
 ### Bug Fixes
