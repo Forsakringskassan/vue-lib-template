@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.10.30](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.29...v1.10.30) (2026-11-15)
+
+### Bug Fixes
+
+* **deps:** update dependency @babel/preset-env to v7.29.14 ([d0c8554](https://github.com/Forsakringskassan/vue-lib-template/commit/d0c85543ca8547c2281dc9045d3ea8ce3a0aa28e))
+
 ## [1.10.29](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.28...v1.10.29) (2026-11-15)
 
 ### Bug Fixes
