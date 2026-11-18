@@ -119,7 +119,7 @@
     "@forsakringskassan/eslint-config": "15.13.12",
     "@forsakringskassan/eslint-config-cli": "15.13.6",
     "@forsakringskassan/eslint-config-cypress": "15.13.16",
-    "@forsakringskassan/eslint-config-jest": "15.13.0",
+    "@forsakringskassan/eslint-config-jest": "15.13.17",
     "@forsakringskassan/eslint-config-typescript": "15.13.15",
     "@forsakringskassan/eslint-config-typescript-typeinfo": "15.13.15",
     "@forsakringskassan/eslint-config-vitest": "15.13.7",
