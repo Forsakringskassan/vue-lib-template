@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.11.1](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.11.0...v1.11.1) (2026-11-18)
+
+### Bug Fixes
+
+* **deps:** update dependency npm-pkg-lint to v5.4.2 ([54384e7](https://github.com/Forsakringskassan/vue-lib-template/commit/54384e7c90e7d554351113672d12c512d1ddf615))
+
 ## [1.11.0](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.10.40...v1.11.0) (2026-11-18)
 
 ### Features
