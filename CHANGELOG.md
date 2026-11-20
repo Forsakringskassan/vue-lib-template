@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.11.4](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.11.3...v1.11.4) (2026-11-20)
+
+### Bug Fixes
+
+* **deps:** update dependency @forsakringskassan/vite-lib-config to v6.0.2 ([b6c355a](https://github.com/Forsakringskassan/vue-lib-template/commit/b6c355a13fbce0a80db2226e90eb409cb7b7ea9b))
+
 ## [1.11.3](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.11.2...v1.11.3) (2026-11-19)
 
 ### Bug Fixes
