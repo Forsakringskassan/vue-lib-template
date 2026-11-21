@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.11.7](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.11.6...v1.11.7) (2026-11-21)
+
+### Bug Fixes
+
+* **deps:** update dependency @vue/test-utils to v2.6.0 ([95fee56](https://github.com/Forsakringskassan/vue-lib-template/commit/95fee56cccd4ebcdb9c71a249ce42f48d2dadd43))
+
 ## [1.11.6](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.11.5...v1.11.6) (2026-11-20)
 
 ### Bug Fixes
