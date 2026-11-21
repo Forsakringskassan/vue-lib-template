@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.11.11](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.11.10...v1.11.11) (2026-11-21)
+
+### Bug Fixes
+
+* **deps:** update ext/npm-pkg-lint action to v5.5.0 ([846ecdb](https://github.com/Forsakringskassan/vue-lib-template/commit/846ecdbb3e6be6f50e1acb5e4b436c901541cd9c))
+
 ## [1.11.10](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.11.9...v1.11.10) (2026-11-21)
 
 ### Bug Fixes
