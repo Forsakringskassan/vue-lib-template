@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.11.12](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.11.11...v1.11.12) (2026-11-22)
+
+### Bug Fixes
+
+* **deps:** update forsakringskassan/prettier-config action to v3.7.16 ([477e0ee](https://github.com/Forsakringskassan/vue-lib-template/commit/477e0eef9af458bed9bb1a93b19f11b02233631b))
+
 ## [1.11.11](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.11.10...v1.11.11) (2026-11-21)
 
 ### Bug Fixes
