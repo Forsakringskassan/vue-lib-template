@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.11.16](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.11.15...v1.11.16) (2026-11-24)
+
+### Bug Fixes
+
+* **deps:** update dependency npm-run-all2 to v9.1.0 ([49d5db9](https://github.com/Forsakringskassan/vue-lib-template/commit/49d5db94dcf991e99e609f2483cca575c3c0bf16))
+
 ## [1.11.15](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.11.14...v1.11.15) (2026-11-24)
 
 ### Bug Fixes
