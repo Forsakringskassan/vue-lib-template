@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.11.23](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.11.22...v1.11.23) (2026-11-28)
+
+### Bug Fixes
+
+* **deps:** update dependency @types/node to v24.19.4 ([817bef4](https://github.com/Forsakringskassan/vue-lib-template/commit/817bef459ab4daf9a508e99470715d252aeaa729))
+
 ## [1.11.22](https://github.com/Forsakringskassan/vue-lib-template/compare/v1.11.21...v1.11.22) (2026-11-28)
 
 ### Bug Fixes
